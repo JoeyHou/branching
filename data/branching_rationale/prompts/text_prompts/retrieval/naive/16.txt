@@ -1,0 +1,31 @@
+CONTEXT
+- Goal: go back in time
+- Previous Actions: 
+  1. decided to go back in time
+  2. go to school for quantum mechanics
+CURRENT EVENT
+go to school for quantum mechanics
+ALTERNATIVE OPTIONS
+- Option_1: go to a class at a university
+- Option_2: go to a class at a community college
+RELATED RATIONALES
+- [cost] effort / manpower
+- [cost] money / materials
+- [cost] time
+- [outcome] emotional / physical rewards
+- [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success
+QUESTION
+Does Option_1 and Option_2 have a difference in the RELATED RATIONALES?
+ANSWER- [cost] effort / manpower:
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [cost] effort / manpower.
+- [cost] money / materials:
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [cost] money / materials
+- [cost] time:
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [cost] time
+- [outcome] emotional / physical rewards:
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [outcome] emotional / physical rewards
+- [outcome] more options / variety:
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success:
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [outcome]reliability / certainty / chance of success.

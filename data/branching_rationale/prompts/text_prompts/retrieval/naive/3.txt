@@ -1,0 +1,33 @@
+CONTEXT
+- Goal: place the skeleton on the counter
+- Previous Actions: 
+  1. take the skeleton to the cashier
+  2. get close to counter
+  3. lift skeleton up
+CURRENT EVENT
+lift skeleton up
+ALTERNATIVE OPTIONS
+- Option_1: life the skeleton on one's own
+- Option_2: ask the cashier for help
+RELATED RATIONALES
+- [cost] effort / manpower
+- [cost] money / materials
+- [cost] time
+- [outcome] emotional / physical rewards
+- [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success
+QUESTION
+Does Option_1 and Option_2 have a difference in the RELATED RATIONALES?
+ANSWER
+- [cost] effort / manpower:
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [cost] effort / manpower.
+- [cost] money / materials:
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [cost] money / materials
+- [cost] time:
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [cost] time
+- [outcome] emotional / physical rewards:
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [outcome] emotional / physical rewards
+- [outcome] more options / variety:
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success:
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [outcome]reliability / certainty / chance of success.

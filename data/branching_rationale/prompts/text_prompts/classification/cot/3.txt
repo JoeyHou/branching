@@ -1,0 +1,23 @@
+CONTEXT
+- Goal: place the skeleton on the counter
+- Step: lift skeleton up
+- Option_1: lift the skeleton on one's own
+- Option_2: ask the cashier for help
+RELATED RATIONALES
+- [cost] effort / manpower
+- [outcome] reliability / certainty / chance of success
+QUESTION
+For every rationale in RELATED RATIONALES, which one of Option_1 and Option_2 is the better choice?
+ANSWER
+- [cost] effort / manpower
+    - Explanation:
+        - For Option_1, lifting a skeleton can be hard for some people since a skeleton can be as heavy as more than 20 lbs.
+        - For Option_2, lifting a skeleton with someone else's help is most likely feasible.
+        - Having someone else's help would save effort than doing it on one's own.
+    - Conclusion: The effort-saving option is Option_2.
+- [outcome] reliability / certainty / chance of success
+    - Explanation:
+        - For Option_1, it can be hard to lift a skeleton on one's own and if not handled correctly, the skeleton might fall down.
+        - For Option_2, lifting a skeleton with the help of someone else can be more stable.
+        - Enhanced stability is more reliable than some chance of falling down.   
+    - Conclusion: The more reliable option is Option_2.

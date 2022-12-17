@@ -1,0 +1,30 @@
+CONTEXT
+- Goal: air out the musty basement
+- Step: put breathing mask on
+- Option_1: put on a reusable mask
+- Option_2: put on an n-95 single-use mask
+RELATED RATIONALES
+- [cost] money / materials
+- [outcome] emotional / physical rewards
+- [outcome] reliability / certainty / chance of success
+QUESTION
+For every rationale in RELATED RATIONALES, which one of Option_1 and Option_2 is the better choice?
+ANSWER
+- [cost] money / materials
+    - Explanation:
+        - For Option_1, average cost for a reusable mask is around 1 dollars. In some cases, people can also get them for free.
+        - For Option_2, average cost for a n-95 is 2 to 3 dollars and people need to replace them after every few hours.
+        - 1 dollars is cheaper than 2 to 3 dollars.
+    - Conclusion: The affordable option is Option_1.
+- [outcome] emotional / physical rewards
+    - Explanation:
+        - For Option_1, the reusable mask are mostly for basic protection and cannot handle heavy dust.
+        - For Option_2, n-95 mask is designed to provide enhanced protection for people's health.
+        - Enhanced protection is more benifitial than basic protection.
+    - Conclusion: The option that brings more health benifit is Option_2.
+- [outcome] reliability / certainty / chance of success
+    - Explanation:
+        - For Option_1, the reusable mask can only provide basic protection.
+        - For Option_2, n-95 mask can provide protections against heavy dust or virus.
+        - Protections against heavy dust or virus is more reliable than basic protection.
+    - Conclusion: The more reliable option is Option_2.

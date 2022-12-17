@@ -1,0 +1,26 @@
+CONTEXT
+- Goal: air out the musty basement
+- Previous Actions: 
+  1. decided to air out the musty basement
+  2. put breathing mask on
+CURRENT EVENT
+put breathing mask on
+ALTERNATIVE OPTIONS
+- Option_1: put on a reusable mask
+- Option_2: put on an n-95 single-use mask
+RELATED RATIONALES
+- [cost] money / materials
+- [outcome] emotional / physical rewards
+- [outcome] reliability / certainty / chance of success
+QUESTION
+For every rationale in RELATED RATIONALES, which one of Option_1 and Option_2 is the better choice?
+ANSWER
+- [cost] money / materials
+    - Explanation: In most cases, a reusable mask would cost much less than an n-95 single-use mask, not to mention a reusable mask can be reused and save more.
+    - Conclusion: Option_1 is better than Option_2 when it comes to the "[cost] money / materials".
+- [outcome] emotional / physical rewards
+    - Explanation: In most cases, wearing an n-95 mask would provide more protection against the environment than wearing a reusable mask, making the first option more healthy
+    - Conclusion: Option_1 is better than Option_2 when it comes to the "[outcome] emotional / physical rewards".
+- [outcome] reliability / certainty / chance of success
+    - Explanation: Protect ourselves with mask is the goal here. In most cases, wearing an n-95 mask would provide more protection against the environment than wearing a reusable mask, making the first option more reliable
+    - Conclusion: Option_2 is better than Option_1 when it comes to the "[outcome] reliability / certainty / chance of success".

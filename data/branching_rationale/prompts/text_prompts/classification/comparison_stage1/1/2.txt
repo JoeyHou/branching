@@ -1,0 +1,9 @@
+- Goal: air out the musty basement
+- Step: put breathing mask on
+- Option_1: put on a reusable mask
+- Option_2: put on an n-95 single-use mask
+- Conclusion: Option_1 is more affordable than Option_2, because:
+    - For Option_1, average cost for a reusable mask is around 1 dollars. In some cases, people can also get them for free.
+    - For Option_2, average cost for a n-95 is 2 to 3 dollars and people need to replace them after every few hours.
+    - 1 dollars is cheaper than 2 to 3 dollars.
+    

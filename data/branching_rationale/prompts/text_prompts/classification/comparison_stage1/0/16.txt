@@ -1,0 +1,9 @@
+- Goal: go back in time
+- Step: go to school for quantum mechanics
+- Option_1: go to a class at a university
+- Option_2: go to a class at a community college
+- Conclusion: Option_2 is more effort-saving than Option_1, because:
+    - For Option_1, taking a class in university would likely to be stressful as research shows university students are the group with a high stress level.
+    - For Option_2, taking a class in a community college is most likely not too stressful since community college are designed for basic level of education.
+    - Doing something that is less stressful is more effort-saving than doing something that could be stressful.
+    

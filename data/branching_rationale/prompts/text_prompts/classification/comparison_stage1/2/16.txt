@@ -1,0 +1,8 @@
+- Goal: go back in time
+- Step: go to school for quantum mechanics
+- Option_1: go to a class at a university
+- Option_2: go to a class at a community college
+- Conclusion: Option_2 is more time-saving than Option_1, because:
+    - For Option_1, in most cases, university education takes four to five years to finish.
+    - For Option_2, in most cases, a degree from community college takes two to three years to finish.
+    - Two to three years is less than four to five years.

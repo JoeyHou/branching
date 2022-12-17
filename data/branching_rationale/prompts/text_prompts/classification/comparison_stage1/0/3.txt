@@ -1,0 +1,8 @@
+- Goal: place the skeleton on the counter
+- Step: lift skeleton up
+- Option_1: lift the skeleton on one's own
+- Option_2: ask the cashier for help
+- Conclusion: Option_2 is more effort-saving than Option_1, because:
+    - For Option_1, lifting a skeleton can be hard for some people since a skeleton can be as heavy as more than 20 lbs.
+    - For Option_2, lifting a skeleton with someone else's help is most likely feasible.
+    - Having someone else's help would save effort than doing it on one's own.

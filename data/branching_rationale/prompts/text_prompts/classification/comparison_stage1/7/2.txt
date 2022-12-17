@@ -1,0 +1,8 @@
+- Goal: air out the musty basement
+- Step: put breathing mask on
+- Option_1: put on a reusable mask
+- Option_2: put on an n-95 single-use mask
+- Conclusion: Option_2 is more reliable than Option_1, because:
+    - For Option_1, the reusable mask can only provide basic protection.
+    - For Option_2, n-95 mask can provide protections against heavy dust or virus.
+    - Protections against heavy dust or virus is more reliable than basic protection.

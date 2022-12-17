@@ -1,0 +1,27 @@
+CONTEXT
+- Goal: go out for a picnic
+- Previous Actions: 
+  1. decided to go out for a picnic
+  2. take a shower
+  3. get ready for the day
+  4. get in the car
+  5. drive to the park
+  6. park the car
+CURRENT EVENT
+park the car
+ALTERNATIVE OPTIONS
+- Option_1: park along the street
+- Option_2: try to park inside the park
+RELATED RATIONALES
+- [cost] money / materials
+- [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success
+QUESTION
+For every rationale in RELATED RATIONALES, which one of Option_1 and Option_2 is the better choice?
+ANSWER
+- [cost] money / materials
+    - Conclusion: Option_1 is better than Option_2 when it comes to the "[cost] money / materials".
+- [outcome] more options / variety
+    - Conclusion: Option_1 is better than Option_2 when it comes to the "[outcome] more options / variety".
+- [outcome] reliability / certainty / chance of success
+    - Conclusion: Option_2 is better than Option_1 when it comes to the "[outcome] reliability / certainty / chance of success".

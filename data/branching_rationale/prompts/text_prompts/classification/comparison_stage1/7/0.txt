@@ -1,0 +1,9 @@
+- Goal: go out for a picnic
+- Step: park the car
+- Option_1: park along the street
+- Option_2: try to park inside the park
+- Conclusion: Option_2 is more reliable than Option_1, because
+    - For Option_1, street parking suffers from window break-in or theft.
+    - For Option_2, parking in the park would come with park guards and other protections.
+    - Park guards and other protections is more reliable than no protetion and the risk of getting break-in.
+    

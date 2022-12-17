@@ -1,0 +1,44 @@
+CONTEXT
+- Goal: go back in time
+- Step: go to school for quantum mechanics
+- Option_1: go to a class at a university
+- Option_2: go to a class at a community college
+RELATED RATIONALES
+- [cost] effort / manpower
+- [cost] money / materials
+- [cost] time
+- [outcome] emotional / physical rewards
+- [outcome] reliability / certainty / chance of success
+QUESTION
+For every rationale in RELATED RATIONALES, which one of Option_1 and Option_2 is the better choice?
+ANSWER
+- [cost] effort / manpower
+    - Explanation:
+        - For Option_1, taking a class in university would likely to be stressful as research shows university students are the group with a high stress level.
+        - For Option_2, taking a class in a community college is most likely not too stressful since community college are designed for basic level of education.
+        - Doing something that is less stressful is more effort-saving than doing something that could be stressful.
+    - Conclusion: The effort-saving option is Option_2.
+- [cost] money / materials
+    - Explanation:
+        - For Option_1, on average, a class in a university can take a few thousand dollars and finanacial aid is limited.
+        - For Option_2, taking a class in a community college can take a few hundred dollars, or even free in some cases.
+        - A few hundred dollars or free tuition is better than a few thousand dollars and limited financial aid.
+    - Conclusion: The affordable option is Option_2.
+- [cost] time
+    - Explanation:
+        - For Option_1, in most cases, university education takes four to five years to finish.
+        - For Option_2, in most cases, a degree from community college takes two to three years to finish.
+        - Two to three years is less than four to five years.
+    - Conclusion: The time-saving option is Option_2.
+- [outcome] emotional / physical rewards
+    - Explanation:
+        - For Option_1, a university would provide lots of extracurricular activitis and networking oppertunities, making the education more comprehensive.
+        - For Option_2, a community college would mostly focus on the skills and no more benifits.
+        - Extracurricular activities and networking opptertunities are more benifitial in the long term than basic classes on skills.
+    - Conclusion: The option that brings more benifit is Option_1.
+- [outcome] reliability / certainty / chance of success
+    - Explanation:
+        - For Option_1, in most cases, a university would have a physics deparment to provide classes for quantum mechanics.
+        - For Option_2, a community college might not have a physics deparment so it might not offer a class in quantum mechanics. 
+        - The place that is almost certain to have the quantum mechanics class is more reliable than the place that might not offer the class.
+    - Conclusion: The more reliable option is Option_1.

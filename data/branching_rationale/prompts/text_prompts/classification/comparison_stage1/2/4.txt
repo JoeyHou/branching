@@ -1,0 +1,8 @@
+- Goal: buy milk from the store
+- Step: decide which store to go to
+- Option_1: go to the closest store
+- Option_2: go to the store with the most options
+- Conclusion: Option_1 is more time-saving than Option_2, because:
+    - For Option_1, the closest store would require the least time to get to.
+    - For Option_2, the store with the most options would require some extra time to get to, depending on the distance and transportation.
+    - Going to somewhere very close by is faster than going to somewhere that is not very close by.

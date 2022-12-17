@@ -1,0 +1,8 @@
+- Goal: start practicing with friends
+- Step: contact friends to set up a time
+- Option_1: make a public post about playing football in facebook group
+- Option_2: call friends one at a time to see their available time
+- Conclusion: Option_2 is more reliable than Option_1, because:
+    - For Option_1, making a public post might be ignored for people not on social media all the time
+    - For Option_2, calling friends would hardly be ignored and mostly would read the people.
+    - Hardly ignored by most people is more reliable than might be ignored for lots of people.

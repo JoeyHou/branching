@@ -1,0 +1,30 @@
+CONTEXT
+- Goal: start practicing with friends
+- Step: contact friends to set up a time
+- Option_1: make a public post about playing football in facebook group
+- Option_2: call friends one at a time to see their available time
+RELATED RATIONALES
+- [cost] effort / manpower
+- [cost] time
+- [outcome] reliability / certainty / chance of success
+QUESTION
+For every rationale in RELATED RATIONALES, which one of Option_1 and Option_2 is the better choice?
+ANSWER
+- [cost] effort / manpower
+    - Explanation:
+        - For Option_1, making a public post would only take a few click on the smart phone.
+        - For Option_2, contacting friends one at a time would require mulitiple phone calls and lots of talking.
+        - A few clicks on the smart phone is easier than making a couple of phone calls.
+    - Conclusion: The effort-saving option is Option_1.
+- [cost] time
+    - Explanation:
+        - For Option_1, making a public post would only take a few minutes.
+        - For Option_2, calling friends one by one can take a few dozens of minutes or even an hour.
+        - A few minutes is less than a dozens of minutes or an hour.
+    - Conclusion: The time-saving option is Option_1.
+- [outcome] reliability / certainty / chance of success
+    - Explanation:
+        - For Option_1, making a public post might be ignored for people not on social media all the time
+        - For Option_2, calling friends would hardly be ignored and mostly would read the people.
+        - Hardly ignored by most people is more reliable than might be ignored for lots of people.
+    - Conclusion: The more reliable option is Option_2.

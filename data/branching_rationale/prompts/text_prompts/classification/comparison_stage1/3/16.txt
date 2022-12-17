@@ -1,0 +1,8 @@
+- Goal: go back in time
+- Step: go to school for quantum mechanics
+- Option_1: go to a class at a university
+- Option_2: go to a class at a community college
+- Conclusion: Option_1 brings more benifit than Option_2, because:
+    - For Option_1, a university would provide lots of extracurricular activitis and networking oppertunities, making the education more comprehensive.
+    - For Option_2, a community college would mostly focus on the skills and no more benifits.
+    - Extracurricular activities and networking opptertunities are more benifitial in the long term than basic classes on skills.

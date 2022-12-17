@@ -1,0 +1,8 @@
+- Goal: buy milk from the store
+- Step: decide which store to go to
+- Option_1: go to the closest store
+- Option_2: go to the store with the most options
+- Conclusion: Option_2 is more reliable than Option_1, because:
+    - For Option_1, the closest store is likely to have milk, but with limited options, people might not get what they want.
+    - For Option_2, the store with the most options would likely have any milk a person could image, making it more likely to achieve the goal.
+    - Store with most options is more reliable than very limited options.

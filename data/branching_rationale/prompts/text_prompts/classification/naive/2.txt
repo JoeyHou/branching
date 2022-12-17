@@ -1,0 +1,23 @@
+CONTEXT
+- Goal: air out the musty basement
+- Previous Actions: 
+  1. decided to air out the musty basement
+  2. put breathing mask on
+CURRENT EVENT
+put breathing mask on
+ALTERNATIVE OPTIONS
+- Option_1: put on a reusable mask
+- Option_2: put on an n-95 single-use mask
+RELATED RATIONALES
+- [cost] money / materials
+- [outcome] emotional / physical rewards
+- [outcome] reliability / certainty / chance of success
+QUESTION
+For every rationale in RELATED RATIONALES, which one of Option_1 and Option_2 is the better choice?
+ANSWER
+- [cost] money / materials
+    - Conclusion: Option_1 is better than Option_2 when it comes to the "[cost] money / materials".
+- [outcome] emotional / physical rewards
+    - Conclusion: Option_1 is better than Option_2 when it comes to the "[outcome] emotional / physical rewards".
+- [outcome] reliability / certainty / chance of success
+    - Conclusion: Option_2 is better than Option_1 when it comes to the "[outcome] reliability / certainty / chance of success".

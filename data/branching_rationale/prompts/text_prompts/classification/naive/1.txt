@@ -1,0 +1,23 @@
+CONTEXT
+- Goal: start practicing with friends
+- Previous Actions: 
+  1. learn how to play football
+  2. contact friends to set up a time
+CURRENT EVENT
+contact friends to set up a time
+ALTERNATIVE OPTIONS
+- Option_1: make a public post about playing football in facebook group
+- Option_2: call friends one at a time to see their available time
+RELATED RATIONALES
+- [cost] effort / manpower
+- [cost] time
+- [outcome] reliability / certainty / chance of success
+QUESTION
+For every rationale in RELATED RATIONALES, which one of Option_1 and Option_2 is the better choice?
+ANSWER
+- [cost] effort / manpower
+    - Conclusion: Option_1 is better than Option_2 when it comes to the "[cost] effort / manpower".
+- [cost] time
+    - Conclusion: Option_1 is better than Option_2 when it comes to the "[cost] time".
+- [outcome] reliability / certainty / chance of success
+    - Conclusion: Option_2 is better than Option_1 when it comes to the "reliability / certainty / chance of success".

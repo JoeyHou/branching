@@ -1,0 +1,8 @@
+- Goal: go back in time
+- Step: go to school for quantum mechanics
+- Option_1: go to a class at a university
+- Option_2: go to a class at a community college
+- Conclusion: Option_1 is more reliable than Option_2, because:
+    - For Option_1, in most cases, a university would have a physics deparment to provide classes for quantum mechanics.
+    - For Option_2, a community college might not have a physics deparment so it might not offer a class in quantum mechanics. 
+    - The place that is almost certain to have the quantum mechanics class is more reliable than the place that might not offer the class.

@@ -1,0 +1,37 @@
+CONTEXT
+- Goal: buy milk from the store
+- Step: decide which store to go to
+- Option_1: go to the closest store
+- Option_2: go to the store with the most options
+RELATED RATIONALES
+- [cost] effort / manpower
+- [cost] time
+- [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success
+QUESTION
+For every rationale in RELATED RATIONALES, which one of Option_1 and Option_2 is the better choice?
+ANSWER
+- [cost] effort / manpower
+    - Explanation:
+        - For Option_1, the closest store would require the least effort to get to.
+        - For Option_2, the store with the most options would require some extra effort to get to, depending on the distance.
+        - Going to somewhere very close by is easier than going to somewhere that is not very close by.
+    - Conclusion: The effort-saving option is Option_1.
+- [cost] time
+    - Explanation:
+        - For Option_1, the closest store would require the least time to get to.
+        - For Option_2, the store with the most options would require some extra time to get to, depending on the distance and transportation.
+        - Going to somewhere very close by is faster than going to somewhere that is not very close by.
+    - Conclusion: The time-saving option is Option_1.
+- [outcome] more options / variety
+    - Explanation:
+        - For Option_1, the closest store would provide the average amount of options to select from.
+        - For Option_2, the store with the most options would provide the most options to select from, more than any other store.
+        - The most options to choose from is more than the average amount of options.
+    - Conclusion: The option that provides more potential options is Option_2.
+- [outcome] reliability / certainty / chance of success
+    - Explanation:
+        - For Option_1, the closest store is likely to have milk, but with limited options, people might not get what they want.
+        - For Option_2, the store with the most options would likely have any milk a person could image, making it more likely to achieve the goal.
+        - Store with most options is more reliable than very limited options.
+    - Conclusion: The more reliable option is Option_2.

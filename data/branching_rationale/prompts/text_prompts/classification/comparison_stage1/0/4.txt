@@ -1,0 +1,8 @@
+- Goal: buy milk from the store
+- Step: decide which store to go to
+- Option_1: go to the closest store
+- Option_2: go to the store with the most options
+- Conclusion: Option_1 is more effort-saving than Option_2, because:
+    - For Option_1, the closest store would require the least effort to get to.
+    - For Option_2, the store with the most options would require some extra effort to get to, depending on the distance.
+    - Going to somewhere very close by is easier than going to somewhere that is not very close by.

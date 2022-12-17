@@ -1,0 +1,8 @@
+- Goal: go out for a picnic
+- Step: park the car
+- Option_1: park along the street
+- Option_2: try to park inside the park
+- Conclusion: Option_1 is more affordable than Option_2, because:
+    - For Option_1, average cost for parking along the street is around 3 dollars.
+    - For Option_2, average cost for parking inside a park or in a parking garage is around 10 dollars.
+    - 3 dollars is cheaper than 10 dollars.

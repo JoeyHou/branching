@@ -1,0 +1,32 @@
+CONTEXT
+- Goal: air out the musty basement
+- Previous Actions: 
+  1. decided to air out the musty basement
+  2. put breathing mask on
+CURRENT EVENT
+put breathing mask on
+ALTERNATIVE OPTIONS
+- Option_1: put on a reusable mask
+- Option_2: put on an n-95 single-use mask
+RELATED RATIONALES
+- [cost] effort / manpower
+- [cost] money / materials
+- [cost] time
+- [outcome] emotional / physical rewards
+- [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success
+QUESTION
+Does Option_1 and Option_2 have a difference in the RELATED RATIONALES?
+ANSWER
+- [cost] effort / manpower:
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [cost] effort / manpower.
+- [cost] money / materials:
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [cost] money / materials
+- [cost] time:
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [cost] time
+- [outcome] emotional / physical rewards:
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [outcome] emotional / physical rewards
+- [outcome] more options / variety:
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success:
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [outcome]reliability / certainty / chance of success.

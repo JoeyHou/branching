@@ -1,0 +1,8 @@
+- Goal: air out the musty basement
+- Step: put breathing mask on
+- Option_1: put on a reusable mask
+- Option_2: put on an n-95 single-use mask
+- Conclusion: Option_2 brings more benifit than Option_1, because:
+    - For Option_1, the reusable mask are mostly for basic protection and cannot handle heavy dust.
+    - For Option_2, n-95 mask is designed to provide enhanced protection for people's health.
+    - Enhanced protection is more benifitial than basic protection.

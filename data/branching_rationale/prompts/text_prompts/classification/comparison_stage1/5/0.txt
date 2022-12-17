@@ -1,0 +1,8 @@
+- Goal: go out for a picnic
+- Step: park the car
+- Option_1: park along the street
+- Option_2: try to park inside the park
+- Conclusion: Option_1 provides more potential options than Option_2, because:
+    - For Option_1, normally there would be dozens or even thousands of parking spot along the street.
+    - For Option_2, normally there are a few or a few dozens of parking spot in a public park.
+    - Dozens or thousands of options is more than a few dozens of options.

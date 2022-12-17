@@ -1,0 +1,30 @@
+CONTEXT
+- Goal: go out for a picnic
+- Previous Actions: 
+  1. decided to go out for a picnic
+  2. take a shower
+  3. get ready for the day
+  4. get in the car
+  5. drive to the park
+  6. park the car
+CURRENT EVENT
+park the car
+ALTERNATIVE OPTIONS
+- Option_1: park along the street
+- Option_2: try to park inside the park
+RELATED RATIONALES
+- [cost] money / materials
+- [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success
+QUESTION
+For every rationale in RELATED RATIONALES, which one of Option_1 and Option_2 is the better choice?
+ANSWER
+- [cost] money / materials
+    - Explanation: In most cases, the cost of parking along the street is normally less than the cost of parking inside a park, making option 1 more desirable 
+    - Conclusion: Option_1 is better than Option_2 when it comes to the "[cost] money / materials".
+- [outcome] more options / variety
+    - Explanation: In most cases, parking along the street would have more choices of parking spot while parking inside a park would have limited options.
+    - Conclusion: Option_1 is better than Option_2 when it comes to the "[outcome] more options / variety".
+- [outcome] reliability / certainty / chance of success
+    - Explanation: Successfully park the car is the goal here. In most cases, parking inside a park would make the overall goal: go for a picnic, more likely to success. It is also more reliable.
+    - Conclusion: Option_2 is better than Option_1 when it comes to the "[outcome] reliability / certainty / chance of success".

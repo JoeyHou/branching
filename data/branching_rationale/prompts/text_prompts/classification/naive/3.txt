@@ -1,0 +1,22 @@
+CONTEXT
+- Goal: place the skeleton on the counter
+- Previous Actions: 
+  1. take the skeleton to the cashier
+  2. get close to counter
+  3. lift skeleton up
+CURRENT EVENT
+lift skeleton up
+ALTERNATIVE OPTIONS
+- Option_1: lift the skeleton on one's own
+- Option_2: ask the cashier for help
+RELATED RATIONALES
+- [prerequisite] outside support (people, environment)
+- [cost] effort / manpower
+- [outcome] reliability / certainty / chance of success
+QUESTION
+For every rationale in RELATED RATIONALES, which one of Option_1 and Option_2 is the better choice?
+ANSWER
+- [cost] effort / manpower
+    - Conclusion: Option_2 is better than Option_1 when it comes to the "[cost] effort / manpower".
+- [outcome] reliability / certainty / chance of success
+    - Conclusion: Option_2 is better than Option_1 when it comes to the "[outcome] reliability / certainty / chance of success".

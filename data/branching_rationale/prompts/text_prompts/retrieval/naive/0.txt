@@ -1,0 +1,36 @@
+CONTEXT
+- Goal: go out for a picnic
+- Previous Actions: 
+  1. decided to go out for a picnic
+  2. take a shower
+  3. get ready for the day
+  4. get in the car
+  5. drive to the park
+  6. park the car
+CURRENT EVENT
+park the car
+ALTERNATIVE OPTIONS
+- Option_1: park along the street
+- Option_2: try to park inside the park
+RELATED RATIONALES
+- [cost] effort / manpower
+- [cost] money / materials
+- [cost] time
+- [outcome] emotional / physical rewards
+- [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success
+QUESTION
+Does Option_1 and Option_2 have a difference in the RELATED RATIONALES?
+ANSWER
+- [cost] effort / manpower:
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [cost] effort / manpower.
+- [cost] money / materials:
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [cost] money / materials
+- [cost] time:
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [cost] time
+- [outcome] emotional / physical rewards:
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [outcome] emotional / physical rewards
+- [outcome] more options / variety:
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success:
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [outcome]reliability / certainty / chance of success.

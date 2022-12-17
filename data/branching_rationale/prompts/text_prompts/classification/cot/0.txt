@@ -1,0 +1,30 @@
+CONTEXT
+- Goal: go out for a picnic
+- Step: park the car
+- Option_1: park along the street
+- Option_2: try to park inside the park
+RELATED RATIONALES
+- [cost] money / materials
+- [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success
+QUESTION
+For every rationale in RELATED RATIONALES, which one of Option_1 and Option_2 is the better choice?
+ANSWER
+- [cost] money / materials
+    - Explanation:
+        - For Option_1, average cost for parking along the street is around 3 dollars.
+        - For Option_2, average cost for parking inside a park or in a parking garage is around 10 dollars.
+        - 3 dollars is cheaper than 10 dollars.
+    - Conclusion: The affordable option is Option_1.
+- [outcome] more options / variety
+    - Explanation:
+        - For Option_1, normally there would be dozens or even thousands of parking spot along the street.
+        - For Option_2, normally there are a few or a few dozens of parking spot in a public park.
+        - Dozens or thousands of options is more than a few dozens of options.
+    - Conclusion: The option that provides more potential options is Option_1.
+- [outcome] reliability / certainty / chance of success
+    - Explanation:
+        - For Option_1, street parking suffers from window break-in or theft.
+        - For Option_2, parking in the park would come with park guards and other protections.
+        - Park guards and other protections is more reliable than no protetion and the risk of getting break-in.
+    - Conclusion: The more reliable option is Option_2.
