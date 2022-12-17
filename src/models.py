@@ -1,6 +1,6 @@
 # python code
 import util
-from env import *
+from env import * # TODO: change to import env
 
 import json
 import time
@@ -13,6 +13,8 @@ import re
 import pandas as pd
 import pickle
 # api_key_json = util.load_json(api_key_fp)
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+
 
 # Create and configure logger
 import logging
@@ -28,49 +30,12 @@ logger.setLevel(logging.WARNING)
 ##################### BranchingAI ########################
 ##########################################################
 class BranchingAI():
+    default_rationale_keys = [0, 1, 2, 3, 5, 7]
 
-    default_config = {
-        'gpt_config': {
-            'model': 'davinci',
-            'wait_time': 0
-        },
-        'model_name': 'codex_naive_prompting_v1',
-        'task': 'classification'
-    }
-
-    def __init__(self, config = default_config):
+    def __init__(self, config):
         # save config
         self.config = config
 
-        # openai settings
-        self.gpt_config = config['gpt_config'] if 'gpt_config' in config else {}
-        self.gpt_model = self.gpt_config['model'] if 'model' in self.gpt_config else 'davinci'
-        if 'code' in self.gpt_model.lower():
-            # self.model_type = 'codex'
-            logger.warning("[BranchingAI.__init__()] Using personal token")
-            self.api_key = util.load_json(api_key_fp)['personal']
-            self.gpt_config['wait_time'] = 14 # override config setting
-            self.prompting = True
-        else:
-            # self.model_type = 'gpt'
-            logger.warning("[BranchingAI.__init__()] Using ccb_group token")
-            self.api_key = util.load_json(api_key_fp)['ccb_group']
-            if 'ft' in self.gpt_model.lower():
-                self.prompting = False
-                self.gpt_config['wait_time'] = 1 # override config setting
-            else:
-                self.prompting = True 
-                self.gpt_config['wait_time'] = 0 # override config setting
-        self.gpt_config['api_key'] = self.api_key
-        self.gpt_config['model'] = self.gpt_model
-
-        # loading required data
-        self.rationale2key = pickle.load(open(final_dataset_dir + 'proscript/rationale2key.pkl', 'rb'))
-        self.key2rationale = pickle.load(open(final_dataset_dir + 'proscript/key2rationale.pkl', 'rb'))
-
-        # prompt related attributes
-        self.script_template = config['script_template'] if 'script_template' in config else {}
-        
         # model settings
         self.task = config['task']
         self.model_name = config['model_name'] # model identifier, e.g. codex_baseline
@@ -78,7 +43,48 @@ class BranchingAI():
         self.naive = True if 'naive' in self.model_name else False
         self.prompting = True if 'prompting' in self.model_name else False
         self.ensemble = True if 'ensemble' in self.model_name else False 
+        # self.multi_rationale = config['multi_rationale'] if 'multi_rationale' in config else False
 
+        # openai settings
+        self.gpt_config = config['gpt_config'] if 'gpt_config' in config else {}
+        
+        # begin change
+        # self.gpt_model = self.gpt_config['model'] if 'model' in self.gpt_config else "text-davinci-002"
+        # if 'code' in self.gpt_model.lower():
+        #     # self.model_type = 'codex'
+        #     logger.warning("[BranchingAI.__init__()] Using personal token")
+        #     self.api_key = util.load_json(api_key_fp)['personal']
+        #     self.gpt_config['wait_time'] = 10 # override config setting
+        #     # print('wait_time:', self.gpt_config['wait_time'])
+        #     self.prompting = True
+        # else:
+        #     # self.model_type = 'gpt'
+        #     logger.warning("[BranchingAI.__init__()] Using ccb_group token")
+        #     self.api_key = util.load_json(api_key_fp)['ccb_group']
+        #     if 'ft' in self.gpt_model.lower():
+        #         self.prompting = False
+        #         self.gpt_config['wait_time'] = 1 # override config setting
+        #     else:
+        #         self.prompting = True 
+        #         self.gpt_config['wait_time'] = 0 # override config setting
+        self.gpt_model = "code-davinci-002"
+        logger.warning("[BranchingAI.__init__()] Using personal token")
+        self.api_key = util.load_json(api_key_fp)['personal']
+        self.gpt_config['wait_time'] = 10 #config['gpt_config'] if 'wait_time' in config['gpt_config'] else 10
+        self.prompting = True
+        ## end change
+
+        # other openai setting
+        self.gpt_config['api_key'] = self.api_key
+        self.gpt_config['model'] = self.gpt_model
+        self.gpt_config['max_tokens'] = 1200
+
+        # loading required data
+        self.rationale2key = pickle.load(open(final_dataset_dir + 'proscript/rationale2key.pkl', 'rb'))
+        self.key2rationale = pickle.load(open(final_dataset_dir + 'proscript/key2rationale.pkl', 'rb'))
+
+        # prompt related attributes
+        self.script_template = config['script_template'] if 'script_template' in config else {}
 
     def init_prompt(self, train_scripts):
         '''
@@ -87,83 +93,257 @@ class BranchingAI():
             - prompting: will formulate all training scripts into self.few_shot_promots, which is a dictionary of prompts key by different rataionles
             - fine-tuning: will formulate all training scripts into the folder of {prompt_dir}/{model_name} for further annotations
         '''
-        # check model type
-        if self.task == "classification":
-            if 'codex' in self.model_name:
-                rationale_keys = [k for k in self.key2rationale if k >= 0]
-                selected_scripts = self.helper_sample_shots(train_scripts, rationale_keys, pos_only = True)
+        if self.task == "retrieval":
+            if 'code' in self.model_name:
+                # code prompt
                 if self.naive:
-                    self.few_shot_prompts = {
-                        ra: "# Python Code\n" + "\n###\n".join([
-                            "\n# Example {}".format(i + 1) + self.format_script_prompt(selected_scripts[ra][i], ra, answer = True) 
-                            for i in range(len(selected_scripts[ra]))
-                        ]) 
-                        for ra in rationale_keys
-                    }
-                #elif 'code_style' in self.model_name:
+                    raise NotImplementedError
+                elif 'cot' in self.model_name:
+                    # cot codex model
+                    shot_indices = [0, 1, 2, 3, 4, 16]
+                    prompt_sub_cat = self.config["prompt_type"] if "prompt_type" in self.config else "cot_naive"
+                    self.few_shot_prompts = [
+                        "# TEST CASE\n{}\n###\n\n".format(
+                            self.format_script_prompt(train_scripts[i], filename = 'code_prompts/retrieval/{}/{}.py'.format(prompt_sub_cat, i), answer = True)
+                        )
+                        for i in shot_indices
+                    ]
                 else:
-                    self.few_shot_prompts = {
-                        ra: self.script_template['overview'] + "\n###\n".join([
-                            "\n# Test Case {}".format(i + 1) + self.format_script_prompt(selected_scripts[ra][i], ra, answer = True) 
-                            for i in range(len(selected_scripts[ra]))
-                        ]) 
-                        for ra in rationale_keys
-                    }
-                # prompt_text = self.overview + '\n\n' + formatted_scripts        
-                # if save_to_file:
-                #     prompt_file = open(self.prompt_dir + self.model_name + '.txt', 'w')
-                #     prompt_file.write(prompt_text)
-                #     prompt_file.close()
-                # return prompt_text
-        
-            if self.prompting:
-                rationale_keys = [k for k in self.key2rationale if k >= 0]
-                selected_scripts = self.helper_sample_shots(train_scripts, rationale_keys, pos_only = True)
-                if self.naive:
-                    self.few_shot_prompts = {
-                        ra: "# Python Code\n" + "\n###\n".join([
-                            "\n# Example {}".format(i + 1) + self.format_script_prompt(selected_scripts[ra][i], ra, answer = True) 
-                            for i in range(len(selected_scripts[ra]))
-                        ]) 
-                        for ra in rationale_keys
-                    }
+                    raise NotImplementedError
             else:
-                ##TODO
-                pass
-        else:
-            pass
-    
-    def format_script_prompt(self, script, rationale_key = None, answer = None):
-        if 'codex' in self.model_name:
-            if self.task == "classification":
-                previous_actions = ''
-                for i in range(script['branching_info']['branching_idx'] + 1):
-                    event = script['steps'][i]
-                    previous_actions += ("'{}. {}'").format(i + 1, event)
-                prompt = self.script_template['script_template'].format(
-                    goal = "'{}'".format(script['goal']),
-                    prev_events = previous_actions,
-                    branching_step = "'{}'".format(script['branching_info']['branching_step']),
-                    op1 = "'{}'".format(script['branching_info']['option 1']),
-                    op2 = "'{}'".format(script['branching_info']['option 2']),
-                    rationale = self.key2rationale[rationale_key],
-                    rationale_explanation = self.script_template['rationale_explanation'][self.key2rationale[rationale_key]]
-                )
-                if answer is not None:
-                    if rationale_key in script['branching_info']['op1_ra']:
-                        prompt += " '{}' # option_1".format(script['branching_info']['option 1'])
-                    elif rationale_key in script['branching_info']['op2_ra']:
-                        prompt += " '{}' # option_2".format(script['branching_info']['option 2'])
+                # text prompt
+                if "shots" in self.config:
+                    shot_indices = self.config['shots']
+                else:
+                    shot_indices = [0, 1, 2, 3, 4, 16]
+                if self.naive:
+                    prompt_sub_cat = "naive"
+                else:
+                    prompt_sub_cat = self.config["prompt_type"] if "prompt_type" in self.config else "cot"
+                
+                self.few_shot_prompts = [
+                    "[Example]\n{}\n###\n\n".format(
+                        self.format_script_prompt(
+                            train_scripts[i], 
+                            filename = 'text_prompts/retrieval/{}/{}.txt'.format(prompt_sub_cat, i), 
+                            answer = True
+                        )
+                    )
+                    for i in shot_indices
+                ]
+        elif self.task == "classification":
+            if 'comparison' in self.model_name:
+                self.few_shot_prompts = {}
+                for key in self.default_rationale_keys:
+                    files = [f for f in os.listdir(rationale_prompt_dir + 'text_prompts/classification/comparison/{}'.format(key)) if '.txt' in f]
+                    self.few_shot_prompts[key] = [
+                        "[Example]\n{}\n###\n\n".format(
+                            self.format_script_prompt(
+                                train_scripts[i], 
+                                filename = 'text_prompts/classification/comparison/{}/{}'.format(key, files[i]), 
+                                answer = True
+                            )
+                        )
+                        for i in range(len(files))
+                    ]
+            elif 'code' in self.model_name:
+                # code prompt for classification
+                if "shots" in self.config:
+                    shot_indices = self.config['shots']
+                else:
+                    shot_indices = [0, 1, 2, 3, 4, 16]
+                if self.naive:
+                    prompt_sub_cat = "naive"
+                else:
+                    prompt_sub_cat = self.config["prompt_type"] if "prompt_type" in self.config else "cot_w_assert"
+                
+                self.few_shot_prompts = [
+                   "# TEST CASE\n{}\n###\n\n".format(
+                        self.format_script_prompt(
+                            train_scripts[i], 
+                            filename = 'code_prompts/classification/{}/{}.py'.format(prompt_sub_cat, i), 
+                            answer = True
+                        )
+                    )
+                    for i in shot_indices
+                ]
+            else:
+                # text prompt for classification
+                if "shots" in self.config:
+                    shot_indices = self.config['shots']
+                else:
+                    shot_indices = [0, 1, 2, 3, 4, 16]
+                if self.naive:
+                    prompt_sub_cat = "naive"
+                else:
+                    prompt_sub_cat = self.config["prompt_type"] if "prompt_type" in self.config else "cot_short"
+                
+                self.few_shot_prompts = [
+                    "[Example]\n{}\n###\n\n".format(
+                        self.format_script_prompt(
+                            train_scripts[i], 
+                            filename = 'text_prompts/classification/{}/{}.txt'.format(prompt_sub_cat, i), 
+                            answer = True
+                        )
+                    )
+                    for i in shot_indices
+                ]
+                
+    def format_script_prompt(self, script, rationale_key = None, answer = None, filename = None):
+        if self.task == "retrieval":
+            if 'code' in self.model_name:
+                if self.naive:
+                    raise NotImplementedError
+                elif 'cot' in self.model_name:
+                    if answer is None: 
+                        # case 1: prediction time, no answer is provided
+                        previous_actions = ''
+                        for i in range(script['branching_info']['branching_idx'] + 1):
+                            event = script['steps'][i]
+                            previous_actions += ("'{}. {}', ").format(i + 1, event)
+                        prompt = self.script_template['script_template'].format(
+                            goal = "'{}'".format(script['goal']),
+                            prev_events = previous_actions,
+                            branching_step = "'{}'".format(script['branching_info']['branching_step']),
+                            op1 = "'{}'".format(script['branching_info']['option 1']),
+                            op2 = "'{}'".format(script['branching_info']['option 2'])
+                        )
+                        return prompt
                     else:
-                        prompt += " 'There is not much difference between option 1 and option 2'"
-                return prompt  
+                        if filename is None:
+                            # case 2: annotation time, no cot is provided, output text for annotations
+                            raise NotImplementedError
+                        else:
+                            # case 3: prediction time, look for annotated cot prompts from files
+                            with open(rationale_prompt_dir + filename, 'r') as prompt_file:
+                                return ''.join(prompt_file.readlines())
+                else:
+                    raise NotImplementedError
+            else:
+                # text prompts
+                if filename is not None:
+                    # case 1: prediction time, look for annotated cot prompts from files
+                    with open(rationale_prompt_dir + filename, 'r') as prompt_file:
+                        return ''.join(prompt_file.readlines())
+                else:
+                    if answer is None: 
+                        # case 2: prediction time, no answer is provided
+                        goal = script['goal']
+                        prev_events = '\n'.join([
+                            '  {}. {}'.format(i + 1, script['steps'][i]) 
+                            for i in range(script['branching_info']['branching_idx'] + 1)
+                        ])
+                        branching_step = script['branching_info']['branching_step']
+                        option1 = script['branching_info']['option 1']
+                        option2 = script['branching_info']['option 2']
+                        related_rationales = '\n'.join([
+                            '- ' + self.key2rationale[rationale_key] + ''
+                            for rationale_key in self.default_rationale_keys
+                        ])
+                        # answers = related_rationales
+                        formatted_script = self.script_template['script_template'].format(
+                            goal = goal,
+                            prev_events = prev_events,
+                            branching_step = branching_step,
+                            option1 = option1,
+                            option2 = option2,
+                            related_rationales = related_rationales,
+                            question = self.script_template['retrieval_question']
+                        ).strip()
+                        return formatted_script
+                    else:
+                        # case 3: annotation time, no cot is provided, output text for annotations
+                        raise NotImplementedError
+        elif self.task == "classification":
+            # case 1: prediction time, look for annotated cot prompts from files
+            if filename is not None:
+                with open(rationale_prompt_dir + filename, 'r') as prompt_file:
+                    return ''.join(prompt_file.readlines())
+            # case 2&3: need to do string mulipulation
+            if 'comparison' in self.model_name:
+                # comparison prompts
+                assert rationale_key is not None, 'Expect not-None rationale_key!'
+                
+                goal = script['goal']
+                branching_step = script['branching_info']['branching_step']
+                option1 = script['branching_info']['option 1']
+                option2 = script['branching_info']['option 2']
+                if answer == 1:
+                    conclusion = self.script_template[self.key2rationale[rationale_key]].format(
+                        'Option_1', 
+                        'Option_2'
+                    )
+                elif answer == 2:
+                    conclusion = self.script_template[self.key2rationale[rationale_key]].format(
+                        'Option_2', 
+                        'Option_1'
+                    )
+                else:
+                    raise NotImplementedError
+                conclusion = '\n- Conclusion: ' + conclusion
+                prompt = self.script_template['script_template'].format(
+                    goal = goal,
+                    # prev_events = previous_actions,
+                    branching_step = branching_step,
+                    option1 = option1,
+                    option2 = option2,
+                    conclusion = conclusion
+                )
+                return prompt
+            elif 'code' in self.model_name:
+                # code prompts
+                if answer is None: 
+                    # case 2: prediction time, no answer is provided
+                    # previous_actions = ''
+                    # for i in range(script['branching_info']['branching_idx'] + 1):
+                    #     event = script['steps'][i]
+                    #     previous_actions += ("'{}. {}', ").format(i + 1, event)
+                    related_rationale_keys = script['branching_info']['op1_ra'] + script['branching_info']['op2_ra']
+                    related_rationale_list = "['{}']".format("', '".join([self.key2rationale[key] for key in related_rationale_keys]))
+                    prompt = self.script_template['script_template'].format(
+                        goal = "'{}'".format(script['goal']),
+                        # prev_events = previous_actions,
+                        branching_step = "'{}'".format(script['branching_info']['branching_step']),
+                        op1 = "'{}'".format(script['branching_info']['option 1']),
+                        op2 = "'{}'".format(script['branching_info']['option 2']),
+                        related_rationale = related_rationale_list
+                    )
+                    return prompt
+                else:
+                    # case 3: annotation time, no cot is provided, output text for annotations
+                    raise NotImplementedError
+            else:
+                if answer is None: 
+                    # case 2: prediction time, no answer is provided
+                    goal = script['goal']
+                    # prev_events = '\n'.join([
+                    #     '  {}. {}'.format(i + 1, script['steps'][i]) 
+                    #     for i in range(script['branching_info']['branching_idx'] + 1)
+                    # ])
+                    branching_step = script['branching_info']['branching_step']
+                    option1 = script['branching_info']['option 1']
+                    option2 = script['branching_info']['option 2']
+                    related_rationales = '\n'.join([
+                        '- ' + self.key2rationale[rationale_key] + ''
+                        for rationale_key in script['branching_info']['op1_ra'] + script['branching_info']['op2_ra'] 
+                        if rationale_key in self.default_rationale_keys
+                    ])
+                    # answers = related_rationales
+                    formatted_script = self.script_template['script_template'].format(
+                        goal = goal,
+                        # prev_events = prev_events,
+                        branching_step = branching_step,
+                        option1 = option1,
+                        option2 = option2,
+                        related_rationales = related_rationales,
+                        question = self.script_template['classification_question']
+                    ).strip()
+                    return formatted_script
+                else:
+                    # case 3: annotation time, no cot is provided, output text for annotations
+                    raise NotImplementedError
 
-            elif self.task == "retrieval":
-                pass 
-               
-
-
-    def predict(self, orig_scripts):
+    def predict(self, orig_scripts, checkpoint = None):
         '''
         Desc: Make prediction of a batch of scripts
         Input: 
@@ -175,74 +355,80 @@ class BranchingAI():
         
         '''
         ### 1. prompt for gpt output
-        if 'checkpoint' not in self.config or self.config['checkpoint'] == '':
+        if checkpoint is None:
             # 1.0. make a deep copy as the results would be stored in the `scripts`
             scripts = copy.deepcopy(orig_scripts)
 
             # 1.1 gpt calls
             timestamp = util.get_current_timestamp()
             for script in tqdm(scripts):
-                if self.task == "multi_task":
-                    # query about all the rationales if under multi-task setting
-                    rationales = [ra for ra in self.rationale2key if self.rationale2key[ra] >= 0]
-                    # TODO
+                if self.task == "retrieval":
+                    script['branching_info']['rationale_gpt_output'] = self.predict_gpt_call(script, rationales_keys = None)
                 elif self.task == "classification":
                     rationales_keys = script['branching_info']['op1_ra'] + script['branching_info']['op2_ra']
-                    # rationales = [self.key2rationale[ra] for ra in all_keys]
+                    rationales_keys = [key for key in rationales_keys if key in self.default_rationale_keys]
                     script['branching_info']['rationale_gpt_output'] = self.predict_gpt_call(script, rationales_keys)
-                elif self.task == "retrieval":
-                    # TODO
-                    pass
-                
+                else:
+                    raise NotImplementedError
+
             # 1.2 dump to cache 
             cache_jsonl = self.cache_dir + 'BAI_' + timestamp + '.jsonl'
             with open(cache_jsonl, 'w') as cache_file:
                 for data in scripts:
                     cache_file.write(json.dumps(data))
                     cache_file.write('\n')
+
+            logger.warning("[BranchingAI.predict()] Predicted {} scripts with model {}, checkpoint: {}".format(
+                len(orig_scripts),
+                self.model_name,
+                timestamp
+            ))
         else:
             # 1.3 load from cache
-            scripts = util.load_jsonl(self.cache_dir + 'BAI_' + self.config['checkpoint'] + '.jsonl')
-        
-        ### 2. inference from gpt output
-        for script in scripts:
-            classi_results = []
-            retrieval_text_results = []
-            retrieval_key_results = []
-            gpt_outputs = script['branching_info']['rationale_gpt_output']
-            for ra, gpt_output in gpt_outputs:
-                pred_text, pred_answ = self.predict_gpt_output_parser(gpt_output)
-                
-                # retrieval results
-                retrieval_text_results.append(pred_text)
-                if pred_answ != 0:
-                    retrieval_key_results.append(ra)
+            # print(self.cache_dir + 'output/BAI_' + checkpoint + '.jsonl')
+            scripts = util.load_jsonl(self.cache_dir + 'BAI_' + checkpoint + '.jsonl')
+            # print(len(scripts))
 
-                # classification results
-                if ra in script['branching_info']['op1_ra']:
-                    true_answ = 1
-                elif ra in script['branching_info']['op2_ra']:
-                    true_answ = 2
-                else:
-                    true_answ = 0
-                classi_results.append({
-                    'rationele_text': self.key2rationale[ra],
-                    'rationele_key': ra,
-                    'true_answ': true_answ, # MAGIC NUMBER: depends on the `option_key` format
-                    'pred_answ': pred_answ,
-                    'pred_text': pred_text
-                })
-                
-            script['branching_info']['classi_results'] = classi_results
-            if self.task == "multi_task":
+
+        ### 2. inference from gpt output
+        if self.task == 'retrieval':
+            for script in scripts:
+                gpt_output = script['branching_info']['rationale_gpt_output']
+                retrieval_results = self.predict_gpt_output_parser(gpt_output)
                 script['branching_info']['retrieval_result'] = {
-                    'true_answ': script['branching_info']['op1_ra'] + script['branching_info']['op2_ra'],
-                    'text_results': retrieval_text_results,
-                    'pred_answ': retrieval_key_results
-                }
+                        'true_answ': script['branching_info']['op1_ra'] + script['branching_info']['op2_ra'],
+                        'text_results': [
+                            r['pred_text']
+                            for r in retrieval_results if r['pred_answ'] == 1
+                        ],
+                        'pred_answ': [
+                            r['rationale_key']
+                            for r in retrieval_results if r['pred_answ'] == 1
+                        ]
+                    }
+        elif self.task == 'classification':
+            if 'comparison' in self.model_name:
+                # TODO
+                pass 
+            else:
+                for script in scripts:
+                    gpt_output = script['branching_info']['rationale_gpt_output']
+                    classi_results = self.predict_gpt_output_parser(gpt_output)
+                    
+                    for result in classi_results:
+                        rationale_key = result['rationale_key']
+                        if rationale_key in script['branching_info']['op1_ra']:
+                            result['true_answ'] = 1
+                        elif rationale_key in script['branching_info']['op2_ra']:
+                            result['true_answ'] = 2
+                        else:
+                            result['true_answ'] = 0
+                    script['branching_info']['classi_results'] = classi_results
+        else:
+            raise NotImplementedError
         return scripts
 
-    def predict_gpt_call(self, script, rationales_keys):
+    def predict_gpt_call(self, script, rationales_keys = None):
         '''
         Decs: Get GPT output for a list of rationales
         Input: 
@@ -251,166 +437,327 @@ class BranchingAI():
         Output:
             - [(rationale, gpt_outputs)]
         '''
-        gpt_outputs = []
-        for key in rationales_keys: 
-            formatted_script = self.format_script_prompt(script, key)
-            if self.prompting:
-                inference_prompt = '{}\n###\n\n# Test Case\n{}'.format(
-                    self.few_shot_prompts[key], 
-                    formatted_script
+        if self.task == "retrieval":
+            inference_prompt = ''
+            if 'code' in self.model_name:
+                if 'cot' in self.model_name:
+                    formatted_script = "# TEST CASE\n{}".format(
+                        self.format_script_prompt(script, answer = None)
+                    )
+                    if self.prompting:
+                        inference_prompt = "".join(self.few_shot_prompts) + formatted_script
+                    else:
+                        raise NotImplementedError
+                    gpt_output = util.universal_gpt_call(
+                        inference_prompt, 
+                        config = self.gpt_config
+                    )
+                    return gpt_output
+                else:
+                    raise NotImplementedError
+            else:
+                # text prompts
+                formatted_script = "[Example]\n{}".format(
+                    self.format_script_prompt(script, answer = None)
+                )
+                if self.prompting:
+                    inference_prompt = "".join(self.few_shot_prompts) + formatted_script
+                else:
+                    raise NotImplementedError
+                gpt_output = util.universal_gpt_call(
+                    inference_prompt, 
+                    config = self.gpt_config
+                )
+                return gpt_output
+            
+        elif self.task == "classification":
+            if 'comparison' in self.model_name:
+                gpt_output = []
+                for key in rationales_keys:
+                    # stage 1: two-sided prompt
+                    formatted_script_1 = "[Example]\n{}".format(self.format_script_prompt(script, rationale_key = key, answer = 1))
+                    formatted_script_2 = "[Example]\n{}".format(self.format_script_prompt(script, rationale_key = key, answer = 2))
+                    inference_prompt_1 = "".join(self.few_shot_prompts[key]) + formatted_script_1
+                    inference_prompt_2 = "".join(self.few_shot_prompts[key]) + formatted_script_2
+                    tmp_gpt_output_1 = util.universal_gpt_call(inference_prompt_1, config = self.gpt_config)
+                    tmp_gpt_output_2 = util.universal_gpt_call(inference_prompt_2, config = self.gpt_config)
+
+                    # stage 2: gpt_judging
+                    # TODO
+                    gpt_output.append((key, tmp_gpt_output_1, tmp_gpt_output_2))
+            elif 'code' in self.model_name:
+                formatted_script = "# TEST CASE\n{}".format(
+                    self.format_script_prompt(script, answer = None)
+                )
+                if self.prompting:
+                    inference_prompt = "".join(self.few_shot_prompts) + formatted_script
+                else:
+                    raise NotImplementedError
+                gpt_output = util.universal_gpt_call(
+                    inference_prompt, 
+                    config = self.gpt_config
                 )
             else:
-                ##TODO
-                pass
-            
-            gpt_output = util.universal_gpt_call(
-                inference_prompt, 
-                config = self.gpt_config
-            )
-            gpt_outputs.append((key, gpt_output))
-        return gpt_outputs
-    
-    def predict_gpt_output_parser(self, gpt_output):
-        if self.task == "classification":
-            if 'codex' in self.model_name:
-                pred_answ = 0
-                pred_text = gpt_output.strip().lower()
-                if 'option_1' in pred_text:
-                    pred_answ = 1
-                elif 'option_2' in pred_text:
-                    pred_answ = 2
-                return pred_text, pred_answ
-
-
-    def helper_sample_shots(self, train_scripts, rationale_keys, num_shot = 3, pos_only = False):
-        '''
-        Desc: make sampling choices across the training scripts
-        '''
-
-        # self.base_prompts = {}
-        script_visit_count = {}
-        all_selected_scripts = {}
-        current_max_visit = 1
-        hard_keys = [3, 4, 6, 9] # MAGIC NUMBER: keys with very few available samples
-        for key in rationale_keys:
-            # key/ = self.rationale2key[ra]
-            if key < 0:
-                continue
-            pos_count = sum([key in script['branching_info']['op1_ra'] + script['branching_info']['op2_ra'] for script in train_scripts])
-            if num_shot > pos_count:
-                tmp_num_shot = pos_count
-            else:
-                tmp_num_shot = num_shot
-
-            ## select scripts
-            pos_counter, neg_counter = 0, 0
-            selected_scripts = []
-            curr_idx = 0
-            while True:
-                # check curr_idx position
-                if curr_idx == len(train_scripts):
-                    current_max_visit += 1
-                    curr_idx = 0
-                    continue
-                script = train_scripts[curr_idx]
-                script_id = script['curr_index']
-                # count_valid = False
-                if script_id in script_visit_count:
-                    if script_visit_count[script_id] + 1 > current_max_visit:
-                        curr_idx += 1
-                        continue
+                formatted_script = "[Example]\n{}".format(
+                    self.format_script_prompt(script, answer = None)
+                )
+                if self.prompting:
+                    inference_prompt = "".join(self.few_shot_prompts) + formatted_script
                 else:
-                    script_visit_count[script_id] = 1
-                
-                # adding script
-                if key in script['branching_info']['op1_ra'] + script['branching_info']['op2_ra']:
-                    if pos_counter < tmp_num_shot:
-                        pos_counter += 1
-                        if key not in hard_keys:
-                            script_visit_count[script_id] += 1
-                        selected_scripts.append(script)
-                elif not pos_only:
-                    if neg_counter < tmp_num_shot:
-                        neg_counter += 1
-                        script_visit_count[script_id] += 1
-                        selected_scripts.append(script)
-                curr_idx += 1
-
-                # stop condition
-                if pos_only and len(selected_scripts) >= tmp_num_shot:
-                    break
-                if not pos_only and len(selected_scripts) >= tmp_num_shot * 2:
-                    break
-
-            all_selected_scripts[key] = selected_scripts
-
-        return all_selected_scripts
-
-
-
-
-
-
-##########################################################
-######################### Tester #########################
-##########################################################
-from sklearn.metrics import accuracy_score, precision_score
-class Tester():
-    def __init__(self):
-        pass
-
-    def eval_(self, scripts, task):        
-        if task == 'retrieval':
-            return self.eval_retrieval(scripts)
-        elif task == 'classification':
-            return self.eval_classification(scripts)
+                    raise NotImplementedError
+                gpt_output = util.universal_gpt_call(
+                    inference_prompt, 
+                    config = self.gpt_config
+                )
+            return gpt_output
         else:
             raise NotImplementedError
 
-    def eval_retrieval(self, scripts):
+    
+    def predict_gpt_output_parser(self, gpt_output):
+        if self.task == "retrieval":
+            pred_text_lst = None
+            if 'code' in self.model_name:
+                answers = gpt_output.split("if rationale == ")
+                all_results = []
+                for ans in answers:
+                    ans = ans.strip()
+                    if len(re.findall("'[^']+'", ans)) != 1:
+                        continue
+                    rationale = re.findall("'[^']+'", ans)[0][1:-1]
+                    # ans_lst = ans.split('\n')[1:]
+                    pred_text = ans.strip() # ans_lst[0].strip()
+                    # pred_text += '\n' + ans_lst[1].strip()
+                    if 'return True' in ans.split('\n')[-1]:
+                        pred_answ = 1
+                    elif 'return False' in ans.split('\n')[-1]:
+                        pred_answ = 0
+                    all_results.append({
+                        'rationale_text': rationale,
+                        'rationale_key': self.rationale2key[rationale],
+                        # 'true_answ': true_answ,
+                        'pred_answ': pred_answ,
+                        'pred_text': pred_text
+                    })
+                return all_results
+            else:
+                # text prompt
+                all_results = []
+                for answer in gpt_output.split('\n- '):
+                    answer = answer.lower().strip()
+                    if len(answer) == 0:
+                        continue
+                    ans_lst = answer.split('\n')
+                    rationale = ans_lst[0].replace('-', '').replace(':', '').strip()
+                    pred_text = copy.copy(answer)
+                    if len(answer.split('- conclusion')) > 0:
+                        conculsion = answer.split('- conclusion')[-1]
+                    else:
+                        conculsion = answer
+                    if 'do have' in conculsion:
+                        pred_answ = 1
+                    elif 'do not have' in conculsion:
+                        pred_answ = 0
+                    else:
+                        pred_answ = -1
+                    all_results.append({
+                        'rationale_text': rationale,
+                        'rationale_key': self.rationale2key[rationale],
+                        # 'true_answ': true_answ,
+                        'pred_answ': pred_answ,
+                        'pred_text': pred_text
+                    })
+                return all_results
+        elif self.task == "classification":
+            if 'code' in self.model_name:
+                # parse code prompt
+                answers = gpt_output.split("if rationale == ")
+                all_results = []
+                for ans in answers:
+                    ans = ans.strip()
+                    if len(re.findall("'[^']+'", ans)) != 1:
+                        continue
+                    rationale = re.findall("'[^']+'", ans)[0][1:-1]
+                    ans_lst = ans.split('\n')[1:]
+                    pred_text = ans_lst[0].strip()
+                    pred_text += '\n' + ans_lst[1].strip()
+                    if 'option1' in ans_lst[2]:
+                        pred_answ = 1
+                    elif 'option2' in ans_lst[2]:
+                        pred_answ = 2
+                    all_results.append({
+                        'rationale_text': rationale,
+                        'rationale_key': self.rationale2key[rationale],
+                        # 'true_answ': true_answ,
+                        'pred_answ': pred_answ,
+                        'pred_text': pred_text
+                    })
+                return all_results
+            else:
+                # parse text prompt
+                all_results = []
+                for answer in gpt_output.split('\n- '):
+                    answer = answer.lower().strip()
+                    if len(answer) == 0:
+                        continue
+                    ans_lst = answer.split('\n')
+                    rationale = ans_lst[0].replace('-', '').strip()
+                    pred_text = copy.copy(answer)
+                    if len(answer.split('- conclusion')) > 0:
+                        conculsion = answer.split('- conclusion')[-1]
+                    else:
+                        conculsion = ''
+                    # if 'option_1 is better' in conculsion:
+                    #     pred_answ = 1
+                    # elif 'option_2 is better' in conculsion:
+                    #     pred_answ = 2
+                    # else:
+                    #     pred_answ = -1
+                    if 'option_1' in conculsion:
+                        pred_answ = 1
+                    elif 'option_2' in conculsion:
+                        pred_answ = 2
+                    else:
+                        pred_answ = -1
+                    all_results.append({
+                        'rationale_text': rationale,
+                        'rationale_key': self.rationale2key[rationale],
+                        # 'true_answ': true_answ,
+                        'pred_answ': pred_answ,
+                        'pred_text': pred_text
+                    })
+                return all_results
+        else:
+            raise NotImplementedError
+
+
+    ##########################################################
+    ########################## Eval ##########################
+    ##########################################################
+    def eval_retrieval(self, scripts, rationale_subset = default_rationale_keys):
         '''
             'true_answ': script['branching_info']['op1_ra'] + script['branching_info']['op2_ra'],
             'text_results': text_results,
             'pred_answ': key_results
         '''
-        precision_scores = []
+        pre_scores = []
+        rec_scores = []
+        f1_scores = []
+        all_true = []
+        all_pred = []
         for script in scripts:
             true_topic = script['branching_info']['retrieval_result']['true_answ']
             pred_topic = script['branching_info']['retrieval_result']['pred_answ']
-            precision_scores.append(self.retrieval_precision(true_topic, pred_topic))
-
-        avg_pre = round(np.mean(precision_scores), 2)
-        return {
+            true_topic = [1 if i in true_topic else 0 for i in rationale_subset]
+            pred_topic = [1 if i in pred_topic else 0 for i in rationale_subset]
+            if len(true_topic) != 0:
+                pre_scores.append(precision_score(true_topic, pred_topic))
+                rec_scores.append(recall_score(true_topic, pred_topic))
+                f1_scores.append(f1_score(true_topic, pred_topic))
+            all_true += true_topic
+            all_pred += pred_topic
+        
+        avg_f1 = round(np.mean(f1_scores), 2)
+        avg_pre = round(np.mean(pre_scores), 2)
+        avg_rec = round(np.mean(rec_scores), 2)
+        all_pre = round(precision_score(all_true, all_pred), 2)
+        all_rec = round(recall_score(all_true, all_pred), 2)
+        all_f1 = round(f1_score(all_true, all_pred), 2)
+        eval_result = {
             'avg_pre': avg_pre,
-            'pre_scores': precision_scores # list of precisions
+            'avg_rec': avg_rec,
+            'avg_f1': avg_f1,
+            'all_pre': all_pre,
+            'all_rec': all_rec,
+            'all_f1': all_f1,
+            'num_sample': len(scripts)
         }
-    
-    # helper precision
-    def retrieval_precision(self, label, pred):
-        valid_pred = [i for i in pred if i != -1]
-        if len(valid_pred) == 0:
-            return 0
-        precision = round(sum([i in label for i in valid_pred]) / len(valid_pred), 2)
-        return precision
+        self.helper_log_eval(eval_result, scripts, 'retrieval')
+        return eval_result
 
-    def eval_classification(self, scripts):
+    def eval_classification(self, scripts, relevant_only = False, rationale_subset = default_rationale_keys):
         assert 'classi_results' in scripts[0]['branching_info'], "[ERROR] Expect 'classi_results' in scripts['branching_info']!"
         all_pred, all_true = [], []
         script_acc_lst = []
         for script in scripts:
             script_result = script['branching_info']['classi_results']
-            
-            tmp_acc = sum([r['pred_answ'] == r['true_answ'] for r in script_result]) / len(script_result)
+            script_result = [r for r in script_result if r['rationale_key'] in rationale_subset]
+            if relevant_only:
+                script_result = [r for r in script_result if r['true_answ'] != 0]
+            if len(script_result) == 0:
+                continue
+            tmp_acc = sum([
+                r['pred_answ'] == r['true_answ'] 
+                for r in script_result
+            ]) / len(script_result)
             script_acc_lst.append(round(tmp_acc, 2))
-            
             all_pred += [r['pred_answ'] for r in script_result] 
-            all_true += [r['true_answ'] for r in script_result] 
-        
+            all_true += [r['true_answ'] for r in script_result]                 
         # print(script_acc_lst)
         avg_acc = round(np.mean(script_acc_lst), 2)
         all_acc = round(accuracy_score(all_true, all_pred), 2)
-        return {
+        
+        eval_result = {
             'avg_acc': avg_acc,
             'all_acc': all_acc,
-            'acc_scors': script_acc_lst
+            'conf_ma': self.helper_classification_confusion_matrix(all_pred, all_true)
         }
+        self.helper_log_eval(eval_result, scripts, 'classification')
+        return eval_result
+        
+
+    def helper_classification_confusion_matrix(self, pred_answ, true_answ):
+        '''
+        Note: true_answ and pred_answ should be list with exact same shape
+        '''
+        false_unknown = 0
+        false_retrieve = 0
+        false_predict = 0
+        correct_igonre = 0
+        correct_predict = 0
+
+        for i in range(len(pred_answ)):
+            tmp_pred = pred_answ[i]
+            tmp_true = true_answ[i]
+
+            if tmp_pred == 0 and tmp_true != 0:
+                false_unknown += 1
+            elif tmp_true == 0 and tmp_pred != 0:
+                false_retrieve += 1
+            elif tmp_true != 0 and tmp_pred != 0:
+                if tmp_pred != tmp_true:
+                    false_predict += 1
+                else:
+                    correct_predict += 1 
+            else:
+                correct_igonre += 1
+
+        return {
+            'false_unknown': false_unknown,
+            'false_retrieve': false_retrieve,
+            'false_predict': false_predict,
+            'correct_igonre': correct_igonre,
+            'correct_predict': correct_predict
+        }
+
+    def helper_log_eval(self, eval_result, scripts, task):
+        # save evaluation results
+        timestamp = util.get_current_timestamp()
+        # save data
+        results_jsonl = rationale_results_dir + 'eval_logs/BAI_' + timestamp + '_{}_scripts.jsonl'.format(task)
+        with open(results_jsonl, 'w') as cache_file:
+            for data in scripts:
+                cache_file.write(json.dumps(data))
+                cache_file.write('\n')
+        # save result
+        metric_json = rationale_results_dir + 'eval_logs/BAI_' + timestamp + '_{}_results.json'.format(task)
+        with open(metric_json, 'w') as cache_file:
+            eval_result_copy = copy.copy(eval_result)
+            eval_result_copy['model_config'] = vars(self)
+            cache_file.write(json.dumps(eval_result_copy, indent = 4))
+            cache_file.write('\n')
+        logger.warning("[BranchingAI.helper_log_eval()] Evaluated {} scripts with model {}, checkpoint: {}".format(
+            len(scripts),
+            self.model_name,
+            timestamp
+        ))

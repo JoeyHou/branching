@@ -117,53 +117,68 @@ def universal_gpt_call(prompt, config = {}):
     stop_tokens = config['stop_tokens'] if 'stop_tokens' in config else ['###'] 
     frequency_penalty = config['frequency_penalty'] if 'frequency_penalty' in config else 0
     presence_penalty = config['presence_penalty'] if 'presence_penalty' in config else 0
-    wait_time = config['wait_time'] if 'wait_time' in config else 0
+    wait_time = config['wait_time'] # if 'wait_time' in config else 0
     model = config['model'] if 'model' in config else 'curie'
     return_logprobs = config['return_logprobs'] if 'return_logprobs' in config else False
     logprobs = 1 if return_logprobs else None
 
     # wait for codex model
-    if 'code' in model:
-        max_sleep_gap = 9
-        with open('../log/codex.log', 'r') as codex_log:
-            lines = [line for line in codex_log.readlines()]
-            last_gap = (datetime.now() - pd.to_datetime(lines[-1].strip())).seconds
-            sleep_time = max_sleep_gap - last_gap
-            if sleep_time > 0:
-                sleep_time = int(sleep_time) + 1
-                print('[Utils.universal_gpt_call()] Sleep for {}s...'.format(sleep_time))
-                time.sleep(sleep_time)
-        with open('../log/codex.log', 'a') as codex_log:
-            codex_log.write(str(datetime.now()) + '\n')
+    # if 'code' in model:
+    #     max_sleep_gap = 12
+    #     with open('../log/codex.log', 'r') as codex_log:
+    #         lines = [line for line in codex_log.readlines()]
+    #         last_gap = (datetime.now() - pd.to_datetime(lines[-1].strip())).seconds
+    #         sleep_time = max_sleep_gap - last_gap
+    #         if sleep_time > 0:
+    #             sleep_time = int(sleep_time) + 1
+    #             print('[Utils.universal_gpt_call()] Sleep for {}s...'.format(sleep_time))
+    #             time.sleep(sleep_time)
+    #     with open('../log/codex.log', 'a') as codex_log:
+    #         codex_log.write(str(datetime.now()) + '\n')
     
     # call openai
-    # try:
-    response = openai.Completion.create(
-        model=model,
-        prompt=prompt,
-        temperature=temperature,
-        max_tokens=max_tokens,
-        top_p=1,
-        frequency_penalty=frequency_penalty,
-        presence_penalty=presence_penalty,
-        logprobs=logprobs,
-        stop=stop_tokens
-    )
-    time.sleep(wait_time)
-    # except openai.error.RateLimitError:
-    #     print('[Utils.universal_gpt_call()] Sleep for 30s...')
-    #     time.sleep(30)
-    #     response = openai.Completion.create(
-    #         model=model,
-    #         prompt=prompt,
-    #         temperature=temperature,
-    #         max_tokens=max_tokens,
-    #         top_p=1,
-    #         frequency_penalty=frequency_penalty,
-    #         presence_penalty=presence_penalty,
-    #         logprobs=logprobs,
-    #         stop=stop_tokens
-    #     )
+    try:
+        response = openai.Completion.create(
+            model=model,
+            prompt=prompt,
+            temperature=temperature,
+            max_tokens=max_tokens,
+            top_p=1,
+            frequency_penalty=frequency_penalty,
+            presence_penalty=presence_penalty,
+            logprobs=logprobs,
+            stop=stop_tokens
+        )
+        time.sleep(wait_time)
+    except openai.error.RateLimitError:
+        print('[Utils.universal_gpt_call()] Sleep for 20s...')
+        time.sleep(20)
+        try:
+            response = openai.Completion.create(
+                model=model,
+                prompt=prompt,
+                temperature=temperature,
+                max_tokens=max_tokens,
+                top_p=1,
+                frequency_penalty=frequency_penalty,
+                presence_penalty=presence_penalty,
+                logprobs=logprobs,
+                stop=stop_tokens
+            )
+        except openai.error.RateLimitError:
+            print('[Utils.universal_gpt_call()] Sleep for another 20s...')
+            time.sleep(20)
+            response = openai.Completion.create(
+                model=model,
+                prompt=prompt,
+                temperature=temperature,
+                max_tokens=max_tokens,
+                top_p=1,
+                frequency_penalty=frequency_penalty,
+                presence_penalty=presence_penalty,
+                logprobs=logprobs,
+                stop=stop_tokens
+            )
     completion = response['choices'][0]['text'].strip()
     if not return_logprobs:
         return completion
