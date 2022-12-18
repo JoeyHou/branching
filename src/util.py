@@ -137,22 +137,8 @@ def universal_gpt_call(prompt, config = {}):
     #         codex_log.write(str(datetime.now()) + '\n')
     
     # call openai
-    try:
-        response = openai.Completion.create(
-            model=model,
-            prompt=prompt,
-            temperature=temperature,
-            max_tokens=max_tokens,
-            top_p=1,
-            frequency_penalty=frequency_penalty,
-            presence_penalty=presence_penalty,
-            logprobs=logprobs,
-            stop=stop_tokens
-        )
-        time.sleep(wait_time)
-    except openai.error.RateLimitError:
-        print('[Utils.universal_gpt_call()] Sleep for 20s...')
-        time.sleep(20)
+
+    while True:
         try:
             response = openai.Completion.create(
                 model=model,
@@ -165,20 +151,13 @@ def universal_gpt_call(prompt, config = {}):
                 logprobs=logprobs,
                 stop=stop_tokens
             )
-        except openai.error.RateLimitError:
-            print('[Utils.universal_gpt_call()] Sleep for another 20s...')
-            time.sleep(20)
-            response = openai.Completion.create(
-                model=model,
-                prompt=prompt,
-                temperature=temperature,
-                max_tokens=max_tokens,
-                top_p=1,
-                frequency_penalty=frequency_penalty,
-                presence_penalty=presence_penalty,
-                logprobs=logprobs,
-                stop=stop_tokens
-            )
+            time.sleep(wait_time)
+            break
+        except:
+            print('[Utils.universal_gpt_call()] Rate limit error. Sleep for 20s...')
+            time.sleep(wait_time)
+            continue
+
     completion = response['choices'][0]['text'].strip()
     if not return_logprobs:
         return completion
