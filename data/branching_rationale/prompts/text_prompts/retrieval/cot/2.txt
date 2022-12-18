@@ -1,0 +1,38 @@
+CONTEXT
+- Goal: air out the musty basement
+- Previous Actions: 
+  1. decided to air out the musty basement
+  2. put breathing mask on
+CURRENT EVENT
+put breathing mask on
+ALTERNATIVE OPTIONS
+- Option_1: put on a reusable mask
+- Option_2: put on an n-95 single-use mask
+RELATED RATIONALES
+- [cost] effort / manpower
+- [cost] money / materials
+- [cost] time
+- [outcome] emotional / physical rewards
+- [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success
+QUESTION
+Does Option_1 and Option_2 have a difference in the RELATED RATIONALES?
+ANSWER
+- [cost] effort / manpower:
+    - Explanation: In most cases, the human effort required for putting on a reusable mask and an n-95 single-use mask are similar to each other: they both require little effort.
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [cost] effort / manpower.
+- [cost] money / materials:
+    - Explanation: In most cases, a reusable mask would cost much less than an n-95 single-use mask, not to mention a reusable mask can be reused and save more.
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [cost] money / materials
+- [cost] time:
+    - Explanation: In most cases, the time required to put on a reusable mask and an n-95 does not differ by too much: they both only take a few seconds
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [cost] time
+- [outcome] emotional / physical rewards:
+    - Explanation: In most cases, wearing an n-95 mask would provide more protection against the environment than wearing a reusable mask, making the first option more healthy
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [outcome] emotional / physical rewards
+- [outcome] more options / variety:
+    - Explanation: In most cases, neither reusable mask or n-95 mask could provide too much variety in terms of options or outcome
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success:
+    - Explanation: Protect ourselves with mask is the goal here. In most cases, wearing an n-95 mask would provide more protection against the environment than wearing a reusable mask, making the first option more reliable
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [outcome]reliability / certainty / chance of success.

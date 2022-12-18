@@ -1,0 +1,38 @@
+CONTEXT
+- Goal: start practicing with friends
+- Previous Actions: 
+  1. learn how to play football
+  2. contact friends to set up a time
+CURRENT EVENT
+contact friends to set up a time
+ALTERNATIVE OPTIONS
+- Option_1: make a public post about playing football in facebook group
+- Option_2: call friends one at a time to see their available time
+RELATED RATIONALES
+- [cost] effort / manpower
+- [cost] money / materials
+- [cost] time
+- [outcome] emotional / physical rewards
+- [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success
+QUESTION
+Does Option_1 and Option_2 have a difference in the RELATED RATIONALES?
+ANSWER
+- [cost] effort / manpower:
+    - Explanation: In most cases, the human effort required for making a public post is less than the effort required for calling friends one at a time, which sometimes can take multiple rounds of negotiation to figure out the best option for everyone.
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [cost] effort / manpower.
+- [cost] money / materials:
+    - Explanation: In most cases, the time required to making a public post is less than the effort required for calling friends one at a time, which sometimes can take hours.
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [cost] money / materials
+- [cost] time:
+    - Explanation: In most cases, the time required to making a public post is less than the effort required for calling friends one at a time, which sometimes can take hours.
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [cost] money / materials
+- [outcome] emotional / physical rewards:
+    - Explanation: In most cases, the reward from contacting friends depends on the content of the contact and the friends getting contacted, instead of the way people contacting them. 
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [outcome] emotional / physical rewards
+- [outcome] more options / variety:
+    - Explanation: In most cases, the variety of options for making public post and making phone calls are both limited: you just use your smart phone to do them and there is not clear difference between those two options.
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success:
+    - Explanation: Reaching out to friends is the goal here. In most cases, facebook messages or posts might be ignored by people while calling people one at a time can ensure the success of communication, making it more desiable when it comes to chance of success
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [outcome]reliability / certainty / chance of success.

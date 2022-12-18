@@ -1,0 +1,38 @@
+CONTEXT
+- Goal: buy milk from the store
+- Previous Actions: 
+  1. decided to buy milk from the store
+  2. decide which store to go to
+CURRENT EVENT
+decide which store to go to
+ALTERNATIVE OPTIONS
+- Option_1: go to the closest store
+- Option_2: go to the store with the most options
+RELATED RATIONALES
+- [cost] effort / manpower
+- [cost] money / materials
+- [cost] time
+- [outcome] emotional / physical rewards
+- [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success
+QUESTION
+Does Option_1 and Option_2 have a difference in the RELATED RATIONALES?
+ANSWER
+- [cost] effort / manpower:
+    - Explanation: In most cases, the human effort required for going to the closest store is less than going to the one with the most options, making the first one the better option.
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [cost] effort / manpower.
+- [cost] money / materials:
+    - Explanation: In most cases, the money or materials required to go to the closest store and to go to the one with the most options are the same: neither of them cost any money!
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [cost] money / materials
+- [cost] time:
+    - Explanation: In most cases, the time required for going to the closest store is less than going to the one with the most options, making the first one the better option.
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [cost] time
+- [outcome] emotional / physical rewards:
+    - Explanation: In most cases, the emotional or physical rewards bring up by going to the closest store and going to the one with the most options do not differ by too much: neither of them provide any reward
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [outcome] emotional / physical rewards
+- [outcome] more options / variety:
+    - Explanation: In most cases, going to the store with the most options would have more choices of milk while going to the closest store would have limited options.
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success:
+    - Explanation: Buying the milk is the goal here. In most cases, going to the store with the most options would make the overall goal: buy milk from the store, more likely to success. It is also more reliable.
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [outcome]reliability / certainty / chance of success.

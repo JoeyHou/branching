@@ -1,0 +1,39 @@
+CONTEXT
+- Goal: place the skeleton on the counter
+- Previous Actions: 
+  1. take the skeleton to the cashier
+  2. get close to counter
+  3. lift skeleton up
+CURRENT EVENT
+lift skeleton up
+ALTERNATIVE OPTIONS
+- Option_1: life the skeleton on one's own
+- Option_2: ask the cashier for help
+RELATED RATIONALES
+- [cost] effort / manpower
+- [cost] money / materials
+- [cost] time
+- [outcome] emotional / physical rewards
+- [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success
+QUESTION
+Does Option_1 and Option_2 have a difference in the RELATED RATIONALES?
+ANSWER
+- [cost] effort / manpower:
+    - Explanation: In most cases, the human effort required for lifting a skeleton on one's own is more than doing it with the help of others, making the later one the better option.
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [cost] effort / manpower.
+- [cost] money / materials:
+    - Explanation: In most cases, the money or materials required to lift the skeleton on one's own and to ask the cashier for help are the same: neither of them cost any money!
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [cost] money / materials
+- [cost] time:
+    - Explanation: In most cases, the time required to lift the skeleton on one's own and to ask the cashier for help does not differ by too much: both of them costs a few seconds.
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [cost] time
+- [outcome] emotional / physical rewards:
+    - Explanation: In most cases, the emotional or physical rewards bring up by lifting the skeleton on one's own and to ask the cashier do not differ by too much: neither of them provide any reward
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [outcome] emotional / physical rewards
+- [outcome] more options / variety:
+    - Explanation: In most cases, neither lifting the skeleton on one's own or asking the cashier for help could provide much variety in terms of options or outcome: for both of them, there only one way of doing that.
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success:
+    - Explanation: Lifting up the item is the goal here. In most cases, lifting an item with the help of others would more likely to success than doing it on one's own, making the second option more promising
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [outcome]reliability / certainty / chance of success.

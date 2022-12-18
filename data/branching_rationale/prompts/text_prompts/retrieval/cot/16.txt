@@ -1,0 +1,37 @@
+CONTEXT
+- Goal: go back in time
+- Previous Actions: 
+  1. decided to go back in time
+  2. go to school for quantum mechanics
+CURRENT EVENT
+go to school for quantum mechanics
+ALTERNATIVE OPTIONS
+- Option_1: go to a class at a university
+- Option_2: go to a class at a community college
+RELATED RATIONALES
+- [cost] effort / manpower
+- [cost] money / materials
+- [cost] time
+- [outcome] emotional / physical rewards
+- [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success
+QUESTION
+Does Option_1 and Option_2 have a difference in the RELATED RATIONALES?
+ANSWER- [cost] effort / manpower:
+    - Explanation: In most cases, the human effort required for going to a class at a university is more than that of going to a class at a community college.
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [cost] effort / manpower.
+- [cost] money / materials:
+    - Explanation: In most cases, the money or materials required for a university is more than that for a community college
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [cost] money / materials
+- [cost] time:
+    - Explanation: In most cases, the time required for going to a university (around 4 years) is more than that of going to a community college (around 2 years).
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [cost] time
+- [outcome] emotional / physical rewards:
+    - Explanation: In most cases, the emotional rewards bring up by going to a university is more than going to a community college since the first one makes people feel more prouded and sense of achievement
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [outcome] emotional / physical rewards
+- [outcome] more options / variety:
+    - Explanation: In most cases, the availability of university or community college depends on the location, which makes it hard to conclude with one has more options or varieties.
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success:
+    - Explanation: go back in time is the goal here. In most cases, go to university would provide more in depth knowledge about quantum mechanics than community colleges, making the option 1 more reliable
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [outcome]reliability / certainty / chance of success.

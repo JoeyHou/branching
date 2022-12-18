@@ -1,0 +1,42 @@
+CONTEXT
+- Goal: go out for a picnic
+- Previous Actions: 
+  1. decided to go out for a picnic
+  2. take a shower
+  3. get ready for the day
+  4. get in the car
+  5. drive to the park
+  6. park the car
+CURRENT EVENT
+park the car
+ALTERNATIVE OPTIONS
+- Option_1: park along the street
+- Option_2: try to park inside the park
+RELATED RATIONALES
+- [cost] effort / manpower
+- [cost] money / materials
+- [cost] time
+- [outcome] emotional / physical rewards
+- [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success
+QUESTION
+Does Option_1 and Option_2 have a difference in the RELATED RATIONALES?
+ANSWER
+- [cost] effort / manpower:
+    - Explanation: In most cases, the human effort required for parking along the street and parking inside the park are similar to each other, since they are both parking the car on some open, outdoor space.
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [cost] effort / manpower.
+- [cost] money / materials:
+    - Explanation: In most cases, the cost of parking along the street is normally less than the cost of parking inside a park, making option 1 more desirable 
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [cost] money / materials
+- [cost] time:
+    - Explanation: In most cases, the time required to park along the street and to park inside a park does not differ by too much
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [cost] time
+- [outcome] emotional / physical rewards:
+    - Explanation: In most cases, there wouldn't be more or less reward in terms of emotional or physical between these two choices
+    - Conclusion: Option_1 and Option_2 DO NOT HAVE a difference in terms of [outcome] emotional / physical rewards
+- [outcome] more options / variety:
+    - Explanation: In most cases, parking along the street would have more choices of parking spot while parking inside a park would have limited options.
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [outcome] more options / variety
+- [outcome] reliability / certainty / chance of success:
+    - Explanation: Successfully park the car is the goal here. In most cases, parking inside a park would make the overall goal: go for a picnic, more likely to success. It is also more reliable, since people might break into the car if parked along the street.
+    - Conclusion: Option_1 and Option_2 DO HAVE a difference in terms of [outcome]reliability / certainty / chance of success.
