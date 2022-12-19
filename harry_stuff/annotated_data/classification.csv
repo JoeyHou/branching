@@ -1,0 +1,409 @@
+goal,steps,branching_step,options,rationales,label_to_be_annotated
+work at a ramen shop,"[decided to work at a ramen shop, 
+write a resume, 
+write a cover letter, 
+submit resume and cover letter to the ramen shop, 
+wait for the ramen shop to get in touch, 
+go in for an interview, 
+accept a job offer]",submit resume and cover letter to the ramen shop,"print out everything and submit them to the ramen shop in person
+submit the resume and cover letter online","[7, 0, 2]","7:
+0:
+2:
+"
+try making bagels,"[decided to try making bagels, 
+turn on the computer, 
+open a web browswer, 
+search the internet for how to make bagels, 
+take notes on how to make bagels, 
+drive to the store, 
+buy ingredients at the store, 
+follow the instructions to make bagels]",take notes on how to make bagels,"take notes on the easy recipes of making bagels
+take notes on the delicious but difficult recipes of making bagels","[0, 2, 7, 5, 3]","0:
+2:
+7:
+5:
+3:
+"
+go back to college,"[decided to go back to college, 
+search the internet for nearby colleges, 
+see what majors are offered, 
+prepare a college application, 
+mail in the application, 
+apply for loans, 
+open acceptance letters, 
+enroll in college]",prepare a college application,"prepare college application on your own
+ask a friend or a family member for help",[7],"7:
+"
+make an impression on a girl at school,"[decided to make an impression on a girl at school, 
+buy the girl presents, 
+dress well to school, 
+talk to the girl, 
+present chocolate to the girl, 
+buy the girl chocolate]",buy the girl presents,"ask the friends of the girl for gift ideas
+ask the girl herself for what she likes",[7],"7:
+"
+walk to cashier with makeup selections,"[shop for makeup, 
+look through make up, 
+grab some makeup, 
+put makeup on basket, 
+walk out of makeup aisle, 
+locate checkout area]",grab some makeup,"ask the salesman if you can try the makeup before buying it
+search online to see the images of people using those makeup",[7],"7:
+"
+make a new salad,"[decided to make a new salad, 
+look for salad recipes online, 
+choose a salad recipe, 
+gather the ingredients, 
+gather the kitchen tools, 
+put the ingredients in a bowl, 
+mix up the ingredients, 
+add salad dressing]",choose a salad recipe,"choose a salad that you have tried before
+choose a salad that you have never tried","[7, 5]","7:
+5:
+"
+move belongings to new rural house,"[close escrow on new home, 
+pack belongings into boxes, 
+rent a moving truck, 
+park back of truck in front of the door, 
+load belongings into moving truck, 
+drive truck to new house, 
+move boxes into new house]",load belongings into moving truck,"load belongings with only one's hands
+borrow or rent a moving cart to help loading","[0, 7]","0:
+7:
+"
+meet up with ghost hunters,"[travel to ghost hunt location, 
+park the vehicle, 
+turn off the vehicle, 
+exit the car, 
+walk to ghost hunter location, 
+enter the location, 
+greet the others that are there]",park the vehicle,"park along the street
+park in a gated garage",[7],"7:
+"
+stir the mixture of water and kool-aid,"[fill the pitcher with water, 
+find spoon to stir, 
+grab spoon with hand, 
+bring spoon to pitcher, 
+place spoon in pitcher, 
+move arm in circles to stir]",move arm in circles to stir,"do not stop stirring until fullly mixed
+during stirring, stop every once in a while to check if the mix is ready","[0, 2, 7]","0:
+2:
+7:
+"
+eat breakfast food,"[put on clothes, 
+decide what he/she wants to eat, 
+get ingredients out of the cabinet and refrigerator, 
+prepare and cook the ingredients, 
+put the finally prepared food on a plate, 
+get utensils for eating from the drawer]",decide what he/she wants to eat,"decide on the foods based on calories in the food
+decide on the foods based on time-consumption of preparation","[3, 2]","3:
+2:
+"
+start taking a lunch to school,"[decided to start taking a lunch to school, 
+buy ingredient to prepare for lunch, 
+prepare and cook meal at home, 
+pack lunch once finish cooking, 
+place lunch in refrigeration, 
+bring lunch to school]",prepare and cook meal at home,"prepare meals for a few days all at once
+prepare only one meal at a time","[0, 5]","0:
+5:
+"
+lace up roller skates,"[put on skates, 
+check the fit, 
+wiggle feet to ensure a good fit, 
+make sure wheels spin freely, 
+grab right lace, 
+grab left lace]",check the fit,"check the fit by trying to roll for a few steps
+check the fit by wiggle feet back and forth",[7],"7:
+"
+take a cheap vacation,"[decided to take a cheap vacation, 
+drive to hiking front, 
+pack hiking backpacks, 
+hike out the trails, 
+camp out overnight, 
+hike the trails back]",pack hiking backpacks,"bring process food for every meal
+bring raw foods and some cookware to cook at the campsite","[0, 7, 3]","0:
+7:
+3:
+"
+go to subway for lunch,"[decided to go to subway for lunch, 
+get the car keys, 
+put the address on the maps app, 
+drive to the subway, 
+wait in line, 
+decide on what to order]",decide on what to order,"order the daily special
+order the same food that you had last time","[5, 7]","5:
+7:
+"
+eat roast beef for dinner,"[decided to eat roast beef for dinner, 
+look for the recipe online, 
+gather the ingredients, 
+gather the equipment, 
+cook the roast, 
+set the table, 
+set the food on the table]",gather the ingredients,"order same-day delivery for the ingredients
+drive to the grocery store on one's own and buy the ingredients","[0, 2, 7]","0:
+2:
+7:
+"
+speak a lot of languages,"[decided to speak a lot of languages, 
+decide on what languages to learn, 
+purchase books to learn each language, 
+wait for delivery, 
+open and unpack books, 
+read through each one]",purchase books to learn each language,"request a sample before buying an e-book
+order a paper copy of the language book from amazon","[1, 7, 0]","1:
+7:
+0:
+"
+buy some bait,"[compare fishing poles, 
+go to the bait counter, 
+ask what bait is available, 
+look over the options, 
+decide on bait to use, 
+purchase the bait]",decide on bait to use,"ask the owner for bait suggestions
+search online for reviews and advice for bait","[0, 5]","0:
+5:
+"
+start lifting weights to build muscle,"[decided to start lifting weights to build muscle, 
+go to the gym, 
+go into the locker room, 
+put on workout attire, 
+head to the bench press machine, 
+do bench presses]",go to the gym,"go to the gym on your own
+find someone in your community or social media to go with you","[0, 3]","0:
+3:
+"
+start a diet,"[decided to start a diet, 
+decide on the weight and fitness goal desired, 
+find how many daily calories are allowed to reach goal, 
+plan meals that fit inside the days calorie goals, 
+drive to store, 
+purchase ingredients for planned meals, 
+drive home from store, 
+prep the meals for the day with the purchased ingredients]",plan meals that fit inside the days calorie goals,"make a plan that prefers delicious foods over convenient foods
+make a plan that prefers convenient foods over delicious foods","[3, 0, 2]","3:
+0:
+2:
+"
+practice singing the song,"[look up the lyrics, 
+turn on printer, 
+do vocal warm ups, 
+sing the lyrics everyday using the print out, 
+practice singing the song, 
+print the lyrics onto a sheet of paper, 
+place lyrics in front of person]",practice singing the song,"practice singing with a friend
+practice on one's own",[7],"7:
+"
+learn figure drawing,"[decided to learn figure drawing, 
+view tutorial online, 
+obtain blank paper, 
+place pencil tip to paper, 
+learn figure drawing, 
+find a pencil, 
+locate an eraser]",find a pencil,"buy a new pencil
+find a pencil in your school's art room","[5, 7, 1]","5:
+7:
+1:
+"
+have a nerf gun war,"[decided to have a nerf gun war, 
+take nerf gun ammo out of the closet, 
+take nerf guns out of the closet, 
+pass out the nerf guns and ammo, 
+scatter in all directions, 
+hide behind trees and buildings, 
+shoot at anyone passing by, 
+collect the spent toys and put away]",shoot at anyone passing by,"only shoot at people in front of you
+shoot at anyone within a distance of 1,000 feet","[0, 7, 5]","0:
+7:
+5:
+"
+know more about film,"[decided to know more about film, 
+decide which area of film to learn about, 
+research history and topic online, 
+go to local library to find books and articles, 
+read the research, 
+enjoy the newfound respect for film]",read the research,"read the whole research paper
+read only the abstract and introduction part of the paper","[7, 0, 2]","7:
+0:
+2:
+"
+learn the guitar,"[decided to learn the guitar, 
+save up for a guitar, 
+purchase a guitar, 
+purchase learning material, 
+load up some video tutorials at home, 
+practice following along the tutorials and material]",purchase learning material,"buy learning material in a store
+buy learning material online","[7, 0, 5]","7:
+0:
+5:
+"
+know more about american history,"[decided to know more about american history, 
+search the internet for a local library, 
+find the library's hours, 
+drive to the library, 
+ask the librarian for help, 
+sit down and read through books]",find the library's hours,"call the library
+look online at the library's website","[7, 0]","7:
+0:
+"
+see a rhinoceros,"[decided to see a rhinoceros, 
+find out hours zoo is open, 
+travel to zoo during open-hours, 
+purchase ticket  for entry, 
+find out where rhinoceros are kept, 
+walk to rhinoceros enclosure and look around]",travel to zoo during open-hours,"buy a ticket on your own
+find a travel agency to book on your behalf","[7, 0, 2]","7:
+0:
+2:
+"
+learn how to line dance,"[decided to learn how to line dance, 
+learn to love country music, 
+watch other dancers, 
+sign up for a dance class, 
+practice the steps, 
+go to the dance class, 
+learn how to line dance, 
+listen to and watch the teacher]",practice the steps,"practice at home
+find a dance studio and learn in a group","[3, 7]","3:
+7:
+"
+earn some cash over the summer,"[decided to earn some cash over the summer, 
+type up flyers offering to do handy work, 
+print the flyers, 
+disperse the flyers around the neighborhood, 
+when prompted go to homes and do odd jobs, 
+place earnings in a savings account]",disperse the flyers around the neighborhood,"get a box of flyers and put it in front of community center
+carry a flyer in your hand while you walk around the neighborhood","[0, 2, 7]","0:
+2:
+7:
+"
+learn to dance in time for prom,"[decided to learn to dance in time for prom, 
+look up dance teachers online, 
+contact a good dance teacher, 
+meet a teacher at a scheduled time, 
+start learning basic moves, 
+go to a few more classes and learn more]",look up dance teachers online,"go to your local dance studio
+go to dancestation.com","[0, 2, 5]","0:
+2:
+5:
+"
+learn how to paint,"[decided to learn how to paint, 
+sign up for a painting class, 
+drive to the crafts store, 
+browse painting supplies, 
+pay for supplies, 
+drive to painting class, 
+go to painting class every day]",browse painting supplies,"go to a local office supply store
+order painting supplies online","[0, 2, 5, 7]","0:
+2:
+5:
+7:
+"
+have blond hair,"[decided to have blond hair, 
+locate a nearby hair stylist on the internet, 
+call the office, 
+schedule an appointment, 
+drive to the stylist, 
+have the stylist dye the hair blonde]",locate a nearby hair stylist on the internet,"google it
+call the phone number for a hair salon","[0, 2, 5, 7]","0:
+2:
+5:
+7:
+"
+write a new song,"[decided to write a new song, 
+get the thesaurus, 
+find a piece of paper, 
+write down some lyrical ideas, 
+outline an emotional theme, 
+proofread all the words, 
+write everything out on paper, 
+find a working pen]",proofread all the words,"print out the lyrics and proofread them
+ask a friend to proofread for you","[0, 2, 7]","0:
+2:
+7:
+"
+attend gym today,"[decided to attend gym today, 
+search the internet for nearby gyms, 
+compare gym prices, 
+find one that has compatible hours, 
+drive to the gym, 
+walk up to the desk and get a membership]",compare gym prices,"compare gym prices online
+go to a gym and compare prices there","[0, 2, 5, 7]","0:
+2:
+5:
+7:
+"
+make some bath soap last week,"[decided to make some bath soap last week, 
+find a recipe for bath soap, 
+buy the needed ingredients, 
+prepare a workspace, 
+mix ingredients together, 
+pour ingredient mix into a soap mold, 
+wait for soap to cool/become firm]",mix ingredients together,"mix ingredients by hand
+mix ingredients by using a hand mixer",[7],"7:
+"
+learn how to bake a cake,"[decided to learn how to bake a cake, 
+search for baking classes in town, 
+sign up for a baking class, 
+wait for day of baking class, 
+walk to baking class in town, 
+follow along in baking class]",search for baking classes in town,"go to local community center and ask for baking classes in town
+search for baking classes online","[7, 0, 2, 5]","7:
+0:
+2:
+5:
+"
+do stand-up at an open mic night,"[decided to do stand-up at an open mic night, 
+learn a stand up routine, 
+find an open mic night, 
+drive to the club, 
+sign up for the open mic, 
+go on stage]",sign up for the open mic,"go to the open mic site
+call up a friend and ask them to put you on the open mic","[0, 2, 7]","0:
+2:
+7:
+"
+learn how to make pottery,"[decided to learn how to make pottery, 
+find a pottery class that is near, 
+sign up to the class and pay, 
+find the time and place for the class, 
+attend the class, 
+make a piece of pottery for final exam, 
+fire the the piece of pottery for final exam]",attend the class,"try to take the class at a local community center
+try to take the class online","[7, 0, 2, 5]","7:
+0:
+2:
+5:
+"
+wait for a bus,"[decided to wait for a bus, 
+think of a destination to go to, 
+lookup the bus needed to get there online, 
+map out where the bus stop is, 
+walk to the bus stop, 
+buy a bus pass, 
+collect the bus pass, 
+make sure the bus is on time]",buy a bus pass,"buy a bus pass from a ticket selling machine
+download a ticket selling app and buy a bus pass from your phone","[7, 0, 2]","7:
+0:
+2:
+"
+take a vacation this year,"[decided to take a vacation this year, 
+save up money for vacation, 
+research vacation spots, 
+choose a vacation spot, 
+choose a time to take off work, 
+request time off of work]",choose a time to take off work,"take a vacation on your company's time
+take a vacation on your own time","[7, 3]","7:
+3:
+"
+start to eat healthy,"[decided to start to eat healthy, 
+research healthy diets, 
+pick out a new diet, 
+make a list of groceries, 
+go to the store for the groceries, 
+start eating according to the diet]",pick out a new diet,"pick from the list of popular diets
+pick from your own list of favorite foods","[5, 3, 7]","5:
+3:
+7:
+"
