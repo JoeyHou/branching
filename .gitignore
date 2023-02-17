@@ -1,19 +1,24 @@
 # Project specific files
+
+### data
 data/data_generation/*
 data/raw/*
 data/branching_options/*
 data/branching_rationale/archive/
 data/branching_rationale/openai_cache/
 data/branching_rationale/results/
-# */archive/*
-# */archived/*
 data/final_dataset/annotations/*
-notebooks/archived/*
 
+data/tmp/
+data/dataset_dev/
+
+
+### others
+notebooks/archived/*
 literatures/*
 references/*
 
-# MacOS
+### MacOS
 .DS_Store
 
 
