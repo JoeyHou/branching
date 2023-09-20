@@ -7,4 +7,4 @@ rationale_cache_dir = '../data/branching_rationale/openai_cache/'
 rationale_prompt_dir = '../data/branching_rationale/prompts/'
 
 wait_time = 1
-api_key_fp = '/Users/joeyhou/Developer/develop_resources/openai_key.json'
+api_key_fp = 'openai_key.json'
