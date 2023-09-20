@@ -1,0 +1,35 @@
+{
+    "goal": "write a new song",
+    "steps": [
+        "decided to write a new song",
+        "get the thesaurus",
+        "find a piece of paper",
+        "write down some lyrical ideas",
+        "outline an emotional theme",
+        "proofread all the words",
+        "write everything out on paper",
+        "find a working pen"
+    ],
+    "curr_index": 4455,
+    "branching_info": {
+        "branching_idx": 5,
+        "branching_step": "proofread all the words",
+        "option 1": "print out the lyrics and proofread them",
+        "option 2": "ask a friend to proofread for you",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "the song is special to Doe",
+                0,
+                "na"
+            ],
+            [
+                "is not confident in proofreading",
+                2,
+                "easy"
+            ]
+        ]
+    },
+    "index": 256
+}

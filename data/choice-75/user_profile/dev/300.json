@@ -1,0 +1,40 @@
+{
+    "goal": "wait for a bus",
+    "steps": [
+        "decided to wait for a bus",
+        "think of a destination to go to",
+        "lookup the bus needed to get there online",
+        "map out where the bus stop is",
+        "walk to the bus stop",
+        "buy a bus pass",
+        "collect the bus pass",
+        "make sure the bus is on time"
+    ],
+    "curr_index": 5715,
+    "branching_info": {
+        "branching_idx": 5,
+        "branching_step": "buy a bus pass",
+        "option 1": "buy a bus pass from a ticket selling machine",
+        "option 2": "download a ticket selling app and buy a bus pass from your phone",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: Convenience, simplicity, ease of use, unfamiliar with technologies\nInterests: reading books\nFinancial situation: moderate\nOccupation: Retired from work\nAge: 79\nGender: Not specified\nLifestyle: slow",
+                1,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: Convenience and ease of use, speed and efficiency\nInterests: Reading, listening to music, exploring new places, and trying out new technologies\nFinancial situation: Has a stable income and likes to stick to a budget\nOccupation: student\nAge: 19\nHobbies: playing video games on cell phones\nGender: Unknown\nLife-style: Likes to plan ahead and stay organized. Prefers to avoid unnecessary waiting and delays.",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: Convenience, simplicity, ease of use\nInterests: Travel, exploring new places\nFinancial situation: Budget-conscious, prefers cost-effective options\nOccupation: student\nHobbies: hiking\nGender: Not specified\nLifestyle: well-balanced",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 300
+}

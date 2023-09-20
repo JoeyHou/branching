@@ -1,0 +1,44 @@
+{
+    "goal": "read about the heatwave in the paper",
+    "steps": [
+        "decided to read about the heatwave in the paper",
+        "stand up on feet",
+        "walk to paper",
+        "pick up paper",
+        "open pages of paper",
+        "scan headlines for heatwave"
+    ],
+    "original_index": 792,
+    "curr_index": 6364,
+    "index": 75,
+    "branching_info": {
+        "branching_idx": 5,
+        "branching_step": "scan headlines for heatwave",
+        "option 1": "only looking at the social news section",
+        "option 2": "read through all pages for news about heatwave",
+        "type": "golden",
+        "dataset": "train",
+        "freeform_ra": [
+            [
+                "have a huge deck of paper to read",
+                1,
+                "medium"
+            ],
+            [
+                "have a tight schedule",
+                1,
+                "medium"
+            ],
+            [
+                "need detail information for a homework essay",
+                2,
+                "easy"
+            ],
+            [
+                "want to learn heatwave from different perspectives",
+                2,
+                "easy"
+            ]
+        ]
+    }
+}

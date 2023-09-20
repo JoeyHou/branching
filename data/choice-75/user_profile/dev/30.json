@@ -1,0 +1,40 @@
+{
+    "goal": "make a new salad",
+    "steps": [
+        "decided to make a new salad",
+        "look for salad recipes online",
+        "choose a salad recipe",
+        "gather the ingredients",
+        "gather the kitchen tools",
+        "put the ingredients in a bowl",
+        "mix up the ingredients",
+        "add salad dressing"
+    ],
+    "curr_index": 6260,
+    "index": 30,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "choose a salad recipe",
+        "option 1": "choose a salad that you have tried before",
+        "option 2": "choose a salad that you have never tried",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nInterests: Doe is interested in trying out new things in general but tends to be cautious when it comes to food.\nFinancial situation: Doe has a moderate budget when it comes to grocery shopping.\nOccupation: Student.\nGender: Female.\nLife-style: nine-to-fiver.",
+                1,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: Doe enjoys experimenting with different flavors.\nInterests: Doe has a keen interest in cooking and enjoys spending time in the kitchen. \nFinancial Situation: Doe has a stable income and is willing to spend money on quality ingredients to create a healthy and delicious salad.\nOccupation: Student.\nHobbies: Cooking, gardening, and traveling.\nGender: Not specified.\nLife-Style: Doe enjoys a healthy lifestyle and is conscious of the food that is consumed. Doe prefers to eat salads and other healthy food items.",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: Doe enjoys high-quality foods\nInterests: Doe has a keen interest in cooking and enjoys spending time in the kitchen. \nFinancial Situation: Doe has a stable income and is willing to spend money on quality ingredients to create a healthy and delicious salad.\nOccupation: banker.\nHobbies: Cooking, gardening, and traveling.\nGender: Not specified.\nLife-Style: Doe enjoys a healthy lifestyle and is conscious of the food that is consumed. Doe prefers to eat salads and other healthy food items.",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

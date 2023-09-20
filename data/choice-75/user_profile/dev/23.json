@@ -1,0 +1,38 @@
+{
+    "goal": "take items to counter and pay",
+    "steps": [
+        "pick out items to purchase",
+        "think if anything was forgotten",
+        "double check cost of items in cart",
+        "locate check out area",
+        "choose quickest checkout lane",
+        "pay for items when turn comes"
+    ],
+    "curr_index": 6230,
+    "index": 23,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "choose quickest checkout lane",
+        "option 1": "do a self-checkout",
+        "option 2": "do a checkout at one of the counters",
+        "type": "golden",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Name: Doe\nGender: female\nPreferences: Doe values efficiency and convenience when shopping.\nOccupation: accountant\nFinancial Situation: on a tight budget\nHobbies: watching musicial \nLifestyle: balanced",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nInterests: Doe enjoys trying new products and finding good deals; Doe enjoys human interaction, such as small talks with people in the community \nFinancial situation: Doe has a comfortable financial situation and is willing to pay for quality products.\nOccupation: accountant\nHobbies: watching musicial \nGender: female\nLifestyle: balanced",
+                2,
+                "easy"
+            ],
+            [
+                "Name: Doe\nGender: female\nPreferences: Doe enjoys trying new products and finding good deals\nOccupation: accountant\nFinancial situation: Doe has a comfortable financial situation and is willing to pay for quality products.\nHobbies: watching musicial \nLifestyle: balanced",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "goal": "make an impression on a girl at school",
+    "steps": [
+        "decided to make an impression on a girl at school",
+        "buy the girl presents",
+        "dress well to school",
+        "talk to the girl",
+        "present chocolate to the girl",
+        "buy the girl chocolate"
+    ],
+    "curr_index": 6251,
+    "index": 27,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "buy the girl presents",
+        "option 1": "ask the friends of the girl for gift ideas",
+        "option 2": "ask the girl herself for what she likes",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nGender: male\nApproach to gift-giving: Wants to make a good impression without being too obvious.\nPreferences: Likes surprises, enjoys socializing\nGift-giving style: Tries to be thoughtful and creative\nOccupation: Student\nFinancial Situation: Moderate\nInterests: Music, movies, sports\nHobbies: Playing guitar, reading books",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nGender: male\nOccupation: Student\nFinancial situation: Limited budget\nPreferences: Romantic gestures, thoughtful gifts, fully-informed decision-making\nInterests: Music, movies, sports\nHobbies: Playing guitar, cooking\nLifestyle: Active, outgoing",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nGender: male\nOccupation: Student\nPreferences: Romantic gestures, thoughtful gifts,\nInterests: Music, movies, sports\nHobbies: Playing guitar, cooking\nLifestyle: Active, outgoing\nFinancial Situation: Moderate",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

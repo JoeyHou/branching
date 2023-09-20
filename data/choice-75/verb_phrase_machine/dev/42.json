@@ -1,0 +1,35 @@
+{
+    "goal": "get in better shape",
+    "steps": [
+        "decided to get in better shape",
+        "make a list of healthy foods",
+        "write down an exercise regime",
+        "tape the paper with the regime to the fridge",
+        "do exercises off the list each day",
+        "track fitness progress with an app",
+        "buy the healthy foods each week",
+        "modify regime and diet based on results"
+    ],
+    "curr_index": 6297,
+    "index": 42,
+    "branching_info": {
+        "branching_idx": 6,
+        "branching_step": "buy the healthy foods each week",
+        "option 1": "order healthy foods from wholefoods.com and get them delivered to you",
+        "option 2": "go to grocery store every other day to get fresh foods",
+        "type": "golden",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "enjoys having healthy foods",
+                0,
+                "na"
+            ],
+            [
+                "has plenty of time available on the calender",
+                2,
+                "easy"
+            ]
+        ]
+    }
+}

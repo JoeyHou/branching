@@ -1,0 +1,39 @@
+{
+    "goal": "learn figure drawing",
+    "steps": [
+        "decided to learn figure drawing",
+        "view tutorial online",
+        "obtain blank paper",
+        "place pencil tip to paper",
+        "learn figure drawing",
+        "find a pencil",
+        "locate an eraser"
+    ],
+    "curr_index": 236,
+    "branching_info": {
+        "branching_idx": 5,
+        "branching_step": "find a pencil",
+        "option 1": "buy a new pencil",
+        "option 2": "find a pencil in your school's art room",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nGender: Not specified\nOccupation: student\nPreferences: practice frequently during after-class time\nFinancial situation: moderate\nInterests: Figure drawing\nHobbies: reading books, drawing\nLifestyle: well-balanced\nOther information: Doe wants to improve their figure drawing skills",
+                1,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: learn by doing \nInterests: Doe is interested in learning figure drawing and enjoys spending time in the art room.\nFinancial Situation: very limited\nGender: Not specified\nOccupations: student\nHobbies: Doe enjoys drawing, reading, and spending time outdoors.\nLifestyle: Doe leads a low-key lifestyle and prefers to keep things simple.",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nGender: Not specified\nOccupation: student\nPreferences: learn by doing\nFinancial situation: moderate\nInterests: Figure drawing\nHobbies: reading books, drawing\nLifestyle: well-balanced\nOther information: Doe wants to improve their figure drawing skills",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 105
+}

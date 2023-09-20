@@ -1,0 +1,38 @@
+{
+    "goal": "learn to dance in time for prom",
+    "steps": [
+        "decided to learn to dance in time for prom",
+        "look up dance teachers online",
+        "contact a good dance teacher",
+        "meet a teacher at a scheduled time",
+        "start learning basic moves",
+        "go to a few more classes and learn more"
+    ],
+    "curr_index": 3363,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "look up dancing instructions",
+        "option 1": "go to your local dance studio",
+        "option 2": "search on youtube",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nInterests: Learning new skills, improving self-confidence, socializing with friends\nPreferences: Learning in a structured environment, having a personal instructor, receiving feedback and corrections\nFinancial Situation: Willing to invest in self-improvement, but needs to stay within a reasonable budget\nOccupation: Student\nGender: N/A\nHobbies: Reading, watching movies, playing video games\nLifestyle: Active, enjoys trying new things, values personal growth",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nPreferences: Doe prefers to learn new skills in a more relaxed, self-paced environment. Doe likes to have access to a variety of resources, and likes to have the freedom to choose which ones to use. \nInterests: Doe is interested in music and loves to dance. Doe would like to learn a new dance style to show off at prom. \nFinancial Situation: Doe is a student and does not have a lot of extra cash to spend. Doe would like to find a cost-effective way to learn how to dance. \nGender: Not specified \nLifestyle: Doe is a busy student with a lot of responsibilities\nOccupation: Student \nHobbies: Listening to music",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nInterests: Learning new skills, improving self-confidence\nFinancial Situation: Willing to invest in self-improvement, but needs to stay within a reasonable budget\nOccupation: Student\nGender: N/A\nHobbies: Reading, watching movies, playing video games\nLifestyle: Active, enjoys trying new things, values personal growth",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 220
+}

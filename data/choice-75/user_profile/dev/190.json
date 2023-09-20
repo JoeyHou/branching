@@ -1,0 +1,39 @@
+{
+    "goal": "compete on a tv game show",
+    "steps": [
+        "decided to compete on a tv game show",
+        "think about skills required to appear on tv",
+        "narrow down options based on skill",
+        "choose a tv show to be on",
+        "submit an application to the show",
+        "get tickets to tv show",
+        "fly out to the tv shows set"
+    ],
+    "curr_index": 2516,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "submit an application to the show",
+        "option 1": "fill out a form on their website",
+        "option 2": "find a friend who is already on the show to submit your application on your behalf",
+        "type": "silver_dev",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: Competitive, adventurous, outgoing, enjoys being in the spotlight\nNote: does not have any personal connection with the show \nInterests: Trivia, puzzles, physical challenges, pop culture\nFinancial situation: Stable\nOccupation: restaurant manager\nHobbies: Watching game shows, exercising, reading\nGender: Unknown\nLife-style: Active, social, enjoys trying new experiences.",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nPreferences: values connections, wants to maximize chance of success whenever possible\nNote: has some personal connections with the show \nInterests: Enjoys watching game shows on television, likes to test their knowledge and skills.\nFinancial Situation: Able to afford travel expenses for the show, but would prefer not to spend unnecessary money.\nOccupation: restaurant manager\nHobbies: Watching game shows, exercising, reading\nGender: Not specified.\nLife-style: Active, social, enjoys trying new experiences.",
+                2,
+                "easy"
+            ],
+            [
+                "Name: Doe\nInterests: Enjoys watching game shows on television, likes to test their knowledge and skills.\nFinancial Situation: Able to afford travel expenses for the show, but would prefer not to spend unnecessary money.\nOccupation: restaurant manager\nHobbies: Watching game shows, exercising, reading\nGender: Not specified.\nLife-style: Active, social, enjoys trying new experiences.",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 190
+}

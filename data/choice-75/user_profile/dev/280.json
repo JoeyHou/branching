@@ -1,0 +1,38 @@
+{
+    "goal": "learn how to bake a cake",
+    "steps": [
+        "decided to learn how to bake a cake",
+        "search for baking classes in town",
+        "sign up for a baking class",
+        "wait for day of baking class",
+        "walk to baking class in town",
+        "follow along in baking class"
+    ],
+    "curr_index": 5227,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "search for baking classes in town",
+        "option 1": "go to local community center and ask for baking classes in town",
+        "option 2": "search for baking classes online",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: likes to learn new skills and enjoys baking, prefers hands-on learning, values in-person interactions\nInterests: baking, cooking, trying out new recipes\nFinancial situation: willing to spend a reasonable amount for a quality learning experience\nOccupation: student\nHobbies: reading, hiking, cooking\nGender: not mentioned\nLifestyle: well-balances",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nAge: 23\nGender: N/A\nOccupation: banker\nFinancial situation: moderate\nInterests: Baking\nHobbies: reading, hiking, cooking\nLifestyle: busy, fast-pace\nDislikes: Long lectures, individual learning\nNotes: Doe is interested in learning how to bake a cake and is looking for a class that can teach them the necessary skills.",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: likes to learn new skills and enjoys baking\nInterests: baking, cooking, trying out new recipes\nFinancial situation: moderate\nOccupation: unknown\nHobbies: reading, hiking, cooking\nGender: not mentioned\nLifestyle: well-balances",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 280
+}

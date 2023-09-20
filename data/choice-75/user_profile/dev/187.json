@@ -1,0 +1,38 @@
+{
+    "goal": "make pizza at home",
+    "steps": [
+        "decided to make pizza at home",
+        "go to the store",
+        "look for pizza ingredients",
+        "pay for the ingredients",
+        "drive back home",
+        "unpack ingredients onto counter"
+    ],
+    "curr_index": 2389,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "look for pizza ingredients",
+        "option 1": "google pizza ingredients",
+        "option 2": "ask your parents for their suggestions",
+        "type": "silver_dev",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: likes to cook at home, enjoys Italian cuisine\nInterests: trying new recipes\nFinancial situation: budget-conscious, prefers to save money where possible\nFamily situation: has immigrant parents from Asian, who are unfamiliar with western lifestyle\nOccupation: N/A\nHobbies: reading, gardening\nGender: N/A\nLife-style: prefers healthy and natural ingredients, enjoys outdoor activities",
+                1,
+                "medium"
+            ],
+            [
+                "Name: Doe\nAge: N/A\nGender: N/A\nOccupation: N/A\nFinancial Situation: N/A\nPreferences: Doe prefers homemade food over restaurant food. Doe likes to cook and experiment with new recipes.\nFamily situation: has a father who is a chef in a italian restaurant\nInterests: Doe is interested in trying out new cuisines and ingredients. Doe is also interested in learning about the history and culture behind different foods. \nHobbies: Cooking, baking, reading recipe books\nLife-style: Doe prefers a healthy lifestyle and tries to incorporate nutritious ingredients in their meals.",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: likes to cook at home, enjoys Italian cuisine\nInterests: trying new recipes\nFinancial situation: budget-conscious, prefers to save money where possible\nFamily situation: has very warm and loving parents and siblings\nOccupation: N/A\nHobbies: reading, gardening\nGender: N/A\nLife-style: prefers healthy and natural ingredients, enjoys outdoor activities",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 187
+}

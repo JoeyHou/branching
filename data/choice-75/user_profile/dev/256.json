@@ -1,0 +1,40 @@
+{
+    "goal": "write a new song",
+    "steps": [
+        "decided to write a new song",
+        "get the thesaurus",
+        "find a piece of paper",
+        "write down some lyrical ideas",
+        "outline an emotional theme",
+        "proofread all the words",
+        "write everything out on paper",
+        "find a working pen"
+    ],
+    "curr_index": 4455,
+    "branching_info": {
+        "branching_idx": 5,
+        "branching_step": "proofread all the words",
+        "option 1": "print out the lyrics and proofread them",
+        "option 2": "ask a friend to proofread for you",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nGender: female\nOccupation: waitress\nFinancial situation: limited\nWork style: prefers to work independently\nInterests: Songwriting, music, creative writing\nHobbies: Playing instruments, attending concerts, reading poetry\nLifestyle: Active, social, artistic\nOverall goal: To write and produce high-quality music and lyrics.",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nGender: female\nOccupation: undisclosed\nFinancial situation: moderate\nPreferences:\n- Values feedback\n- Values accuracy and attention to detail\n- Appreciates efficiency and time-saving methods\nInterests:\n- Writing and composing music\n- Exploring new creative outlets\n- Learning from and engaging with others in the music industry\n- Participating in community events and activities\nHobbies:\n- Playing musical instruments\n- Attending concerts and music festivals\n- Reading and writing poetry\nLife-style:\n- Leads an active and social life\n- Enjoys spending time with friends and family\n- Values personal growth and development",
+                2,
+                "easy"
+            ],
+            [
+                "Name: Doe\nGender: female\nOccupation: undisclosed\nFinancial situation: moderate\nPreferences:\n- Values accuracy and attention to detail\n- Appreciates efficiency and time-saving methods\nInterests:\n- Writing and composing music\n- Exploring new creative outlets\nHobbies:\n- Playing musical instruments\n- Attending concerts and music festivals\n- Reading and writing poetry\nLife-style:\n- Well-balanced\n- Values personal growth and development",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 256
+}

@@ -1,0 +1,39 @@
+{
+    "goal": "work at a ramen shop",
+    "steps": [
+        "decided to work at a ramen shop",
+        "write a resume",
+        "write a cover letter",
+        "submit resume and cover letter to the ramen shop",
+        "wait for the ramen shop to get in touch",
+        "go in for an interview",
+        "accept a job offer"
+    ],
+    "curr_index": 6157,
+    "index": 5,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "submit resume and cover letter to the ramen shop",
+        "option 1": "print out everything and submit them to the ramen shop in person",
+        "option 2": "submit the resume and cover letter online",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nInterests: enjoys trying new foods and exploring different cultures\nLife-style: prefers a balanced work-life balance and values interactions with colleagues and customers.\nFinancial situation: stable, looking for part-time employment\nOccupations: Student\nHobbies: cooking, hiking, reading\nTransportation preference: Driving (has a car)\nGender: N/A",
+                1,
+                "medium"
+            ],
+            [
+                "Name: Doe\nOccupation: Student\nGender: Not specified\nFinancial Situation: limited, looking for part-time employment\nTransportation preference: Public transportation, saving money for buying a car\nPreferences: Prefers to be efficient and save time.\nInterests: Interested in Japanese culture and cuisine.\nHobbies: Not specified\nLife-style: Not specified",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nOccupation: Student\nGender: Not specified\nFinancial Situation: looking for part-time employment\nTransportation preference: Public transportation\nHobbies: reading, hiking, explore the city\nInterests: Interested in Japanese culture and cuisine.\nLife-style: well planned, outgoing",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

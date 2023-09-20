@@ -1,0 +1,39 @@
+{
+    "goal": "enter a relationship",
+    "steps": [
+        "decided to enter a relationship",
+        "turn on computer",
+        "post profile on online dating website",
+        "wait for possible matches",
+        "respond to match",
+        "go on a date with match",
+        "sleep with match"
+    ],
+    "curr_index": 6252,
+    "index": 28,
+    "branching_info": {
+        "branching_idx": 5,
+        "branching_step": "go on a date with match",
+        "option 1": "go on date with only one match at a time",
+        "option 2": "date more than one matches simultaneously",
+        "type": "golden",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: Seeking a potential partner for a long-term relationship.\nInterests: Enjoys exploring new places, trying new foods, and watching movies.\nFinancial Situation: Stable income and able to afford dating expenses.\nOccupation: university researcher\nHobbies: Enjoys reading books, playing video games, and hiking.\nGender: Not mentioned.\nAge: 23\nLifestyle: very busy, enjoys occasional social drinking.",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nAge: 19\nGender: Unknown\nOccupation: college student\nFinancial Situation: Unknown\nInterests: Seeking a relationship, exploring new places, trying new things, watching movies, reading books, listening to music, socializing with friends\nPreferences: Looking for someone who is kind, honest, and loyal; Someone who has similar interests and who is open to trying new things; wants to explore different options before committing\nHobbies: Enjoys reading books, playing video games, and hiking.\nLifestyle: balanced, enjoys occasional social drinking.",
+                2,
+                "easy"
+            ],
+            [
+                "Name: Doe\nAge: 19\nGender: Unknown\nOccupation: college student\nFinancial Situation: Unknown\nInterests: Seeking a relationship, exploring new places, trying new things, watching movies, reading books, listening to music, socializing with friends\nPreferences: Looking for someone who is kind, honest, and loyal; Someone who has similar interests and who is open to trying new things\nHobbies: Enjoys reading books, playing video games, and hiking.\nLifestyle: balanced, enjoys occasional social drinking.",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

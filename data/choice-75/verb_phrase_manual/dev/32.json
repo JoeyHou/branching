@@ -1,0 +1,34 @@
+{
+    "goal": "learn how to play tennis",
+    "steps": [
+        "decided to learn how to play tennis",
+        "look up the rules for tennis",
+        "go buy a tennis racket",
+        "buy some tennis shoes",
+        "find a tennis coach",
+        "practice with tennis coach"
+    ],
+    "original_index": 3271,
+    "curr_index": 6274,
+    "index": 32,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "go buy a tennis racket",
+        "option 1": "go to a sports supply shop and buy a new racket",
+        "option 2": "go to ebay.com to see if there is any cheap, used racket",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "move to another country in the next month",
+                2,
+                "hard"
+            ],
+            [
+                "recently switch focus from soccer to tennis",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

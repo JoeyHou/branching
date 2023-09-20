@@ -1,0 +1,40 @@
+{
+    "goal": "go back to college",
+    "steps": [
+        "decided to go back to college",
+        "search the internet for nearby colleges",
+        "see what majors are offered",
+        "prepare a college application",
+        "mail in the application",
+        "apply for loans",
+        "open acceptance letters",
+        "enroll in college"
+    ],
+    "curr_index": 6200,
+    "index": 16,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "prepare a college application",
+        "option 1": "prepare college application on your own",
+        "option 2": "ask a friend or a family member for help",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nGender: male\nOccupation: N/A\nPreferences: Independent work, self-reliance, achievement\nFinancial situation: Limited budget\nInterests: Learning, personal growth, career advancement\nHobbies: team-based video games, soccer\nLifestyle: Undisclosed",
+                1,
+                "medium"
+            ],
+            [
+                "Name: Doe\nGender: undisclosed\nOccupation: undisclosed\nFinancial situation: limited budget\nInterests: further education, learning new skills, personal growth\nNotes: Doe is excited about the opportunity to go back to college but is worried about the expenses involved. Doe prefers a friendly and collaborative environment that will help them succeed.\nPreferences: a supportive environment\nHobbies: reading, cooking, riding bikes alone \nLifestyle: undisclosed",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nGender: male\nOccupation: student\nFinancial situation: limited budget\nInterests: further education, learning new skills, personal growth\nHobbies: play RPG video games\nPreferences: plan ahead for the work\nNotes: Doe is excited about the opportunity to go back to college but is worried about the expenses involved",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

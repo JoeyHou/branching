@@ -1,0 +1,44 @@
+{
+    "goal": "attend gym today",
+    "steps": [
+        "decided to attend gym today",
+        "search the internet for nearby gyms",
+        "compare gym prices",
+        "find one that has compatible hours",
+        "drive to the gym",
+        "walk up to the desk and get a membership"
+    ],
+    "original_index": 371,
+    "curr_index": 5067,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "compare gym prices",
+        "option 1": "compare gym prices online",
+        "option 2": "go to a gym and compare prices there",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "have personal questions about the gym",
+                2,
+                "medium"
+            ],
+            [
+                "want comprehensive comparison across gyms",
+                1,
+                "easy"
+            ],
+            [
+                "want to start working out as soon as possible",
+                2,
+                "medium"
+            ],
+            [
+                "go to gym 7 am every morning",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 274
+}

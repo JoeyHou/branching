@@ -1,0 +1,33 @@
+{
+    "goal": "learn to dance in time for prom",
+    "steps": [
+        "decided to learn to dance in time for prom",
+        "look up dance teachers online",
+        "contact a good dance teacher",
+        "meet a teacher at a scheduled time",
+        "start learning basic moves",
+        "go to a few more classes and learn more"
+    ],
+    "curr_index": 3363,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "look up dancing instructions",
+        "option 1": "go to your local dance studio",
+        "option 2": "search on youtube",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "does not know any dance moves yet",
+                0,
+                "na"
+            ],
+            [
+                "prom is only one hours away",
+                2,
+                "hard"
+            ]
+        ]
+    },
+    "index": 220
+}

@@ -1,0 +1,33 @@
+{
+    "goal": "take items to counter and pay",
+    "steps": [
+        "pick out items to purchase",
+        "think if anything was forgotten",
+        "double check cost of items in cart",
+        "locate check out area",
+        "choose quickest checkout lane",
+        "pay for items when turn comes"
+    ],
+    "curr_index": 6230,
+    "index": 23,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "choose quickest checkout lane",
+        "option 1": "do a self-checkout",
+        "option 2": "do a checkout at one of the counters",
+        "type": "golden",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "has only a few items",
+                1,
+                "medium"
+            ],
+            [
+                "does not have a lot of time available",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "goal": "audition for the school play",
+    "steps": [
+        "decided to audition for the school play",
+        "sign up for auditions",
+        "get script to practice",
+        "practice reading lines with friends",
+        "practice reading lines before bed",
+        "show up to auditions"
+    ],
+    "curr_index": 2619,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "practice reading lines before bed",
+        "option 1": "read lines by yourself in the mirror (a.k.a. mirror mime)",
+        "option 2": "read lines with a partner",
+        "type": "silver_dev",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "lives alone",
+                1,
+                "easy"
+            ],
+            [
+                "is a beginner in acting",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 194
+}

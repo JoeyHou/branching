@@ -1,0 +1,49 @@
+{
+    "goal": "walk to cashier with makeup selections",
+    "steps": [
+        "shop for makeup",
+        "look through make up",
+        "grab some makeup",
+        "put makeup on basket",
+        "walk out of makeup aisle",
+        "locate checkout area"
+    ],
+    "original_index": 4334,
+    "curr_index": 6253,
+    "index": 29,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "grab some makeup",
+        "option 1": "ask the salesman if you can try the makeup before buying it",
+        "option 2": "search online to see the images of people using those makeup",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "avoid human interaction",
+                2,
+                "easy"
+            ],
+            [
+                "find no salesman available",
+                2,
+                "easy"
+            ],
+            [
+                "have no wireless connection",
+                1,
+                "easy"
+            ],
+            [
+                "want the personalized suggestions",
+                1,
+                "medium"
+            ],
+            [
+                "found out a huge discount on the makeup",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

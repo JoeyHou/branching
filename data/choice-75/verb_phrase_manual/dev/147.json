@@ -1,0 +1,49 @@
+{
+    "goal": "learn the guitar",
+    "steps": [
+        "decided to learn the guitar",
+        "save up for a guitar",
+        "purchase a guitar",
+        "purchase learning material",
+        "load up some video tutorials at home",
+        "practice following along the tutorials and material"
+    ],
+    "original_index": 168,
+    "curr_index": 1306,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "purchase learning material",
+        "option 1": "buy learning material in a store",
+        "option 2": "buy learning material online",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "guitar class starting in half an hour",
+                1,
+                "medium"
+            ],
+            [
+                "have prime membership discount at amazon.com",
+                2,
+                "easy"
+            ],
+            [
+                "need expert suggestions",
+                1,
+                "medium"
+            ],
+            [
+                "want to compare all available options",
+                2,
+                "medium"
+            ],
+            [
+                "learned ukulele before",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 147
+}

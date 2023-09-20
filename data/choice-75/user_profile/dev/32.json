@@ -1,0 +1,38 @@
+{
+    "goal": "learn how to play tennis",
+    "steps": [
+        "decided to learn how to play tennis",
+        "look up the rules for tennis",
+        "go buy a tennis racket",
+        "buy some tennis shoes",
+        "find a tennis coach",
+        "practice with tennis coach"
+    ],
+    "curr_index": 6274,
+    "index": 32,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "go buy a tennis racket",
+        "option 1": "go to a sports supply shop and buy a new racket",
+        "option 2": "go to ebay.com to see if there is any cheap, used racket",
+        "type": "golden",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Name: Doe\nInterests: Tennis\nFinancial Situation: wealthy\nPreferences: values durability and reliability\nGender: female\nOccupation: clothing shop manager\nHobbies: gardening, reading books\nLife-style: balanced",
+                1,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: cost-effective, try-out before committing\nInterests: learning how to play tennis, while having no experience at all\nFinancial Situation: limited\nOccupation: student\nHobbies: gardening, reading books\nLife-style: balanced\nGender: female",
+                2,
+                "easy"
+            ],
+            [
+                "Name: Doe\nPreferences: effectiveness\nInterests: learning how to play tennis\nFinancial Situation: moderate\nOccupation: student\nHobbies: gardening, reading books\nLife-style: balanced\nGender: female",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

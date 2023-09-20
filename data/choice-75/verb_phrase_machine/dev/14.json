@@ -1,0 +1,35 @@
+{
+    "goal": "sign new lease",
+    "steps": [
+        "submit application to landlord",
+        "wait patiently for landlord to make a decision",
+        "hand over deposit and first month rent check",
+        "sign new lease",
+        "landlord calls the tenant",
+        "answer cell phone",
+        "landlord reveals the good news to accept tenant",
+        "landlord meets with new tenants again"
+    ],
+    "curr_index": 6195,
+    "index": 14,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "sign new lease",
+        "option 1": "sign a long-term lease",
+        "option 2": "sign the lease on a monthly or a quarterly basis, if possible",
+        "type": "golden",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "is changing jobs frequently",
+                2,
+                "medium"
+            ],
+            [
+                "Doe's job is unpredictable",
+                2,
+                "medium"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "goal": "try to skateboard",
+    "steps": [
+        "decided to try to skateboard",
+        "search out guide on skateboarding",
+        "purchase skateboard online",
+        "wait for skateboard to arrive",
+        "unpack skateboard package",
+        "take skateboard outside",
+        "stand on skateboard and push off"
+    ],
+    "curr_index": 1979,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "purchase skateboard online",
+        "option 1": "buy a used skateboard",
+        "option 2": "buy a new skateboard",
+        "type": "silver_dev",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: Interested in trying out skateboarding\nInterests: Active sports, outdoor activities\nFinancial Situation: very limited\nOccupation: writer\nHobbies: reading, cooking\nGender: Not specified\nLifestyle: balanced",
+                1,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreference: Values quality and durability, wants a reliable product for a good price\nInterest: Learning new skills, outdoor activities\nFinancial Situation: moderate and stable\nGender: N/A\nOccupation: writer\nHobbies: reading, cooking\nLifestyle: Active, adventurous",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreference: Interested in trying out skateboarding\nInterest: Learning new skills, outdoor activities\nFinancial Situation: unknown\nGender: female\nOccupation: writer\nHobbies: reading, cooking\nLifestyle: Active, adventurous",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 171
+}

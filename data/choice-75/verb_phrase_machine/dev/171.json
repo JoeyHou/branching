@@ -1,0 +1,34 @@
+{
+    "goal": "try to skateboard",
+    "steps": [
+        "decided to try to skateboard",
+        "search out guide on skateboarding",
+        "purchase skateboard online",
+        "wait for skateboard to arrive",
+        "unpack skateboard package",
+        "take skateboard outside",
+        "stand on skateboard and push off"
+    ],
+    "curr_index": 1979,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "purchase skateboard online",
+        "option 1": "buy a used skateboard",
+        "option 2": "buy a new skateboard",
+        "type": "silver_dev",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "is a beginner",
+                0,
+                "na"
+            ],
+            [
+                "is a beginner skater",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 171
+}

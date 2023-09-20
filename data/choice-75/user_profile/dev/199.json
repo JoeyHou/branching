@@ -1,0 +1,39 @@
+{
+    "goal": "find a part time job",
+    "steps": [
+        "decided to find a part time job",
+        "open a laptop",
+        "search for job forums",
+        "fill out applications",
+        "upload a resume",
+        "wait for callbacks",
+        "go to interview"
+    ],
+    "curr_index": 2846,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "fill out applications",
+        "option 1": "go to a career center to fill out applications",
+        "option 2": "go to the internet and find a job board to browse",
+        "type": "silver_dev",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Name: Doe\nGender: male\nOccupation: unemployed\nFinancial Situation: in need of a part-time job immediately\nPreferences: prefers to work nearby, want to ensure that the employer have a good personal impression on him\nInterests: unspecified\nHobbies: Reading books, watching movies, trying out new foods, exploring new places.\nLifestyle: unspecified",
+                1,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: Doe prefers to have a part-time job that doesn't require too much physical labor. Doe also prefers to apply to multiple jobs at the same time\nInterests: Doe is interested in reading books, watching movies, and spending time with friends and family. Doe also enjoys trying out new foods and exploring new places.\nFinancial situation: Doe needs a part-time job to supplement their income and cover living expenses.\nOccupation: N/A\nHobbies: Reading books, watching movies, trying out new foods, exploring new places.\nGender: male\nLife-style: N/A",
+                2,
+                "hard"
+            ],
+            [
+                "Name: Doe\nPreferences: Doe prefers to have a part-time job that doesn't require too much physical labor. Doe also prefers a job that has flexible hours to accommodate other commitments.\nInterests: Doe is interested in reading books, watching movies, and spending time with friends and family. Doe also enjoys trying out new foods and exploring new places.\nFinancial situation: Doe needs a part-time job to supplement their income and cover living expenses.\nOccupation: N/A\nHobbies: Reading books, watching movies, trying out new foods, exploring new places.\nGender: male\nLife-style: N/A",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 199
+}

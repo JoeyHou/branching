@@ -1,0 +1,41 @@
+{
+    "goal": "make a new salad",
+    "steps": [
+        "decided to make a new salad",
+        "look for salad recipes online",
+        "choose a salad recipe",
+        "gather the ingredients",
+        "gather the kitchen tools",
+        "put the ingredients in a bowl",
+        "mix up the ingredients",
+        "add salad dressing"
+    ],
+    "original_index": 3458,
+    "curr_index": 6260,
+    "index": 30,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "choose a salad recipe",
+        "option 1": "choose a salad that you have tried before",
+        "option 2": "choose a salad that you have never tried",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "explore new things",
+                2,
+                "easy"
+            ],
+            [
+                "stay in routine",
+                1,
+                "easy"
+            ],
+            [
+                "is on a diet",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

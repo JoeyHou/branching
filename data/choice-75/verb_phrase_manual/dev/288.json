@@ -1,0 +1,49 @@
+{
+    "goal": "do stand-up at an open mic night",
+    "steps": [
+        "decided to do stand-up at an open mic night",
+        "learn a stand up routine",
+        "find an open mic night",
+        "drive to the club",
+        "sign up for the open mic",
+        "go on stage"
+    ],
+    "original_index": 420,
+    "curr_index": 5471,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "sign up for the open mic",
+        "option 1": "go to the open mic site",
+        "option 2": "call up a friend and ask them to put you on the open mic",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "know no one what works for open mic",
+                1,
+                "easy"
+            ],
+            [
+                "need to fulfill other responsibilities",
+                2,
+                "medium"
+            ],
+            [
+                "want to check out the stage setup before the performance",
+                1,
+                "easy"
+            ],
+            [
+                "want to know staff members at the open mic",
+                1,
+                "easy"
+            ],
+            [
+                "saw one of favorite stand-up comedian in the poster",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 288
+}

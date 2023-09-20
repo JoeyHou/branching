@@ -1,0 +1,38 @@
+{
+    "goal": "speak a lot of languages",
+    "steps": [
+        "decided to speak a lot of languages",
+        "decide on what languages to learn",
+        "purchase books to learn each language",
+        "wait for delivery",
+        "open and unpack books",
+        "read through each one"
+    ],
+    "curr_index": 6359,
+    "index": 74,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "purchase books to learn each language",
+        "option 1": "request a sample before buying an e-book",
+        "option 2": "order a paper copy of the language book from amazon",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nGender: male\nOccupation: student\nFinancial Situation: limited\nInterests: Learning new languages\nHobbies: reading, hiking\nPreference: cautious when it comes to making purchases\nLifestyle: Not specified\nNotes: Doe is keen to expand their linguistic repertoire and is interested in learning new languages.",
+                1,
+                "medium"
+            ],
+            [
+                "Name: Doe\nGender: Not specified\nPreferences: Learning multiple languages, do not like electronic devices \nInterests: Language, culture\nFinancial situation: Able to afford language books\nClass Schedule: tight (new semester starting tommorow)\nOccupation: Student\nHobbies: reading books\nLife-style: balanced",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nGender: female\nOccupation: stay-home mum\nFinancial Situation: sufficient\nInterests: Learning new languages, cooking\nHobbies: Not specified\nLifestyle: very healthy",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

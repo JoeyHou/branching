@@ -1,0 +1,39 @@
+{
+    "goal": "have a cake",
+    "steps": [
+        "decided to have a cake",
+        "go to the store",
+        "pick out ingredients",
+        "pay for ingredients",
+        "drive back home",
+        "bake the cake"
+    ],
+    "original_index": 759,
+    "curr_index": 6366,
+    "index": 76,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "pick out ingredients",
+        "option 1": "pick ingredients that is just enough for one cake",
+        "option 2": "pick ingredients that is enough for a few cakes",
+        "type": "golden",
+        "dataset": "train",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: Loves sweet treats and has a sweet tooth.\nInterests: Enjoys baking and trying out new recipes.\nFinancial situation: Budget-conscious and prefers to save money wherever possible.\nOccupation: Unknown.\nHobbies: Spends free time experimenting with different baking techniques.\nGender: Unknown.\nLife-style: Unknown.",
+                1,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: Doe enjoys sweet treats and loves to indulge in desserts. Doe also prefers homemade baked goods over store-bought ones. Doe also enjoys sharing foods with roommates, who also likes cakes a lot.\nInterests: Doe has a passion for baking and experimenting with new recipes. Doe likes to try out baking techniques and enjoys the process of creating something from scratch.\nFinancial Situation: Doe has a reasonably stable financial situation and can afford to splurge on ingredients for baking.\nOccupation: Not mentioned.\nHobbies: Baking, experimenting with new recipes, trying out different techniques.\nGender: Not mentioned.\nLife-style: Doe prefers a simple and laid-back lifestyle and enjoys spending free time baking and trying out new recipes.",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: Loves sweet treats and has a sweet tooth.\nInterests: Enjoys baking and trying out new recipes.\nFinancial situation: moderate\nOccupation: Unknown.\nHobbies: Spends free time experimenting with different baking techniques.\nGender: Unknown.\nLife-style: Unknown.",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

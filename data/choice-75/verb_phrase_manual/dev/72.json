@@ -1,0 +1,39 @@
+{
+    "goal": "visit the desert",
+    "steps": [
+        "decided to visit the desert",
+        "pack bags for trip",
+        "purchase a plane ticket",
+        "arrive at the airport",
+        "get on plane",
+        "get off the plane at destination"
+    ],
+    "original_index": 4392,
+    "curr_index": 6356,
+    "index": 72,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "purchase a plane ticket",
+        "option 1": "purchase a plane ticket to a major city but far from the desert",
+        "option 2": "purchase a plane ticket to a small city but right next to the desert",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "hate connecting flights",
+                1,
+                "hard"
+            ],
+            [
+                "have a long-time friend living in that major city",
+                1,
+                "medium"
+            ],
+            [
+                "reall look forward to the first time ever in desert",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

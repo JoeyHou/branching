@@ -1,0 +1,50 @@
+{
+    "goal": "go out for a picnic",
+    "steps": [
+        "decided to go out for a picnic",
+        "take a shower",
+        "get ready for the day",
+        "get in the car",
+        "drive to the park",
+        "park the car"
+    ],
+    "original_index": 4677,
+    "curr_index": 6144,
+    "index": 0,
+    "branching_info": {
+        "branching_idx": 5,
+        "branching_step": "park the car",
+        "option 1": "park along the street",
+        "option 2": "try to park inside the park",
+        "type": "golden",
+        "dataset": "train",
+        "freeform_ra": [
+            [
+                "look forward to see an old friend during picnic",
+                0,
+                "na"
+            ],
+            [
+                "have a tight budget",
+                1,
+                "medium"
+            ],
+            [
+                "have many foods and equipments for picnic",
+                2,
+                "medium"
+            ],
+            [
+                "have valuable belongings on the car",
+                2,
+                "medium"
+            ],
+            [
+                "see a long line of cars for park entrance",
+                1,
+                "hard"
+            ]
+
+        ]
+    }
+}

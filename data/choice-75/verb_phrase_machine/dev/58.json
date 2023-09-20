@@ -1,0 +1,33 @@
+{
+    "goal": "lace up roller skates",
+    "steps": [
+        "put on skates",
+        "check the fit",
+        "wiggle feet to ensure a good fit",
+        "make sure wheels spin freely",
+        "grab right lace",
+        "grab left lace"
+    ],
+    "curr_index": 6330,
+    "index": 58,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "check the fit",
+        "option 1": "check the fit by trying to roll for a few steps",
+        "option 2": "check the fit by wiggle feet back and forth",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "is a beginner skater",
+                0,
+                "na"
+            ],
+            [
+                "is a beginner at roller skating",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "goal": "go back in time",
+    "steps": [
+        "decided to go back in time",
+        "go to school for quantum mechanics",
+        "study time travel",
+        "create a time machine prototype",
+        "test the prototype",
+        "invent time travel"
+    ],
+    "original_index": 195,
+    "curr_index": 1667,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "go to school for quantum mechanics",
+        "option 1": "go to a class at a university",
+        "option 2": "go to a class at a community college",
+        "type": "silver_dev",
+        "dataset": "train",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: \n- Values quality education \n- Prefers in-person classes over online classes \n- Likes to learn from experienced and knowledgeable professors \n- Enjoys interactive and engaging learning experiences \nInterests: \n- Has a passion for science and physics \n- Interested in quantum mechanics and its applications \n- Enjoys solving complex problems \n- Likes to participate in discussions and debates related to science \nFinancial Situation: \n- Has enough savings to afford higher education \n- Willing to invest in education for personal and professional growth \nOther: \n- Doe is a hard-working individual who values education and strives for excellence \n- Has a goal to master quantum mechanics and apply it in their future career \n- Values networking and building connections with like-minded individuals \n- Doe is open to new experiences and challenges.",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nPreferences: Doe prefers a practical approach to learning and values hands-on experience over theoretical knowledge. \nInterests: Quantum mechanics, time travel, science fiction, and technology.\nFinancial situation: Doe has a limited budget and needs to find an affordable option for education.\nOccupation: Doe works as a software developer and has a keen interest in quantum computing.\nHobbies: Doe enjoys tinkering with gadgets and experimenting with new technologies.\nGender: Not specified.\nLifestyle: Doe has a busy schedule due to work commitments and prefers a flexible learning environment that can accommodate their schedule.\nOverall, Doe is interested in learning about quantum mechanics but needs to find an affordable and flexible option that can fit into their busy lifestyle.",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: Doe prefers a practical approach to learning. \nInterests: Quantum mechanics, time travel, science fiction, and technology.\nFinancial situation: Doe has a limited budget but willing to invest whatever it takes for education.\nOccupation: Doe works as a software developer and has a keen interest in quantum computing.\nHobbies: Doe enjoys tinkering with gadgets and experimenting with new technologies.\nGender: Not specified.\nLifestyle: Doe has a busy schedule due to work commitments and prefers a flexible learning environment that can accommodate their schedule.",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 155
+}

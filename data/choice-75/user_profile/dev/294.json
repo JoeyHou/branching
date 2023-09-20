@@ -1,0 +1,39 @@
+{
+    "goal": "learn how to make pottery",
+    "steps": [
+        "decided to learn how to make pottery",
+        "find a pottery class that is near",
+        "sign up to the class and pay",
+        "find the time and place for the class",
+        "attend the class",
+        "make a piece of pottery for final exam",
+        "fire the the piece of pottery for final exam"
+    ],
+    "curr_index": 5614,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "attend the class",
+        "option 1": "try to take the class at a local community center",
+        "option 2": "try to take the class online",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nGender: male\nOccupation: banker\nFinancial situation: Moderate\nLearning Preferences: Hands-on learning, values practice \nInterests: Pottery making, art, craft\nHobbies: Reading, gardening\nLifestyle: Busy schedule\nAdditional information: values practical skills and knowledge acquisition.",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nAge: undisclosed\nGender: undisclosed\nLearning Preferences: prefers learning at own pace, open to new experiences, prefers convenient options, values time management\nInterests: learning new skills, exploring creativity, pottery, art\nOccupation: banker\nFinancial Situation: Moderate\nHobbies: reading, hiking, cooking\nLifestyle: very busy",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nGender: male\nOccupation: banker\nFinancial situation: Moderate\nPreferences: n/a\nInterests: Pottery making, art, craft\nHobbies: Reading, gardening\nLifestyle: Busy schedule",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 294
+}

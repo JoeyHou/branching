@@ -1,0 +1,40 @@
+{
+    "goal": "go to a live music venue",
+    "steps": [
+        "decided to go to a live music venue",
+        "go online and purchase tickets for the event",
+        "find appropriate clothing to wear",
+        "put on the clothes",
+        "leave the house",
+        "get into a car",
+        "drive to the event",
+        "attend the event"
+    ],
+    "curr_index": 2349,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "find appropriate clothing to wear",
+        "option 1": "buy clothes at a store",
+        "option 2": "wear the clothes you already have",
+        "type": "silver_dev",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Name: Doe\nGender: male\nPreferences: Prefers trendy and stylish clothing options\nOccupation: banker\nFinancial Situation: wealthy\nInterests: Enjoys live music events and fashion\nLifestyle: Likes to dress up for social events\nHobbies: go to livehouse, go sightseeing, travelling\nNote: travelling, just arrived to this city in the afternoon with limited luggage",
+                1,
+                "medium"
+            ],
+            [
+                "Name: Doe\nGender: Unknown\nInterests: Live music, socializing\nPreferences: Comfortable clothing, practicality\nFinancial situation: Limited budget\nOccupation: banker\nHobbies: go to livehouse, go sightseeing, travelling\nLifestyle: Likes to dress up for social events",
+                2,
+                "easy"
+            ],
+            [
+                "Name: Doe\nGender: Unknown\nInterests: Live music, socializing\nPreferences: Comfortable clothing, practicality\nFinancial situation: unknown\nOccupation: banker\nHobbies: go to livehouse, go sightseeing, travelling\nLifestyle: Likes to dress up for social events",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 185
+}

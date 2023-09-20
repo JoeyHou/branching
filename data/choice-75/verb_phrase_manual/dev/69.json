@@ -1,0 +1,49 @@
+{
+    "goal": "take a cheap vacation",
+    "steps": [
+        "decided to take a cheap vacation",
+        "drive to hiking front",
+        "pack hiking backpacks",
+        "hike out the trails",
+        "camp out overnight",
+        "hike the trails back"
+    ],
+    "original_index": 4522,
+    "curr_index": 6352,
+    "index": 69,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "pack hiking backpacks",
+        "option 1": "bring process food for every meal",
+        "option 2": "bring raw foods and some cookware to cook at the campsite",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "enjoy cooking on the campsite",
+                2,
+                "easy"
+            ],
+            [
+                "have lots of companions for vocation",
+                1,
+                "medium"
+            ],
+            [
+                "want to enjoy every minute of the holiday",
+                1,
+                "medium"
+            ],
+            [
+                "want to stay healthy",
+                2,
+                "medium"
+            ],
+            [
+                "go hiking at least once every month",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

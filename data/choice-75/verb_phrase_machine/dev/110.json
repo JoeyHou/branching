@@ -1,0 +1,35 @@
+{
+    "goal": "have a nerf gun war",
+    "steps": [
+        "decided to have a nerf gun war",
+        "take nerf gun ammo out of the closet",
+        "take nerf guns out of the closet",
+        "pass out the nerf guns and ammo",
+        "scatter in all directions",
+        "hide behind trees and buildings",
+        "shoot at anyone passing by",
+        "collect the spent toys and put away"
+    ],
+    "curr_index": 272,
+    "branching_info": {
+        "branching_idx": 6,
+        "branching_step": "shoot at anyone passing by",
+        "option 1": "only shoot at people in front of you",
+        "option 2": "shoot at anyone within a distance of 1,000 feet",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "is a law-abiding citizen",
+                0,
+                "na"
+            ],
+            [
+                "the nerf gun uses foam bullets and not real bullets",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 110
+}

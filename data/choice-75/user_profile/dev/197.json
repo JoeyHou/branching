@@ -1,0 +1,38 @@
+{
+    "goal": "make a banana strawberry smoothie",
+    "steps": [
+        "decided to make a banana strawberry smoothie",
+        "look up smoothie recipe",
+        "go to the store",
+        "buy smoothie ingredients",
+        "drive home from store",
+        "make smoothie with ingredients"
+    ],
+    "curr_index": 2769,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "look up smoothie recipe",
+        "option 1": "ask your grandmother for her recipe",
+        "option 2": "look up a smoothie recipe online",
+        "type": "silver_dev",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Name: Doe \nPreferences: values family, enjoy companionship from families\nInterests: Cooking \nFinancial situation: unknown \nOccupation: writer \nHobbies: cooking, reading books, hiking \nGender: unknown \nLife-style: balanced.",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nPreferences: Interested in healthy food and drinks, prefers organic and natural ingredients, likes sweet and fruity flavors, prefers comprehensive research before making decisions\nInterests: Enjoys trying new recipes and experimenting with different ingredients, likes to stay active and fit\nFinancial situation: Has a moderate income and is willing to invest in quality ingredients for health benefits\nOccupation: writer\nHobbies: Cooking, baking, reading about healthy lifestyle tips\nGender: N/A\nLife-style: Follows a healthy and balanced diet, exercises regularly, and values self-care and wellness.",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: Interested in healthy food and drinks, prefers organic and natural ingredients, likes sweet and fruity flavors\nInterests: Enjoys trying new recipes and experimenting with different ingredients, likes to stay active and fit\nFinancial situation: Has a moderate income and is willing to invest in quality ingredients for health benefits\nOccupation: N/A\nHobbies: Cooking, baking, reading about healthy lifestyle tips\nGender: N/A\nLife-style: Follows a healthy and balanced diet, exercises regularly, and values self-care and wellness.",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 197
+}

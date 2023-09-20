@@ -1,0 +1,44 @@
+{
+    "goal": "know more about film",
+    "steps": [
+        "decided to know more about film",
+        "decide which area of film to learn about",
+        "research history and topic online",
+        "go to local library to find books and articles",
+        "read the research",
+        "enjoy the newfound respect for film"
+    ],
+    "original_index": 633,
+    "curr_index": 700,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "read the research",
+        "option 1": "read the whole research paper",
+        "option 2": "read only the abstract and introduction part of the paper",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "have a hard time understanding technical details",
+                2,
+                "medium"
+            ],
+            [
+                "have a long list of papers to read",
+                2,
+                "easy"
+            ],
+            [
+                "need an in-depth understanding",
+                1,
+                "easy"
+            ],
+            [
+                "is a fan of europe movies",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 125
+}

@@ -1,0 +1,39 @@
+{
+    "goal": "try to make bread from scratch",
+    "steps": [
+        "decided to try to make bread from scratch",
+        "find recipe for bread",
+        "purchase ingredients from store",
+        "unpack ingredients and open packages",
+        "follow recipe until ingredients combined",
+        "bake dough as long as recipe calls for"
+    ],
+    "original_index": 332,
+    "curr_index": 573,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "find recipe for bread",
+        "option 1": "find a recipe online",
+        "option 2": "ask around in the community",
+        "type": "silver_dev",
+        "dataset": "train",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: enjoys trying new things, interested in home cooking and baking\nInterests: likes to experiment with different flavors and ingredients\nFinancial situation: average income, willing to invest in quality ingredients\nOccupation: not specified\nHobbies: cooking, reading, hiking\nGender: not specified\nLife-style: values healthy and wholesome food, do not like socializing, very in-active",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nGender: Not specified\nOccupation: Not specified\nFinancial Situation: Not specified\nInterests: Cooking, baking, trying new things\nHobbies: Reading, hiking\nLifestyle: socially active, enjoy meeting friends in the community\nPreferences: Homemade food, natural ingredients, community involvement\nOther: Doe enjoys learning from others and values the advice of those in their community. They prioritize using wholesome ingredients in their cooking and baking, and are always open to new recipes and techniques.",
+                2,
+                "easy"
+            ],
+            [
+                "Name: Doe\nGender: Not specified\nOccupation: Not specified\nFinancial Situation: Not specified\nInterests: Cooking, baking, trying new things\nHobbies: Reading, hiking\nLifestyle: Not specified\nPreferences: Homemade food, natural ingredients\nOther: Doe prioritize using wholesome ingredients in their cooking and baking, and are always open to new recipes and techniques.",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 118
+}

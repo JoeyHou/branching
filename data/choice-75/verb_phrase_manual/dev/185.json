@@ -1,0 +1,36 @@
+{
+    "goal": "go to a live music venue",
+    "steps": [
+        "decided to go to a live music venue",
+        "go online and purchase tickets for the event",
+        "find appropriate clothing to wear",
+        "put on the clothes",
+        "leave the house",
+        "get into a car",
+        "drive to the event",
+        "attend the event"
+    ],
+    "original_index": 277,
+    "curr_index": 2349,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "find appropriate clothing to wear",
+        "option 1": "buy clothes at a store",
+        "option 2": "wear the clothes you already have",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "have the concert starting in half an hour",
+                2,
+                "medium"
+            ],
+            [
+                "saw the poster of the show on nearly every street",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 185
+}

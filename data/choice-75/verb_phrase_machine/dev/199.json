@@ -1,0 +1,34 @@
+{
+    "goal": "find a part time job",
+    "steps": [
+        "decided to find a part time job",
+        "open a laptop",
+        "search for job forums",
+        "fill out applications",
+        "upload a resume",
+        "wait for callbacks",
+        "go to interview"
+    ],
+    "curr_index": 2846,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "fill out applications",
+        "option 1": "go to a career center to fill out applications",
+        "option 2": "go to the internet and find a job board to browse",
+        "type": "silver_dev",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "currently lives in a rural area",
+                2,
+                "medium"
+            ],
+            [
+                "is trying to save time and energy",
+                2,
+                "easy"
+            ]
+        ]
+    },
+    "index": 199
+}

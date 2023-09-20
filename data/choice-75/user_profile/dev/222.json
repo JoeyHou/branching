@@ -1,0 +1,39 @@
+{
+    "goal": "learn how to paint",
+    "steps": [
+        "decided to learn how to paint",
+        "sign up for a painting class",
+        "drive to the crafts store",
+        "browse painting supplies",
+        "pay for supplies",
+        "drive to painting class",
+        "go to painting class every day"
+    ],
+    "curr_index": 3405,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "browse painting supplies",
+        "option 1": "go to a local office supply store",
+        "option 2": "order painting supplies online",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nGender: female\nOccupation: student\nShopping preferences: values community-based businesses\nFinancial Situation: Sufficient\nInterests: Art, painting\nHobbies: Not specified\nLifestyle: well-balanced",
+                1,
+                "medium"
+            ],
+            [
+                "Name: Doe\nAge: Unknown\nOccupation: cs researcher\nPreferences: Doe is interested in learning how to paint and would like to purchase the best painting supplies that fit their needs. They prefer high-quality products that are durable and easy to use.\nLife-style: Doe has a very busy schedule; live and work far from city\nInterests: Painting is a new interest for Doe, and they are excited to explore different techniques and styles. \nFinancial situation: Doe is willing to invest in good quality painting supplies, but is also mindful of their budget. \nHobbies: In addition to painting, Doe enjoys reading, watching movies, and spending time outdoors.\nGender: Unknown",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nAge: Unknown\nOccupation: cs researcher\nPreferences: Doe is interested in learning how to paint and would like to purchase the best painting supplies that fit their needs. They prefer high-quality products that are durable and easy to use.\nLife-style: well-balanced\nInterests: Painting is a new interest for Doe, and they are excited to explore different techniques and styles. \nFinancial situation: Doe is willing to invest in good quality painting supplies, but is also mindful of their budget. \nHobbies: In addition to painting, Doe enjoys reading and watching movies\nGender: male",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 222
+}

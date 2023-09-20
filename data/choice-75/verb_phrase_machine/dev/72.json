@@ -1,0 +1,33 @@
+{
+    "goal": "visit the desert",
+    "steps": [
+        "decided to visit the desert",
+        "pack bags for trip",
+        "purchase a plane ticket",
+        "arrive at the airport",
+        "get on plane",
+        "get off the plane at destination"
+    ],
+    "curr_index": 6356,
+    "index": 72,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "purchase a plane ticket",
+        "option 1": "purchase a plane ticket to a major city but far from the desert",
+        "option 2": "purchase a plane ticket to a small city but right next to the desert",
+        "type": "golden",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "is on a budget",
+                0,
+                "na"
+            ],
+            [
+                "does not have time to travel from the major city",
+                2,
+                "easy"
+            ]
+        ]
+    }
+}

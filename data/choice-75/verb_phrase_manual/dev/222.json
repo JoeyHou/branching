@@ -1,0 +1,50 @@
+{
+    "goal": "learn how to paint",
+    "steps": [
+        "decided to learn how to paint",
+        "sign up for a painting class",
+        "drive to the crafts store",
+        "browse painting supplies",
+        "pay for supplies",
+        "drive to painting class",
+        "go to painting class every day"
+    ],
+    "original_index": 418,
+    "curr_index": 3405,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "browse painting supplies",
+        "option 1": "go to a local office supply store",
+        "option 2": "order painting supplies online",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "have an injured leg",
+                2,
+                "hard"
+            ],
+            [
+                "know the owner of the office supply store",
+                1,
+                "medium"
+            ],
+            [
+                "want comprehensive comparison across different options",
+                2,
+                "medium"
+            ],
+            [
+                "want suggestions on purchase",
+                1,
+                "medium"
+            ],
+            [
+                "have two or more painting class in the next few semesters",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 222
+}

@@ -1,0 +1,34 @@
+{
+    "goal": "compete on a tv game show",
+    "steps": [
+        "decided to compete on a tv game show",
+        "think about skills required to appear on tv",
+        "narrow down options based on skill",
+        "choose a tv show to be on",
+        "submit an application to the show",
+        "get tickets to tv show",
+        "fly out to the tv shows set"
+    ],
+    "curr_index": 2516,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "submit an application to the show",
+        "option 1": "fill out a form on their website",
+        "option 2": "find a friend who is already on the show to submit your application on your behalf",
+        "type": "silver_dev",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "is competitive and wants to prove their worth",
+                0,
+                "na"
+            ],
+            [
+                "is applying to a game show",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 190
+}

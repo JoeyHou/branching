@@ -1,0 +1,50 @@
+{
+    "goal": "move belongings to new rural house",
+    "steps": [
+        "close escrow on new home",
+        "pack belongings into boxes",
+        "rent a moving truck",
+        "park back of truck in front of the door",
+        "load belongings into moving truck",
+        "drive truck to new house",
+        "move boxes into new house"
+    ],
+    "original_index": 1728,
+    "curr_index": 6296,
+    "index": 41,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "load belongings into moving truck",
+        "option 1": "load belongings with only one's hands",
+        "option 2": "borrow or rent a moving cart to help loading",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "have a huge amount of belongings",
+                2,
+                "medium"
+            ],
+            [
+                "have a wounded arm",
+                2,
+                "easy"
+            ],
+            [
+                "have fragile items as the majority",
+                1,
+                "medium"
+            ],
+            [
+                "want to save money",
+                1,
+                "easy"
+            ],
+            [
+                "have extensive experience of moving",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

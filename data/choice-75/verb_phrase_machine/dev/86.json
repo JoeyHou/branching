@@ -1,0 +1,35 @@
+{
+    "goal": "start a diet",
+    "steps": [
+        "decided to start a diet",
+        "decide on the weight and fitness goal desired",
+        "find how many daily calories are allowed to reach goal",
+        "plan meals that fit inside the days calorie goals",
+        "drive to store",
+        "purchase ingredients for planned meals",
+        "drive home from store",
+        "prep the meals for the day with the purchased ingredients"
+    ],
+    "curr_index": 6389,
+    "index": 86,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "plan meals that fit inside the days calorie goals",
+        "option 1": "make a plan that prefers delicious foods over convenient foods",
+        "option 2": "make a plan that prefers convenient foods over delicious foods",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "has a long-term goal",
+                0,
+                "na"
+            ],
+            [
+                "wants to have a healthy lifestyle",
+                1,
+                "medium"
+            ]
+        ]
+    }
+}

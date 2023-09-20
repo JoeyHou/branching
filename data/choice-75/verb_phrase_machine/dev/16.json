@@ -1,0 +1,35 @@
+{
+    "goal": "go back to college",
+    "steps": [
+        "decided to go back to college",
+        "search the internet for nearby colleges",
+        "see what majors are offered",
+        "prepare a college application",
+        "mail in the application",
+        "apply for loans",
+        "open acceptance letters",
+        "enroll in college"
+    ],
+    "curr_index": 6200,
+    "index": 16,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "prepare a college application",
+        "option 1": "prepare college application on your own",
+        "option 2": "ask a friend or a family member for help",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "is a perfectionist",
+                0,
+                "na"
+            ],
+            [
+                "just graduated from high school",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

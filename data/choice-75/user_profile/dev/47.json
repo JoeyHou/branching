@@ -1,0 +1,39 @@
+{
+    "goal": "meet up with ghost hunters",
+    "steps": [
+        "travel to ghost hunt location",
+        "park the vehicle",
+        "turn off the vehicle",
+        "exit the car",
+        "walk to ghost hunter location",
+        "enter the location",
+        "greet the others that are there"
+    ],
+    "curr_index": 6306,
+    "index": 47,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "park the vehicle",
+        "option 1": "park along the street",
+        "option 2": "park in a gated garage",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "- Name: Doe\n- Interests: interested in paranormal activities and exploring haunted places\n- Financial situation: limited\n- Occupation: student\n- Hobbies: exploring abandoned places, reading horror novels\n- Gender: not specified\n- Car: 2008 Honda Civic\n- Lifestyle: adventurous, likes to try new things\n- Other notes: enjoys meeting new people and making new friends, open-minded and willing to learn about different perspectives.",
+                1,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: \n- Doe prefers to be cautious in unfamiliar areas\nInterests: \n- Doe is interested in paranormal activities and ghost hunting\n- Doe enjoys exploring new places and meeting new people\nCar: 2022 BMW X3 with premium package\nFinancial situation: \n- Doe has a stable income and is willing to spend money on experiences\n- Doe prefers to spend money wisely and make informed decisions\nOccupation: Banker\nGender: Not mentioned\nLifestyle: Not mentioned",
+                2,
+                "easy"
+            ],
+            [
+                "- Name: Doe\n- Financial situation: moderate\n- Occupation: unknown\n- Hobbies: travel, hiking\n- Gender: not specified\n- Car: 2015 Honda Civic\n- Lifestyle: adventurous\n- Other notes: enjoys meeting new people and making new friends, open-minded and willing to learn about different perspectives.",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "goal": "get away for a quiet vacation",
+    "steps": [
+        "decided to get away for a quiet vacation",
+        "decide to go on a vacation",
+        "pick out a destination",
+        "buy a plane ticket online",
+        "book a hotel online",
+        "drive to airport",
+        "get on plane",
+        "fly to destination"
+    ],
+    "curr_index": 2317,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "book a hotel online",
+        "option 1": "book a hotel on your own",
+        "option 2": "book a hotel through an online travel agency",
+        "type": "silver_dev",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: Quiet vacation, privacy, low-key\nTrip Purpose: annuversary, very personalized\nInterests: Reading, nature walks, sightseeing\nFinancial situation: wealthy\nOccupation: celebrity\nHobbies: travelling\nGender: female\nLife-style: active",
+                1,
+                "hard"
+            ],
+            [
+                "Name: Doe\nPreferences: high-quality trip\nInterests: Reading, hiking\nFinancial situation: wealthy\nOccupation: sales\nHobbies: travelling and living like local people\nGender: female\nLife-style: active",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: Quiet vacation\nInterests: Reading, hiking\nFinancial situation: Moderate budget\nOccupation: sales\nHobbies: travelling\nGender: female\nLife-style: active",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 182
+}

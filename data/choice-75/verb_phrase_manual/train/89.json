@@ -1,0 +1,34 @@
+{
+    "goal": "pay for adoption fee",
+    "steps": [
+        "meet favorite animals",
+        "discuss costs with clerk",
+        "play with animals",
+        "select adoption choice",
+        "proceed to register",
+        "pay fee to cashier"
+    ],
+    "original_index": 1791,
+    "curr_index": 6394,
+    "index": 89,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "select adoption choice",
+        "option 1": "adopt a young animal (e.g. puppy or kitty)",
+        "option 2": "adopt an adult animal (e.g. adult dog or cat)",
+        "type": "golden",
+        "dataset": "train",
+        "freeform_ra": [
+            [
+                "want to build a deep bound with the animal",
+                1,
+                "medium"
+            ],
+            [
+                "worry about the challenge of taking care of a pet",
+                2,
+                "medium"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "goal": "have a water gun fight",
+    "steps": [
+        "decided to have a water gun fight",
+        "get the water gun",
+        "bring the water gun outside",
+        "turn on the water",
+        "fill the water gun",
+        "get into position"
+    ],
+    "original_index": 262,
+    "curr_index": 6301,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "get the water gun",
+        "option 1": "buy a water gun",
+        "option 2": "borrow a water gun from a family member or a friend",
+        "type": "silver_dev",
+        "dataset": "train",
+        "freeform_ra": [
+            [
+                "is far from home and friends",
+                1,
+                "easy"
+            ],
+            [
+                "plan to have water gun fight every week",
+                1,
+                "hard"
+            ],
+            [
+                "want to save money",
+                2,
+                "easy"
+            ]
+        ]
+    },
+    "index": 321
+}

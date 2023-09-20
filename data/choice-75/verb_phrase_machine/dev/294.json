@@ -1,0 +1,34 @@
+{
+    "goal": "learn how to make pottery",
+    "steps": [
+        "decided to learn how to make pottery",
+        "find a pottery class that is near",
+        "sign up to the class and pay",
+        "find the time and place for the class",
+        "attend the class",
+        "make a piece of pottery for final exam",
+        "fire the the piece of pottery for final exam"
+    ],
+    "curr_index": 5614,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "attend the class",
+        "option 1": "try to take the class at a local community center",
+        "option 2": "try to take the class online",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "enjoys the social aspect of learning",
+                1,
+                "medium"
+            ],
+            [
+                "is an independent learner",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 294
+}

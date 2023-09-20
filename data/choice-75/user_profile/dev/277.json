@@ -1,0 +1,39 @@
+{
+    "goal": "make some bath soap last week",
+    "steps": [
+        "decided to make some bath soap last week",
+        "find a recipe for bath soap",
+        "buy the needed ingredients",
+        "prepare a workspace",
+        "mix ingredients together",
+        "pour ingredient mix into a soap mold",
+        "wait for soap to cool/become firm"
+    ],
+    "curr_index": 5123,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "mix ingredients together",
+        "option 1": "mix ingredients by hand",
+        "option 2": "mix ingredients by using a mixer device",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nInterests: Likes to experiment with homemade products; enjoy cooking and mixing as a way of reliefing pressure. \nFinancial situation: Tries to save money wherever possible\nOccupation: student\nHobbies: Likes to read and watch DIY videos\nGender: Not mentioned\nLife-style: Tries to live a simple and sustainable life.",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nPreferences: Doe prefers to have things done efficiently and quickly.\nInterests: Doe enjoys DIY projects and likes to experiment with new things.\nFinancial situation: Doe has a moderate budget and likes to save money where possible.\nOccupation: student\nHobbies: DIY projects, trying out new recipes, and gardening.\nGender: Unknown.\nLife-style: Doe likes to lead an active lifestyle and prioritizes health and wellness.",
+                2,
+                "hard"
+            ],
+            [
+                "Name: Doe\nInterests: Doe enjoys DIY projects and likes to experiment with new things.\nFinancial situation: Doe has a moderate budget\nOccupation: Unknown.\nHobbies: DIY projects, trying out new recipes, and gardening.\nGender: Unknown.\nLife-style: Doe likes to lead an active lifestyle and prioritizes health and wellness.",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 277
+}

@@ -1,0 +1,38 @@
+{
+    "goal": "buy some bait",
+    "steps": [
+        "compare fishing poles",
+        "go to the bait counter",
+        "ask what bait is available",
+        "look over the options",
+        "decide on bait to use",
+        "purchase the bait"
+    ],
+    "curr_index": 6370,
+    "index": 78,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "decide on bait to use",
+        "option 1": "ask the owner for bait suggestions",
+        "option 2": "search online for reviews and advice for bait",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: Doe prefers to have a personal connection with the people he do business with. \nInterests: Doe enjoys fishing as a hobby and is always looking for new ways to improve their skills and catch bigger fish.\nFinancial Situation: Doe is willing to spend a reasonable amount of money on high-quality bait that will increase their chances of catching fish.\nOccupation: Not specified.\nHobbies: Fishing, camping, and outdoor activities.\nGender: male\nLife-style: Doe enjoys spending time outdoors and being active. They prefer a simple and uncomplicated life.",
+                1,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: Likes to make informed decisions from multiple perspectives and sources; prefers to research before making a purchase\nInterests: Fishing, outdoor activities\nFinancial situation: Budget-conscious, prefers cost-effective options\nOccupation: Not specified\nHobbies: Fishing, camping, hiking\nGender: Not specified\nLifestyle: Active, enjoys spending time outdoors",
+                2,
+                "hard"
+            ],
+            [
+                "Name: Doe\nPreferences: Doe prefers to buy high quality products\nInterests: Doe enjoys fishing as a hobby and is always looking for new ways to improve their skills and catch bigger fish.\nFinancial Situation: Doe is willing to spend a reasonable amount of money on high-quality bait that will increase their chances of catching fish.\nOccupation: driver\nHobbies: Fishing, camping, and outdoor activities.\nGender: male\nLife-style: Doe enjoys spending time outdoors and being active. he prefer a simple and uncomplicated life.",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

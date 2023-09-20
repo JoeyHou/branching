@@ -1,0 +1,38 @@
+{
+    "goal": "learn the guitar",
+    "steps": [
+        "decided to learn the guitar",
+        "save up for a guitar",
+        "purchase a guitar",
+        "purchase learning material",
+        "load up some video tutorials at home",
+        "practice following along the tutorials and material"
+    ],
+    "curr_index": 1306,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "purchase learning material",
+        "option 1": "buy learning material in a store",
+        "option 2": "buy learning material online",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: Learns best through traditional books and recordings\nInterests: Music, specifically guitar, and learning new skills\nFinancial Situation: Willing to spend money on quality learning material\nOccupation: student\nHobbies: reading books, listening to music\nGender: Not specified\nLife-style: not active",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nPreferences: Enjoys learning at their own pace, likes to have access to different formats of learning materials\nInterests: Interested in music and wants to learn to play the guitar\nFinancial situation: Has a limited budget\nGender: Not specified\nOccupation: student\nHobbies: streaming videos, reading books, listening to music\nLifestyle: not active",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: Enjoys learning at their own pace\nInterests: Interested in music and wants to learn to play the guitar\nFinancial situation: moderate\nGender: male\nOccupation: college student\nHobbies:  reading books, listening to music\nLifestyle: not active",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 147
+}

@@ -1,0 +1,50 @@
+{
+    "goal": "work at a ramen shop",
+    "steps": [
+        "decided to work at a ramen shop",
+        "write a resume",
+        "write a cover letter",
+        "submit resume and cover letter to the ramen shop",
+        "wait for the ramen shop to get in touch",
+        "go in for an interview",
+        "accept a job offer"
+    ],
+    "original_index": 552,
+    "curr_index": 6157,
+    "index": 5,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "submit resume and cover letter to the ramen shop",
+        "option 1": "print out everything and submit them to the ramen shop in person",
+        "option 2": "submit the resume and cover letter online",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "have additional questions about the position",
+                1,
+                "medium"
+            ],
+            [
+                "have no printer",
+                2,
+                "easy"
+            ],
+            [
+                "live far away from the ramen shop",
+                2,
+                "easy"
+            ],
+            [
+                "want to make a good impression",
+                1,
+                "medium"
+            ],
+            [
+                "is a fan of japanese culture",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "goal": "get away for a quiet vacation",
+    "steps": [
+        "decided to get away for a quiet vacation",
+        "decide to go on a vacation",
+        "pick out a destination",
+        "buy a plane ticket online",
+        "book a hotel online",
+        "drive to airport",
+        "get on plane",
+        "fly to destination"
+    ],
+    "original_index": 659,
+    "curr_index": 2317,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "book a hotel online",
+        "option 1": "book a hotel on your own",
+        "option 2": "book a hotel through an online travel agency",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "want to find out personalized vacation packages",
+                2,
+                "hard"
+            ],
+            [
+                "want to book a single room far from city life",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 182
+}

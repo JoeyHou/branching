@@ -1,0 +1,35 @@
+{
+    "goal": "take the groceries to the kitchen",
+    "steps": [
+        "unload the groceries from the car",
+        "close car up",
+        "lock the car",
+        "lift groceries up to holding position",
+        "walk towards house",
+        "open door to house",
+        "locate kitchen in house",
+        "walk into kitchen"
+    ],
+    "curr_index": 6329,
+    "index": 57,
+    "branching_info": {
+        "branching_idx": 0,
+        "branching_step": "unload the groceries from the car",
+        "option 1": "unload all the groceries all at once",
+        "option 2": "unload only the portion of the groceries that one is able to carry",
+        "type": "golden",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "is strong enough",
+                1,
+                "easy"
+            ],
+            [
+                "is alone",
+                2,
+                "easy"
+            ]
+        ]
+    }
+}

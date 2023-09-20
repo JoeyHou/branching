@@ -1,0 +1,40 @@
+{
+    "goal": "sign new lease",
+    "steps": [
+        "submit application to landlord",
+        "wait patiently for landlord to make a decision",
+        "hand over deposit and first month rent check",
+        "sign new lease",
+        "landlord calls the tenant",
+        "answer cell phone",
+        "landlord reveals the good news to accept tenant",
+        "landlord meets with new tenants again"
+    ],
+    "curr_index": 6195,
+    "index": 14,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "sign new lease",
+        "option 1": "sign a long-term lease",
+        "option 2": "sign the lease on a monthly or a quarterly basis, if possible",
+        "type": "golden",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: Would like to have a stable living situation\nInterests: cooking, hosting friends for party\nFinancial situation: moderate\nOccupation: student\nGender: male\nLifestyle: well-balanced",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nInterests: explore different ways of living.\nFinancial situation: limited\nOccupation: writer.\nHobbies: travel to different places.\nGender: Unknown.\nLife-style: un-stable, living on a wheel.",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: Doe prefers to have his own room\nInterests: american history.\nFinancial situation: moderate\nOccupation: sales.\nHobbies: reading books.\nGender: male.\nLife-style: Unknown.",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

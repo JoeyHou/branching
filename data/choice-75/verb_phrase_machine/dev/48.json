@@ -1,0 +1,33 @@
+{
+    "goal": "stir the mixture of water and kool-aid",
+    "steps": [
+        "fill the pitcher with water",
+        "find spoon to stir",
+        "grab spoon with hand",
+        "bring spoon to pitcher",
+        "place spoon in pitcher",
+        "move arm in circles to stir"
+    ],
+    "curr_index": 6307,
+    "index": 48,
+    "branching_info": {
+        "branching_idx": 5,
+        "branching_step": "move arm in circles to stir",
+        "option 1": "do not stop stirring until fullly mixed",
+        "option 2": "during stirring, stop every once in a while to check if the mix is ready",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "the mixture is for a weekend party",
+                0,
+                "na"
+            ],
+            [
+                "there is a risk of the mix being over-stirred",
+                2,
+                "easy"
+            ]
+        ]
+    }
+}

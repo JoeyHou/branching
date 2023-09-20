@@ -1,0 +1,33 @@
+{
+    "goal": "know more about american history",
+    "steps": [
+        "decided to know more about american history",
+        "search the internet for a local library",
+        "find the library's hours",
+        "drive to the library",
+        "ask the librarian for help",
+        "sit down and read through books"
+    ],
+    "curr_index": 1321,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "find the library's hours",
+        "option 1": "call the library",
+        "option 2": "look online at the library's website",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "is currently in the library",
+                0,
+                "na"
+            ],
+            [
+                "is familiar with the library's website",
+                2,
+                "easy"
+            ]
+        ]
+    },
+    "index": 148
+}

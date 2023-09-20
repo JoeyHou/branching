@@ -1,0 +1,34 @@
+{
+    "goal": "learn how to ballroom dance",
+    "steps": [
+        "decided to learn how to ballroom dance",
+        "search on line for a ballroom teacher",
+        "call and make appointment to meet teacher",
+        "arrange a schedule to take lessons",
+        "dress appropriately to take lessons",
+        "walk over to studio to take lessons",
+        "take ballroom lessons at studio"
+    ],
+    "curr_index": 1935,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "dress appropriately to take lessons",
+        "option 1": "buy a new dance suit",
+        "option 2": "borrow a dance suit from a friend",
+        "type": "silver_dev",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "only recently moved to the area",
+                1,
+                "hard"
+            ],
+            [
+                "spent quite a lot of money recently",
+                2,
+                "medium"
+            ]
+        ]
+    },
+    "index": 166
+}

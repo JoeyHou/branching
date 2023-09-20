@@ -1,0 +1,33 @@
+{
+    "goal": "try out for lacrosse",
+    "steps": [
+        "decided to try out for lacrosse",
+        "find out when tryouts are",
+        "practice for tryouts",
+        "improve lacrosse skills",
+        "stay after school for tryouts",
+        "go to the tryouts"
+    ],
+    "curr_index": 6295,
+    "index": 40,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "improve lacrosse skills",
+        "option 1": "improve lacrosse skills by learning from online tutorials",
+        "option 2": "ask players on the school lacrosse team for suggestions on how to improve",
+        "type": "golden",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "is a busy student with many commitments",
+                1,
+                "medium"
+            ],
+            [
+                "is a beginner at lacrosse",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

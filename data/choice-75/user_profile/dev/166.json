@@ -1,0 +1,39 @@
+{
+    "goal": "learn how to ballroom dance",
+    "steps": [
+        "decided to learn how to ballroom dance",
+        "search on line for a ballroom teacher",
+        "call and make appointment to meet teacher",
+        "arrange a schedule to take lessons",
+        "dress appropriately to take lessons",
+        "walk over to studio to take lessons",
+        "take ballroom lessons at studio"
+    ],
+    "curr_index": 1935,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "dress appropriately to take lessons",
+        "option 1": "buy a new dance suit",
+        "option 2": "borrow a dance suit from a friend",
+        "type": "silver_dev",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Name: Doe\nInterests: Ballroom dancing\nPreferences: Likes to learn new things\nFinancial situation: Stable\nGender: male\nOccupation: student\nHobbies: reading books, playing tennies\nLife-style: well-organized\nSpecial Note: Doe is much taller than any other kids in the class",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nGender: male\nOccupation: student\nFinancial situation: limited budget\nInterests: ballroom dancing\nHobbies: reading books, playing tennies\nLife-style: well-organized\nNote: Doe enjoys dancing and is excited to learn the steps. Doe is open to different options and are willing to try new things.",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nGender: male\nOccupation: student\nFinancial situation: moderate\nInterests: ballroom dancing\nHobbies: reading books, playing tennies\nLife-style: well-organized\nNote: Doe enjoys dancing and is excited to learn the steps. They are open to different options and are willing to try new things.",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 166
+}

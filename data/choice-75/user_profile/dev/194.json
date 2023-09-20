@@ -1,0 +1,38 @@
+{
+    "goal": "audition for the school play",
+    "steps": [
+        "decided to audition for the school play",
+        "sign up for auditions",
+        "get script to practice",
+        "practice reading lines with friends",
+        "practice reading lines before bed",
+        "show up to auditions"
+    ],
+    "curr_index": 2619,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "practice reading lines before bed",
+        "option 1": "read lines by yourself in the mirror (a.k.a. mirror mime)",
+        "option 2": "read lines with a partner",
+        "type": "silver_dev",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: enjoys being alone, values independence\nInterests: acting, theater, performing arts\nFinancial situation: moderate\nOccupation: acting school student\nHobbies: reading, watching movies, writing\nGender: female\nLife-style: balanced\nOther information: Doe is committed to perfecting their acting skills and is willing to put in extra effort to achieve their goals. Doe enjoys immersing themselves in scripts and exploring different characters.",
+                1,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: \n- Doe prefers social interactions over solitary activities.\n- Doe values constructive feedback and seeks it out to improve their skills.\n- Doe prefers hands-on learning experiences.\nInterests: \n- Doe is interested in the performing arts, specifically acting.\n- Doe enjoys reading books and watching movies.\n- Doe is passionate about environmental sustainability and is actively involved in local community efforts.\nFinancial Situation: \n- Doe's family income is middle class.\n- They have enough resources to cover basic needs and some discretionary spending, but not extravagant expenses.\nGender: \n- Unspecified.\nLifestyle: \n- Doe is a high school student with a part-time job.\n- Doe has a positive outlook and enjoys trying new things.",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nInterests: acting, theater, performing arts\nFinancial situation: moderate\nOccupation: acting school student\nHobbies: reading, watching movies, writing\nGender: female\nLife-style: balanced\nOther information: Doe is committed to perfecting their acting skills and is willing to put in extra effort to achieve their goals.",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 194
+}

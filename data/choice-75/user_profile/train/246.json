@@ -1,0 +1,40 @@
+{
+    "goal": "go for a trip on an amtrak train",
+    "steps": [
+        "decided to go for a trip on an amtrak train",
+        "open a laptop",
+        "find amtrak website",
+        "buy the tickets",
+        "print out tickets",
+        "walk to train station",
+        "board the train"
+    ],
+    "original_index": 319,
+    "curr_index": 3978,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "buy the tickets",
+        "option 1": "buy the tickets from an amtrak agent",
+        "option 2": "buy the tickets from an amtrak website",
+        "type": "silver_dev",
+        "dataset": "train",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: \n- Prefers to interact with people face-to-face\n- Likes to ask questions and clarify doubts\n- Values human interaction \nInterests: \n- Enjoys travelling \n- Interested in exploring new places \n- Appreciates scenic views \n- Likes to experience different cultures \nFinancial situation: \n- Has a budget for the trip \n- Willing to spend a reasonable amount on tickets \n- Values good value for money \nOccupation: sales \nHobbies: reading books, driving, swimming \nGender: Not specified \nLifestyle: well-balanced",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nAge: 19\nGender: Unknown\nOccupation: college student\nPreferences:\n- Doe prefers convenience and efficiency\n- Doe likes to have control over their own schedule\n- Doe prefers to avoid long lines and waiting times\nInterests:\n- Doe enjoys exploring new places\n- Doe likes to travel and discover different cultures\n- Doe prefers to have a comfortable and relaxing trip\nFinancial Situation:\n- Doe wants to save money when possible\n- Doe is willing to pay extra for convenience and comfort\nHobbies: reading books, driving, swimming\n- Unknown\nLifestyle:\n- well-balanced",
+                2,
+                "easy"
+            ],
+            [
+                "Name: Doe\nAge: 19\nGender: Unknown\nOccupation: college student\nPreferences:\n- Doe likes to have control over their own schedule\nInterests:\n- Doe enjoys exploring new places\n- Doe likes to travel and discover different cultures\n- Doe prefers to have a comfortable and relaxing trip\nFinancial Situation:\n- Doe wants to save money when possible\nHobbies: reading books, driving, swimming\n- Unknown\nLifestyle:\n- well-balanced",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 246
+}

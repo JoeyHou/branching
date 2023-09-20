@@ -1,0 +1,38 @@
+{
+    "goal": "attend gym today",
+    "steps": [
+        "decided to attend gym today",
+        "search the internet for nearby gyms",
+        "compare gym prices",
+        "find one that has compatible hours",
+        "drive to the gym",
+        "walk up to the desk and get a membership"
+    ],
+    "curr_index": 5067,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "compare gym prices",
+        "option 1": "compare gym prices online",
+        "option 2": "go to a gym and compare prices there",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nAge: 18\nGender: Unknown\nOccupation: student, newly arrived college undergrad\nInterests: Fitness, health, wellness\nHobbies: Unknown\nLifestyle: undecided, since Doe has just arrived and is unfamiliar with the city\nFinancial Situation: limited\nPreferences: Convenience, ease of access, low monthly fees, variety of equipment and classes\nGoals: To maintain a healthy lifestyle, improve fitness, and achieve personal fitness goals.",
+                1,
+                "hard"
+            ],
+            [
+                "Name: Doe\nGender: Not specified\nOccupation: consultant\nFinancial situation: wealthy\nInterests: Fitness, healthy lifestyle\nWorkout Style: has high requirement for workout equipment, willing to pay for good workout condition.\nHobbies: reading books, playing soccer\nLifestyle: Active",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nGender: male\nOccupation: student\nFinancial situation: unknown\nInterests: Fitness, healthy lifestyle\nHobbies: Not specified\nLifestyle: Active\nPreferences: Wants to find an affordable gym with a variety of classes and equipments",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 274
+}

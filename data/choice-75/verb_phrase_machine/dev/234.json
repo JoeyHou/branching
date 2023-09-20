@@ -1,0 +1,33 @@
+{
+    "goal": "have blond hair",
+    "steps": [
+        "decided to have blond hair",
+        "locate a nearby hair stylist on the internet",
+        "call the office",
+        "schedule an appointment",
+        "drive to the stylist",
+        "have the stylist dye the hair blonde"
+    ],
+    "curr_index": 3770,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "locate a nearby hair stylist on the internet",
+        "option 1": "google it",
+        "option 2": "call the phone number for a hair salon",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "has never been in contact with the local hair salons",
+                1,
+                "easy"
+            ],
+            [
+                "is new to the area",
+                1,
+                "hard"
+            ]
+        ]
+    },
+    "index": 234
+}

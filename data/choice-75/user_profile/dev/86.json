@@ -1,0 +1,40 @@
+{
+    "goal": "start a diet",
+    "steps": [
+        "decided to start a diet",
+        "decide on the weight and fitness goal desired",
+        "find how many daily calories are allowed to reach goal",
+        "plan meals that fit inside the days calorie goals",
+        "drive to store",
+        "purchase ingredients for planned meals",
+        "drive home from store",
+        "prep the meals for the day with the purchased ingredients"
+    ],
+    "curr_index": 6389,
+    "index": 86,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "plan meals that fit inside the days calorie goals",
+        "option 1": "make a plan that prefers delicious foods over convenient foods",
+        "option 2": "make a plan that prefers convenient foods over delicious foods",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: high-quality food\nInterests: Health and fitness\nFinancial Situation: Moderate income\nOccupation: car sales\nHobbies: hiking\nGender: male\nLifestyle: well-balanced",
+                1,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: get things done efficiently\nInterests: Not specified\nFinancial situation: Not specified\nOccupation: banker\nHobbies: reading books, watching live shows\nGender: female\nLife-style: busy, fast-pace",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nFood preferences: enjoys Asian foods, especially Japenese food\nInterests: hiking\nFinancial situation: moderate\nOccupation: graduate student\nHobbies: reading books, watching live shows\nGender: female\nLife-style: unknown",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

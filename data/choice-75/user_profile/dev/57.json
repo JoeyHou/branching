@@ -1,0 +1,40 @@
+{
+    "goal": "take the groceries to the kitchen",
+    "steps": [
+        "unload the groceries from the car",
+        "close car up",
+        "lock the car",
+        "lift groceries up to holding position",
+        "walk towards house",
+        "open door to house",
+        "locate kitchen in house",
+        "walk into kitchen"
+    ],
+    "curr_index": 6329,
+    "index": 57,
+    "branching_info": {
+        "branching_idx": 0,
+        "branching_step": "unload the groceries from the car",
+        "option 1": "unload all the groceries all at once",
+        "option 2": "unload only the portion of the groceries that one is able to carry",
+        "type": "golden",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: prefers efficiency; willing to use strength for daily activities\nInterests: enjoys cooking and trying out new recipes\nFinancial situation: comfortable\nOccupation: soccer coach\nHobbies: playing soccer, workout\nGender: female\nLife-style: active",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nPreferences: \n- Doe prefers to take things one step at a time.\n- Doe likes to stay organized.\nInterests: \n- Doe enjoys cooking and trying out new recipes.\n- Doe is interested in gardening and growing vegetables.\n- Doe likes to stay active and go for walks.\nFinancial situation:\n- Doe is mindful of spending and tries to stick to a budget while grocery shopping.\nOccupation: Not specified.\nHobbies: Not specified.\nGender: Not specified.\nLife-style: \n- Doe tries to maintain a healthy lifestyle by cooking nutritious meals and staying active.\n- Doe values environmental sustainability and tries to reduce waste where possible.",
+                2,
+                "easy"
+            ],
+            [
+                "Name: Doe\nPreferences: \n- Doe likes to be organized\nInterests: \n- Doe enjoys cooking and trying out new recipes.\n- Doe is interested in gardening and growing vegetables.\n- Doe likes to stay active and go for walks.\nFinancial situation:\n- Doe is mindful of spending and tries to stick to a budget while grocery shopping.\nOccupation: Not specified.\nHobbies: Not specified.\nGender: Not specified.\nLife-style: \n- Doe tries to maintain a healthy lifestyle by cooking nutritious meals and staying active.\n- Doe values environmental sustainability and tries to reduce waste where possible.",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

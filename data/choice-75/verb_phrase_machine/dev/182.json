@@ -1,0 +1,35 @@
+{
+    "goal": "get away for a quiet vacation",
+    "steps": [
+        "decided to get away for a quiet vacation",
+        "decide to go on a vacation",
+        "pick out a destination",
+        "buy a plane ticket online",
+        "book a hotel online",
+        "drive to airport",
+        "get on plane",
+        "fly to destination"
+    ],
+    "curr_index": 2317,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "book a hotel online",
+        "option 1": "book a hotel on your own",
+        "option 2": "book a hotel through an online travel agency",
+        "type": "silver_dev",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "is planning to go in a few weeks",
+                0,
+                "na"
+            ],
+            [
+                "is planning a long vacation",
+                2,
+                "hard"
+            ]
+        ]
+    },
+    "index": 182
+}

@@ -1,0 +1,39 @@
+{
+    "goal": "buy new door",
+    "steps": [
+        "go to store",
+        "drive to store",
+        "get out of car, lock the doors",
+        "walk towards enterance",
+        "walk into store",
+        "walk towards door department"
+    ],
+    "original_index": 1716,
+    "curr_index": 6327,
+    "index": 56,
+    "branching_info": {
+        "branching_idx": 0,
+        "branching_step": "go to store",
+        "option 1": "drive to store",
+        "option 2": "call an uber or lyft to the store",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "live in a mountain farm",
+                1,
+                "hard"
+            ],
+            [
+                "receive an unplanned conference call",
+                2,
+                "hard"
+            ],
+            [
+                "plan to take a cup of coffee after going to the store",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

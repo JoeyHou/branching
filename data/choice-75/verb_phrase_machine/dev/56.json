@@ -1,0 +1,33 @@
+{
+    "goal": "buy new door",
+    "steps": [
+        "go to store",
+        "drive to store",
+        "get out of car, lock the doors",
+        "walk towards enterance",
+        "walk into store",
+        "walk towards door department"
+    ],
+    "curr_index": 6327,
+    "index": 56,
+    "branching_info": {
+        "branching_idx": 0,
+        "branching_step": "go to store",
+        "option 1": "drive to store",
+        "option 2": "call an uber or lyft to the store",
+        "type": "golden",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "lives in a rural area with limited public transportation",
+                0,
+                "na"
+            ],
+            [
+                "is currently living in a city",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "goal": "make pizza at home",
+    "steps": [
+        "decided to make pizza at home",
+        "go to the store",
+        "look for pizza ingredients",
+        "pay for the ingredients",
+        "drive back home",
+        "unpack ingredients onto counter"
+    ],
+    "original_index": 558,
+    "curr_index": 2389,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "look for pizza ingredients",
+        "option 1": "google pizza ingredients",
+        "option 2": "ask your parents for their suggestions",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "want to search for ancestral secret recipe",
+                2,
+                "medium"
+            ],
+            [
+                "have never made pizza before but very interested in learning it",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 187
+}

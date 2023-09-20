@@ -1,0 +1,36 @@
+{
+    "goal": "build a house",
+    "steps": [
+        "decided to build a house",
+        "obtain building permit",
+        "gather up construction crew",
+        "transport building materials to site",
+        "lay the  foundation",
+        "build the frame",
+        "insert plumbing and electricity wiring",
+        "put up dry wall"
+    ],
+    "original_index": 103,
+    "curr_index": 5594,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "transport building materials to site",
+        "option 1": "call a moving company",
+        "option 2": "move the materials yourself",
+        "type": "silver_dev",
+        "dataset": "train",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: efficiency\nInterests: DIY, home improvement\nFinancial situation: wealthy\nOccupation: college professor\nHobbies: skying, riding boat\nGender: Unknown\nLife-style: balanced, newly moved-in",
+                1,
+                "hard"
+            ],
+            [
+                "Name: Doe\nPreferences: Prefers to be hands-on with projects and likes to do things independently.\nInterests: Enjoys DIY projects, construction, and building.\nFinancial situation: Has a limited budget for the house construction.\nOccupation: Self-employed contractor.\nHobbies: Camping and hiking.\nGender: Not specified.\nLife-style: Active and enjoys physical work.",
+                2,
+                "easy"
+            ]
+        ]
+    },
+    "index": 293
+}

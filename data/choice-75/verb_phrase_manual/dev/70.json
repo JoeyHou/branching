@@ -1,0 +1,44 @@
+{
+    "goal": "go to subway for lunch",
+    "steps": [
+        "decided to go to subway for lunch",
+        "get the car keys",
+        "put the address on the maps app",
+        "drive to the subway",
+        "wait in line",
+        "decide on what to order"
+    ],
+    "original_index": 645,
+    "curr_index": 6353,
+    "index": 70,
+    "branching_info": {
+        "branching_idx": 5,
+        "branching_step": "decide on what to order",
+        "option 1": "order the daily special",
+        "option 2": "order the same food that you had last time",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "want to save money",
+                1,
+                "easy"
+            ],
+            [
+                "want to stay in routine",
+                2,
+                "easy"
+            ],
+            [
+                "want to try new things",
+                1,
+                "easy"
+            ],
+            [
+                "has a great appetite today",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

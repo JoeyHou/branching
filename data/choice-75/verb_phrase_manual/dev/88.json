@@ -1,0 +1,50 @@
+{
+    "goal": "practice singing the song",
+    "steps": [
+        "look up the lyrics",
+        "turn on printer",
+        "do vocal warm ups",
+        "sing the lyrics everyday using the print out",
+        "practice singing the song",
+        "print the lyrics onto a sheet of paper",
+        "place lyrics in front of person"
+    ],
+    "original_index": 1905,
+    "curr_index": 6393,
+    "index": 88,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "practice singing the song",
+        "option 1": "practice singing with a friend",
+        "option 2": "practice on one's own",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "have the concert in half an hour",
+                2,
+                "medium"
+            ],
+            [
+                "need a sense of companion",
+                1,
+                "easy"
+            ],
+            [
+                "need feedback",
+                1,
+                "easy"
+            ],
+            [
+                "want to surprise everyone else",
+                2,
+                "medium"
+            ],
+            [
+                "really look forward to the show as it is the final show of high school",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "goal": "meet up with ghost hunters",
+    "steps": [
+        "travel to ghost hunt location",
+        "park the vehicle",
+        "turn off the vehicle",
+        "exit the car",
+        "walk to ghost hunter location",
+        "enter the location",
+        "greet the others that are there"
+    ],
+    "curr_index": 6306,
+    "index": 47,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "park the vehicle",
+        "option 1": "park along the street",
+        "option 2": "park in a gated garage",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "it is the middle of the night and Doe is wary of safety issues",
+                1,
+                "easy"
+            ],
+            [
+                "it is a remote area with a lot of wild animals",
+                2,
+                "hard"
+            ]
+        ]
+    }
+}

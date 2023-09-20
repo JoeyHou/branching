@@ -1,0 +1,34 @@
+{
+    "goal": "enter a relationship",
+    "steps": [
+        "decided to enter a relationship",
+        "turn on computer",
+        "post profile on online dating website",
+        "wait for possible matches",
+        "respond to match",
+        "go on a date with match",
+        "sleep with match"
+    ],
+    "curr_index": 6252,
+    "index": 28,
+    "branching_info": {
+        "branching_idx": 5,
+        "branching_step": "go on a date with match",
+        "option 1": "go on date with only one match at a time",
+        "option 2": "date more than one matches simultaneously",
+        "type": "golden",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "is looking for the right person to enter a serious relationship with",
+                1,
+                "hard"
+            ],
+            [
+                "is looking for a serious relationship",
+                1,
+                "hard"
+            ]
+        ]
+    }
+}

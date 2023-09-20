@@ -1,0 +1,35 @@
+{
+    "goal": "try to skateboard",
+    "steps": [
+        "decided to try to skateboard",
+        "search out guide on skateboarding",
+        "purchase skateboard online",
+        "wait for skateboard to arrive",
+        "unpack skateboard package",
+        "take skateboard outside",
+        "stand on skateboard and push off"
+    ],
+    "original_index": 293,
+    "curr_index": 1979,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "purchase skateboard online",
+        "option 1": "buy a used skateboard",
+        "option 2": "buy a new skateboard",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "have broken three skateboards in the last two weeks",
+                1,
+                "hard"
+            ],
+            [
+                "live close to campus and plan to skateboard to classes",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 171
+}

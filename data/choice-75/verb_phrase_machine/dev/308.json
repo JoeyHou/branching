@@ -1,0 +1,33 @@
+{
+    "goal": "take a vacation this year",
+    "steps": [
+        "decided to take a vacation this year",
+        "save up money for vacation",
+        "research vacation spots",
+        "choose a vacation spot",
+        "choose a time to take off work",
+        "request time off of work"
+    ],
+    "curr_index": 5941,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "choose a time to take off work",
+        "option 1": "take a vacation based on your company's work plan",
+        "option 2": "take a vacation based on your plan",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "is a loyal employee",
+                1,
+                "easy"
+            ],
+            [
+                "Doe's company has strict work plans",
+                2,
+                "medium"
+            ]
+        ]
+    },
+    "index": 308
+}

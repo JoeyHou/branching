@@ -1,0 +1,41 @@
+{
+    "goal": "set up table",
+    "steps": [
+        "decide to set up table",
+        "open door to garage",
+        "walk into garage",
+        "locate the table",
+        "carry table inside",
+        "lay table on floor",
+        "lift up legs on table",
+        "flip table over"
+    ],
+    "original_index": 4827,
+    "curr_index": 6380,
+    "index": 82,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "carry table inside",
+        "option 1": "use a moving cart to move the table",
+        "option 2": "lift the table up and move the table",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "have a fragile table structure",
+                1,
+                "medium"
+            ],
+            [
+                "see a very narrow room entrance",
+                2,
+                "hard"
+            ],
+            [
+                "bought the table at a very good price (huge discount)",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

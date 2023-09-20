@@ -1,0 +1,50 @@
+{
+    "goal": "meet up with ghost hunters",
+    "steps": [
+        "travel to ghost hunt location",
+        "park the vehicle",
+        "turn off the vehicle",
+        "exit the car",
+        "walk to ghost hunter location",
+        "enter the location",
+        "greet the others that are there"
+    ],
+    "original_index": 5608,
+    "curr_index": 6306,
+    "index": 47,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "park the vehicle",
+        "option 1": "park along the street",
+        "option 2": "park in a gated garage",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "have expensive possessions in the car",
+                2,
+                "medium"
+            ],
+            [
+                "is really bad at parallel parking",
+                2,
+                "medium"
+            ],
+            [
+                "no space left in the garage",
+                1,
+                "easy"
+            ],
+            [
+                "want to save money",
+                1,
+                "medium"
+            ],
+            [
+                "got a secret message from friends about the ghost hunters",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

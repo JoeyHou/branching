@@ -1,0 +1,38 @@
+{
+    "goal": "have blond hair",
+    "steps": [
+        "decided to have blond hair",
+        "locate a nearby hair stylist on the internet",
+        "call the office",
+        "schedule an appointment",
+        "drive to the stylist",
+        "have the stylist dye the hair blonde"
+    ],
+    "curr_index": 3770,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "locate a nearby hair stylist on the internet",
+        "option 1": "google it",
+        "option 2": "call the phone number for a hair salon",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nAge: 23\nGender: female\nOccupation: graduate student\nFinancial Situation: moderate\nPreferences: prefer to research options before making a decision.\nInterests: tech-savvy\nHobbies: Unknown\nLifestyle: fast-pace",
+                1,
+                "medium"
+            ],
+            [
+                "Name: Doe\nAge: 79\nHair Preference: Blond\nLife-style: slow-pace, traditional\nFinancial Situation: wealthy\nInterests: reading books\nOccupation: unemployed (retired from work)\nGender: female",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nAge: 32\nGender: female\nOccupation: sales\nFinancial Situation: moderate\nPreferences: effectiveness and efficiency\nInterests: makeup, self-improvement books\nHobbies: Unknown\nLifestyle: well-balanced",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 234
+}

@@ -1,0 +1,39 @@
+{
+    "goal": "make an impression on a girl at school",
+    "steps": [
+        "decided to make an impression on a girl at school",
+        "buy the girl presents",
+        "dress well to school",
+        "talk to the girl",
+        "present chocolate to the girl",
+        "buy the girl chocolate"
+    ],
+    "original_index": 4532,
+    "curr_index": 6251,
+    "index": 27,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "buy the girl presents",
+        "option 1": "ask the friends of the girl for gift ideas",
+        "option 2": "ask the girl herself for what she likes",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "want the most precise information",
+                2,
+                "easy"
+            ],
+            [
+                "want to surprise the girl",
+                1,
+                "medium"
+            ],
+            [
+                "recently broke up with ex",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "goal": "learn figure drawing",
+    "steps": [
+        "decided to learn figure drawing",
+        "view tutorial online",
+        "obtain blank paper",
+        "place pencil tip to paper",
+        "learn figure drawing",
+        "find a pencil",
+        "locate an eraser"
+    ],
+    "original_index": 310,
+    "curr_index": 236,
+    "branching_info": {
+        "branching_idx": 5,
+        "branching_step": "find a pencil",
+        "option 1": "buy a new pencil",
+        "option 2": "find a pencil in your school's art room",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "have a tight budget",
+                2,
+                "easy"
+            ],
+            [
+                "have the class starting in 2 minutes",
+                2,
+                "medium"
+            ],
+            [
+                "need the pencil for the whole semester",
+                1,
+                "hard"
+            ],
+            [
+                "want a high-quality pencil",
+                1,
+                "hard"
+            ],
+            [
+                "want to be a part-time painter or designer in the future",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 105
+}

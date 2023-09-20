@@ -1,0 +1,38 @@
+{
+    "goal": "take a vacation this year",
+    "steps": [
+        "decided to take a vacation this year",
+        "save up money for vacation",
+        "research vacation spots",
+        "choose a vacation spot",
+        "choose a time to take off work",
+        "request time off of work"
+    ],
+    "curr_index": 5941,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "choose a time to take off work",
+        "option 1": "take a vacation based on your company's work plan",
+        "option 2": "take a vacation based on your plan",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nOccupation: sales\nGender: male\nFinancial Situation: limited\nEmployment Situation: has some tension with manager; wants to keep the job as long as possible\nInterests: Traveling, exploring new cultures, trying new foods, hiking, photography\nHobbies: Reading, playing sports\nLifestyle: Active and adventurous",
+                1,
+                "hard"
+            ],
+            [
+                "Name: Doe\nOccupation: sales\nGender: male\nPreferences: Doe prefers flexibility and control over their vacation plans.\nInterests: Doe enjoys exploring new places, trying new foods, and experiencing different cultures.\nEmployment Situation: Just got promoted into a more flexible position\nHobbies: N/A\nFinancial Situation: Doe has a moderate budget for their vacation but is willing to save up if necessary.\nLifestyle: Doe values work-life balance and wants to prioritize self-care and relaxation during their vacation.",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nOccupation: sales\nGender: male\nFinancial Situation: moderate\nEmployment Situation: stable\nInterests: Traveling, exploring new cultures, trying new foods, hiking, photography\nHobbies: Reading, playing sports\nLifestyle: Active and adventurous",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 308
+}

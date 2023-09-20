@@ -1,0 +1,39 @@
+{
+    "goal": "have a cake",
+    "steps": [
+        "decided to have a cake",
+        "go to the store",
+        "pick out ingredients",
+        "pay for ingredients",
+        "drive back home",
+        "bake the cake"
+    ],
+    "original_index": 759,
+    "curr_index": 6366,
+    "index": 76,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "pick out ingredients",
+        "option 1": "pick ingredients that is just enough for one cake",
+        "option 2": "pick ingredients that is enough for a few cakes",
+        "type": "golden",
+        "dataset": "train",
+        "freeform_ra": [
+            [
+                "do not have containers for extra cakes",
+                1,
+                "medium"
+            ],
+            [
+                "is first time trying the recipe",
+                1,
+                "hard"
+            ],
+            [
+                "plan to eat the cake everyday in following week",
+                2,
+                "easy"
+            ]
+        ]
+    }
+}

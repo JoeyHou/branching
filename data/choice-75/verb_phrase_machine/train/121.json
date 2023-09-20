@@ -1,0 +1,44 @@
+{
+    "goal": "take the sats in order to get into college",
+    "steps": [
+        "decided to take the sats in order to get into college",
+        "go to the room giving the test",
+        "sit down at a desk",
+        "pick up a number two pencil",
+        "fill out the entirety of the test",
+        "hand the test to the teacher"
+    ],
+    "original_index": 123,
+    "curr_index": 661,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "go to the room giving the test",
+        "option 1": "take a bus",
+        "option 2": "call an uber",
+        "type": "silver_dev",
+        "dataset": "train",
+        "freeform_ra": [
+            [
+                "plan to go to Taylor Swift's concert after done with the SAT",
+                0,
+                "na"
+            ],
+            [
+                "have a tight budget",
+                1,
+                "medium"
+            ],
+            [
+                "slept over",
+                2,
+                "hard"
+            ],
+            [
+                "want to review for the last time on the way",
+                2,
+                "medium"
+            ]
+        ]
+    },
+    "index": 121
+}

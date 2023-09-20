@@ -1,0 +1,40 @@
+{
+    "goal": "learn to make pot pies",
+    "steps": [
+        "decided to learn to make pot pies",
+        "find potpie tutorial online",
+        "gather materials together",
+        "turn on the oven",
+        "make the potpies",
+        "bake the potpies",
+        "take the pies out to cool",
+        "serve the potpies on a plate"
+    ],
+    "curr_index": 1280,
+    "branching_info": {
+        "branching_idx": 5,
+        "branching_step": "bake the potpies",
+        "option 1": "buy a new pot pie pan",
+        "option 2": "buy a used pot pie pan",
+        "type": "silver_dev",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: Homemade food, comfort food, easy-to-follow recipes, prefers durability and long-term values\nInterests: Cooking, baking, trying new recipes\nFinancial situation: Able to afford kitchen equipment\nOccupation: student\nHobbies: Reading, watching cooking shows\nGender: male\nLife-style: Leads a simple and frugal life, enjoys cooking as a way to unwind and relax.",
+                1,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: Home-cooked meals, comfort food, easy-to-follow recipes\nInterests: Cooking and baking, trying new recipes\nFinancial situation: Budget-conscious\nGender: male\nOccupation: student\nHobbies: Reading, watching cooking shows\nLife-style: Leads a simple and frugal life, enjoys cooking as a way to unwind and relax.",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: Home-cooked meals, comfort food, easy-to-follow recipes\nInterests: Cooking and baking, trying new recipes\nFinancial situation: unknown\nGender: male\nOccupation: student\nHobbies: Reading, watching cooking shows\nLife-style: Leads a simple and frugal life, enjoys cooking as a way to unwind and relax.",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 145
+}

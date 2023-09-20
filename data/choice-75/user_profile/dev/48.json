@@ -1,0 +1,38 @@
+{
+    "goal": "stir the mixture of water and kool-aid",
+    "steps": [
+        "fill the pitcher with water",
+        "find spoon to stir",
+        "grab spoon with hand",
+        "bring spoon to pitcher",
+        "place spoon in pitcher",
+        "move arm in circles to stir"
+    ],
+    "curr_index": 6307,
+    "index": 48,
+    "branching_info": {
+        "branching_idx": 5,
+        "branching_step": "move arm in circles to stir",
+        "option 1": "do not stop stirring until fullly mixed",
+        "option 2": "during stirring, stop every once in a while to check if the mix is ready",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: Prefers efficiency and getting things done quickly.\nInterests: Enjoys cooking and experimenting with new recipes.\nFinancial situation: Has a moderate income.\nOccupation: Chef.\nHobbies: Enjoys reading and playing sports.\nGender: Unknown.\nLife-style: Leads a busy life.",
+                1,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: \n- Prefers to have control over situations and outcomes.\n- Enjoys following instructions and prefers to stay cautious in unseen cases. \nInterests: \n- Cooking and trying out new recipes.\n- Outdoor activities such as hiking and camping.\n- Watching movies and reading books.\n- Spending time with family and friends.\nFinancial situation: \n- Comfortable, but tries to save where possible.\nGender: \n- Not specified.\nLife-style: \n- Likes to maintain a healthy lifestyle by eating well and exercising regularly.",
+                2,
+                "medium"
+            ],
+            [
+                "[\nName: Doe\nInterests: \n- Cooking and trying out new recipes.\n- Outdoor activities such as hiking and camping.\n- Watching movies and reading books.\n- Spending time with family and friends.\nFinancial situation: \n- Comfortable, but tries to save where possible.\nGender: \n- Not specified.\nLife-style: \n- Likes to maintain a healthy lifestyle by eating well and exercising regularly.",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

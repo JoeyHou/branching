@@ -1,0 +1,38 @@
+{
+    "goal": "eat breakfast food",
+    "steps": [
+        "put on clothes",
+        "decide what he/she wants to eat",
+        "get ingredients out of the cabinet and refrigerator",
+        "prepare and cook the ingredients",
+        "put the finally prepared food on a plate",
+        "get utensils for eating from the drawer"
+    ],
+    "curr_index": 6319,
+    "index": 54,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "decide what he/she wants to eat",
+        "option 1": "decide on the foods based on calories in the food",
+        "option 2": "decide on the foods based on time-consumption of preparation",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: Doe enjoys eating breakfast food in the morning.\nInterests: Doe is interested in maintaining a healthy lifestyle.\nFinancial Situation: Wealthy.\nOccupation: Actor.\nHobbies: Reading books, workout.\nGender: Male",
+                1,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: Breakfast food, foods that are easy to prepare\nInterests: Healthy living, fitness\nFinancial situation: Doe has a comfortable financial situation and can afford a variety of food options.\nOccupation: PhD Student\nLife-style: Very busy\nHobbies: Reading books, watching movies\nGender: Not mentioned",
+                2,
+                "easy"
+            ],
+            [
+                "Name: Doe\nFood preferences: n/a\nInterests: Healthy living, fitness\nFinancial situation: Doe has a comfortable financial situation and can afford a variety of food options.\nOccupation: Student\nLife-style: balanced\nHobbies: Reading books, watching movies\nGender: Not mentioned",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

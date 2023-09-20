@@ -1,0 +1,40 @@
+{
+    "goal": "set up table",
+    "steps": [
+        "decide to set up table",
+        "open door to garage",
+        "walk into garage",
+        "locate the table",
+        "carry table inside",
+        "lay table on floor",
+        "lift up legs on table",
+        "flip table over"
+    ],
+    "curr_index": 6380,
+    "index": 82,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "carry table inside",
+        "option 1": "use a moving cart to move the table",
+        "option 2": "lift the table up and move the table",
+        "type": "golden",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: Efficient and hassle-free processes\nInterests: Home decor and DIY projects\nFinancial Situation: Comfortable\nOccupation: teacher\nHobbies: Home improvement, gardening\nGender: male\nLife-style: Active and busy",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nPreferences: Practical, hands-on\nInterests: DIY projects, home improvement, interior design\nFinancial situation: Middle-class\nOccupation: workout coach\nHobbies: Gardening, woodworking\nGender: famel\nLife-style: Active, outdoorsy",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: effective\nInterests: Home decor and DIY projects\nFinancial Situation: Comfortable\nOccupation: teacher\nHobbies: Home improvement, gardening\nGender: male\nLife-style: Active and busy",
+                1,
+                "na"
+            ]
+        ]
+    }
+}

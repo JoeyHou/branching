@@ -1,0 +1,38 @@
+{
+    "goal": "get some lunch",
+    "steps": [
+        "decided to get some lunch",
+        "walk to the kitchen",
+        "open the fridge",
+        "locate the leftovers",
+        "pull out leftovers",
+        "microwave the leftovers"
+    ],
+    "curr_index": 6397,
+    "index": 91,
+    "branching_info": {
+        "branching_idx": 5,
+        "branching_step": "microwave the leftovers",
+        "option 1": "combine the leftovers into one plate and microwave at the same time",
+        "option 2": "microwave each dish on itself",
+        "type": "golden",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: value efficiency\nInterests: Enjoys trying out new foods and experimenting with recipes\nFinancial Situation: On a tight budget\nOccupation: actress\nHobbies: acting, watching movies\nGender: female\nLifestyle: very busy",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nPreferences: willing to spend time for high quality food; enjoy eating as a important component of the day\nInterests: enjoys trying new recipes, likes to cook at home\nFinancial situation: tries to save money when possible\nOccupation: actress\nHobbies: acting, watching movies\nGender: female\nLifestyle: well-balanced",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: value effectiveness\nInterests: Enjoys trying out new foods and experimenting with recipes\nFinancial Situation: On a tight budget\nOccupation: actress\nHobbies: acting, watching movies\nGender: female\nLifestyle: unknown",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "goal": "buy new clothes",
+    "steps": [
+        "decided to buy new clothes",
+        "put on clothes",
+        "go out to car",
+        "start the car",
+        "drive to clothing shop",
+        "purchase some clothes"
+    ],
+    "original_index": 529,
+    "curr_index": 2041,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "drive to clothing shop",
+        "option 1": "call an uber",
+        "option 2": "walk to the nearest clothing store",
+        "type": "silver_dev",
+        "dataset": "train",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: \n- Prefers convenience and efficiency\n- Values time over money \n- Likes to have choices and options \nInterests:\n- Fashion and clothing \n- Keeping up with current trends \n- Socializing with friends \nFinancial Situation: \n- Has enough disposable income to afford transportation \n- Does not want to spend too much on transportation \nOccupation: Not specified \nHobbies: Not specified \nGender: Not specified \nLife-style: Not specified. \nOverall, Doe is a fashion-conscious individual who values convenience and efficiency. They have enough disposable income to afford transportation but do not want to overspend on it. Doe likes to have choices and options when it comes to their shopping experience. Socializing with friends while shopping may also be important to them.",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nGender: undisclosed\nOccupation: undisclosed\nFinancial Situation: moderate\nHobbies: undisclosed\nInterests: fashion, physical activity\nLifestyle: active\nPreferences: eco-friendly, sustainable, walking over driving\nAdditional Information: Doe enjoys being outdoors and living a healthy lifestyle. They are conscious of their impact on the environment and prefer to walk or use public transportation whenever possible. They have an interest in fashion and enjoy keeping up with the latest trends, but also value sustainability and eco-friendliness in their clothing choices. With a moderate budget, Doe is mindful of their spending and seeks out affordable yet high-quality options.",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nGender: undisclosed\nOccupation: sales\nFinancial Situation: moderate\nHobbies: undisclosed\nInterests: fashion, physical activity\nLifestyle: active\nPreferences: stylish clothings\nAdditional Information: Doe enjoys living a healthy lifestyle. They have an interest in fashion and enjoy keeping up with the latest trends, but also value sustainability in their clothing choices.",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 174
+}

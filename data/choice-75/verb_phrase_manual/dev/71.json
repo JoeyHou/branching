@@ -1,0 +1,50 @@
+{
+    "goal": "eat roast beef for dinner",
+    "steps": [
+        "decided to eat roast beef for dinner",
+        "look for the recipe online",
+        "gather the ingredients",
+        "gather the equipment",
+        "cook the roast",
+        "set the table",
+        "set the food on the table"
+    ],
+    "original_index": 1022,
+    "curr_index": 6355,
+    "index": 71,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "gather the ingredients",
+        "option 1": "order same-day delivery for the ingredients",
+        "option 2": "drive to the grocery store on one's own and buy the ingredients",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "do not have a car",
+                1,
+                "easy"
+            ],
+            [
+                "enjoy shopping as a relaxation",
+                2,
+                "easy"
+            ],
+            [
+                "have other responsibilities due today",
+                1,
+                "medium"
+            ],
+            [
+                "want to ensure the quality of the ingredients",
+                2,
+                "hard"
+            ],
+            [
+                "learned a new roast beef recipe and wanted to try it out",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

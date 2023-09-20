@@ -1,0 +1,36 @@
+{
+    "goal": "fuel a car",
+    "steps": [
+        "decide to fuel a car",
+        "look for a gas station",
+        "pull into the gas station",
+        "choose a pump to use",
+        "pull along side the pump",
+        "open gas cap",
+        "select octane level of gas",
+        "put nozzle into tank"
+    ],
+    "original_index": 4931,
+    "curr_index": 6391,
+    "index": 87,
+    "branching_info": {
+        "branching_idx": 6,
+        "branching_step": "select octane level of gas",
+        "option 1": "select the cheapest gas option",
+        "option 2": "select the premium gas option",
+        "type": "golden",
+        "dataset": "train",
+        "freeform_ra": [
+            [
+                "have a racing car",
+                2,
+                "medium"
+            ],
+            [
+                "want to save money for an aspirational trip",
+                1,
+                "easy"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "goal": "start to eat healthy",
+    "steps": [
+        "decided to start to eat healthy",
+        "research healthy diets",
+        "pick out a new diet",
+        "make a list of groceries",
+        "go to the store for the groceries",
+        "start eating according to the diet"
+    ],
+    "original_index": 172,
+    "curr_index": 6169,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "pick out a new diet",
+        "option 1": "pick from the list of popular diets",
+        "option 2": "pick from your own list of favorite foods",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "prefer more variety",
+                1,
+                "easy"
+            ],
+            [
+                "stay in the same routine",
+                2,
+                "easy"
+            ],
+            [
+                "try something new",
+                1,
+                "easy"
+            ],
+            [
+                "want consistency",
+                2,
+                "easy"
+            ],
+            [
+                "want to stay fit aginst the freshman-15",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 317
+}

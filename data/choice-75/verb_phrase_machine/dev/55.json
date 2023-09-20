@@ -1,0 +1,33 @@
+{
+    "goal": "start taking a lunch to school",
+    "steps": [
+        "decided to start taking a lunch to school",
+        "buy ingredient to prepare for lunch",
+        "prepare and cook meal at home",
+        "pack lunch once finish cooking",
+        "place lunch in refrigeration",
+        "bring lunch to school"
+    ],
+    "curr_index": 6321,
+    "index": 55,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "prepare and cook meal at home",
+        "option 1": "prepare meals for a few days all at once",
+        "option 2": "prepare only one meal at a time",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "wants to ensure the meals are fresh",
+                2,
+                "medium"
+            ],
+            [
+                "has a lot of different food preferences",
+                2,
+                "medium"
+            ]
+        ]
+    }
+}

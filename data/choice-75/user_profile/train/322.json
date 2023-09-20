@@ -1,0 +1,36 @@
+{
+    "goal": "write a book",
+    "steps": [
+        "decided to write a book",
+        "prepare the work space",
+        "pick the topic to write about",
+        "create the main characters",
+        "map out the plot and story line of the book",
+        "write the book",
+        "send to editor for suggestions and make revisions",
+        "have the book published"
+    ],
+    "original_index": 569,
+    "curr_index": 6344,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "create the main characters",
+        "option 1": "create the characters on your own",
+        "option 2": "consult people around you for advice on the main characters",
+        "type": "silver_dev",
+        "dataset": "train",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: Independent, creative, self-sufficient\nInterests: Writing, reading, exploring new ideas and concepts\nFinancial Situation: Stable\nOccupation: Not specified\nHobbies: Writing, sketching, hiking\nGender: Not specified\nLife-style: Simple and uncluttered\nOverall, Doe is someone who values independence and creativity. They enjoy spending time exploring new ideas and concepts, and are passionate about writing.",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe \nPreferences: make decisions after a comprehensive review process \nInterests: Writing, literature, creative writing \nFinancial situation: limited, need to save money for school \nOccupation: individual contractor \nHobbies: watching movies \nGender: male \nLife-style: balanced",
+                2,
+                "medium"
+            ]
+        ]
+    },
+    "index": 322
+}

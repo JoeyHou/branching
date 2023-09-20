@@ -1,0 +1,38 @@
+{
+    "goal": "know more about american history",
+    "steps": [
+        "decided to know more about american history",
+        "search the internet for a local library",
+        "find the library's hours",
+        "drive to the library",
+        "ask the librarian for help",
+        "sit down and read through books"
+    ],
+    "curr_index": 1321,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "find the library's hours",
+        "option 1": "call the library",
+        "option 2": "look online at the library's website",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nInterests: Doe is interested in learning about American history.\nInternet access: home wifi is broken for this week.\nFinancial Situation: moderate\nOccupation: student\nHobbies: reading books, visiting musemns\nGender: Not specified.\nLifestyle: balanced",
+                1,
+                "medium"
+            ],
+            [
+                "Name: Doe\nInterests: American history\nFinancial situation: moderate\nOccupation: student\nSpcecial circumstances: has a very bad sore throat\nHobbies: reading books\nGender: male\nLifestyle: balanced",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nInterests: Doe is interested in learning about American history.\nFinancial Situation: moderate\nOccupation: student\nHobbies: reading books, visiting musemns\nGender: Not specified.\nLifestyle: balanced",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 148
+}

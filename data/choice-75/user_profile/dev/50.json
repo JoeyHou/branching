@@ -1,0 +1,39 @@
+{
+    "goal": "greet the financial adviser",
+    "steps": [
+        "drive to appointment",
+        "walk to the financial advisor's office",
+        "walk to the front desk",
+        "check in at front desk",
+        "wait for the financial advisor's office",
+        "greet the financial adviser",
+        "enter the financial advisor's office"
+    ],
+    "curr_index": 6312,
+    "index": 50,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "wait for the financial advisor's office",
+        "option 1": "scrolling through social media during the wait time",
+        "option 2": "go over potential topics to be discussed later",
+        "type": "golden",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Name: Doe\nInterests: social connections, animals, pets, asian food\nFinancial situation: moderate, know very few about personal finance\nOccupation: Unknown\nHobbies: video gaming, playing badmington, running \nGender: famele\nLifestyle: socially active, enjoys staying connected with friends",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nOccupation: Unknown\nGender: female\nFinancial Situation: very bad, on the edge of bankrupcy \nPreferences: Stay organized and informed, be prepared before important things\nInterests: animals, pets, asian food\nHobbies: video gaming, playing badmington, running \nLifestyle: balanced",
+                2,
+                "easy"
+            ],
+            [
+                "Name: Doe\nOccupation: Unknown\nGender: female\nFinancial Situation: unknown\nPreferences: effectiveness, values human connection\nInterests: animals, pets, asian food\nHobbies: video gaming, playing badmington, running \nLifestyle: balanced",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

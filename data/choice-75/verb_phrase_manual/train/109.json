@@ -1,0 +1,34 @@
+{
+    "goal": "have any pets",
+    "steps": [
+        "decided to have any pets",
+        "purchase a pet carrier or leash",
+        "go to an animal shelter",
+        "pick out a pet",
+        "pay the employee",
+        "take the pet home"
+    ],
+    "original_index": 331,
+    "curr_index": 268,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "purchase a pet carrier or leash",
+        "option 1": "buy a pet carrier from a local pet store",
+        "option 2": "buy a pet carrier from an online store",
+        "type": "silver_dev",
+        "dataset": "train",
+        "freeform_ra": [
+            [
+                "need to take the pet out tonight",
+                1,
+                "medium"
+            ],
+            [
+                "want a co-branded carrier for favorite baseball team",
+                2,
+                "hard"
+            ]
+        ]
+    },
+    "index": 109
+}

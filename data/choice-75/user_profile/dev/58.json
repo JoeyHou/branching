@@ -1,0 +1,38 @@
+{
+    "goal": "lace up roller skates",
+    "steps": [
+        "put on skates",
+        "check the fit",
+        "wiggle feet to ensure a good fit",
+        "make sure wheels spin freely",
+        "grab right lace",
+        "grab left lace"
+    ],
+    "curr_index": 6330,
+    "index": 58,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "check the fit",
+        "option 1": "check the fit by trying to roll for a few steps",
+        "option 2": "check the fit by wiggle feet back and forth",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: testing out before buying\nInterests: Sports, outdoor activities\nFinancial situation: limited\nOccupation: student\nHobbies: Roller skating\nGender: female\nLife-style: balanced",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nPreferences: Doe prefers roller skating to other forms of exercise. Doe also prefers comfortable and well-fitting roller skates.\nInterests: Doe enjoys outdoor activities, especially those that involve physical activity. Doe also has an interest in fashion and likes to look stylish while roller skating.\nFinancial situation: Doe has a moderate income and is willing to invest in a good pair of roller skates.\nOccupation: student\nHobbies: Not specified.\nGender: Not specified.\nLifestyle: Doe leads an active lifestyle and enjoys spending time outdoors. Doe also values comfort and functionality in their belongings.\nAdditional notes: Doe is a beginner at roller skating and is taking the first class today. Doe is looking for a pair of roller skates that are easy to maneuver and learn in.",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nName: Doe\nPreferences: Roller skating\nInterests: Sports, outdoor activities\nFinancial situation: limited\nOccupation: student\nHobbies: sports\nGender: female\nLife-style: balanced",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

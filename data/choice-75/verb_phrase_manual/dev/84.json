@@ -1,0 +1,49 @@
+{
+    "goal": "start lifting weights to build muscle",
+    "steps": [
+        "decided to start lifting weights to build muscle",
+        "go to the gym",
+        "go into the locker room",
+        "put on workout attire",
+        "head to the bench press machine",
+        "do bench presses"
+    ],
+    "original_index": 3436,
+    "curr_index": 6383,
+    "index": 84,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "go to the gym",
+        "option 1": "go to the gym on your own",
+        "option 2": "find someone in your community or social media to go with you",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "need encouragement for the workout",
+                2,
+                "medium"
+            ],
+            [
+                "need guidance on a workout",
+                2,
+                "medium"
+            ],
+            [
+                "want to build-up muscle secretly",
+                1,
+                "medium"
+            ],
+            [
+                "want to have a flexible gym schedule",
+                1,
+                "hard"
+            ],
+            [
+                "enjoy workout as a way of relexation",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

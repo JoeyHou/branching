@@ -1,0 +1,50 @@
+{
+    "goal": "make some bath soap last week",
+    "steps": [
+        "decided to make some bath soap last week",
+        "find a recipe for bath soap",
+        "buy the needed ingredients",
+        "prepare a workspace",
+        "mix ingredients together",
+        "pour ingredient mix into a soap mold",
+        "wait for soap to cool/become firm"
+    ],
+    "original_index": 273,
+    "curr_index": 5123,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "mix ingredients together",
+        "option 1": "mix ingredients by hand",
+        "option 2": "mix ingredients by using a mixer device",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "enjoy hand mixing as a pressure reliever",
+                1,
+                "easy"
+            ],
+            [
+                "have no hand mixer available",
+                1,
+                "easy"
+            ],
+            [
+                "have sensitive skin",
+                2,
+                "medium"
+            ],
+            [
+                "need the soup as soon as possible",
+                2,
+                "medium"
+            ],
+            [
+                "smell the enjoyable flavor of the ingredients",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 277
+}

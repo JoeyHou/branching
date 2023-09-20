@@ -1,0 +1,38 @@
+{
+    "goal": "visit the desert",
+    "steps": [
+        "decided to visit the desert",
+        "pack bags for trip",
+        "purchase a plane ticket",
+        "arrive at the airport",
+        "get on plane",
+        "get off the plane at destination"
+    ],
+    "curr_index": 6356,
+    "index": 72,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "purchase a plane ticket",
+        "option 1": "purchase a plane ticket to a major city but far from the desert",
+        "option 2": "purchase a plane ticket to a small city but right next to the desert",
+        "type": "golden",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: \n- Prefers convenient and comfortable travel\n- Values accessibility and ease of transportation\nInterests: \n- Traveling and exploring new places\n- Enjoy visiting metropolis\n- Culture and history\nFinancial situation: \n- Comfortable with spending on travel\nOccupation: police officer\nHobbies: travel, photography\nGender: male\nLifestyle: balanced",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nPreferences: Prefer to visit places with unique features and natural landscapes; Prefers to travel to off-the-beaten-path places and avoid tourist crowds\nInterests: Enjoys outdoor activities such as hiking and camping\nFinancial situation: Budget-conscious, but willing to spend for unique experiences\nOccupation: police officer\nHobbies: travel, photography\nGender: male\nLife-style: balanced",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: \n- Prefers convenient and comfortable travel\n- Values accessibility and ease of transportation\nInterests: \n- Traveling and exploring new places\n- Culture and history\nFinancial situation: \n- Comfortable with spending on travel\nOccupation: police officer\nHobbies: travel, photography\nGender: male\nLifestyle: balanced",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "goal": "eat some french fries",
+    "steps": [
+        "decided to eat some french fries",
+        "drive to the store",
+        "purchase frozen french fries",
+        "drive home from the store",
+        "pre-heat the oven",
+        "cook the french fries"
+    ],
+    "original_index": 124,
+    "curr_index": 580,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "purchase frozen french fries",
+        "option 1": "buy frozen french fries from a grocery store",
+        "option 2": "buy frozen french fries from an online food store",
+        "type": "silver_dev",
+        "dataset": "train",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: French fries, convenience\nInterests: Food, cooking\nFinancial Situation: Budget-conscious\nOccupation: stay-home mum\nHobbies: reading, streaming tv series\nGender: female\nLife-style: very balanced\nSummary: Doe has a strong preference for French fries and values convenience. Although Doe enjoys cooking, they do not have a lot of time to spend shopping for groceries. As a result, they are budget-conscious and prefer to find the most affordable option for their favorite food.",
+                0,
+                "na"
+            ],
+            [
+                "Name: Doe\nPreferences: French fries, convenience, online shopping\nInterests: Food, technology, ease of use\nFinancial situation: Comfortable, willing to spend for quality and convenience\nOccupation: night-shift firefighter\nHobbies: Not mentioned\nGender: Not mentioned\nLife-style: doe's Life-style is different from most people where Doe has to go to work at night.",
+                2,
+                "hard"
+            ],
+            [
+                "Name: Doe\nPreferences: French fries, convenience, online shopping\nInterests: Food, technology, ease of use\nFinancial situation: Comfortable, willing to spend for quality and convenience\nOccupation: Not mentioned\nHobbies: Not mentioned\nGender: Not mentioned\nLife-style: Not mentioned",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 119
+}

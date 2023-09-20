@@ -1,0 +1,33 @@
+{
+    "goal": "join the marines",
+    "steps": [
+        "decided to join the marines",
+        "volunteer to join the marines",
+        "attend a basic physical examination",
+        "wait to be selected",
+        "travel to a training camp",
+        "successfully pass basic training"
+    ],
+    "curr_index": 1940,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "volunteer to join the marines",
+        "option 1": "talk to your recruiter",
+        "option 2": "apply online",
+        "type": "silver_dev",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "wants to be sure that joining the marines is the right decision",
+                1,
+                "medium"
+            ],
+            [
+                "does not have much time in hand",
+                2,
+                "easy"
+            ]
+        ]
+    },
+    "index": 168
+}

@@ -1,0 +1,34 @@
+{
+    "goal": "learn a new instrument",
+    "steps": [
+        "decided to learn a new instrument",
+        "go to store to buy the instrument",
+        "take lessons from teacher",
+        "practice lessons at home",
+        "get new music to practice more",
+        "get feedback from friends"
+    ],
+    "original_index": 4415,
+    "curr_index": 6280,
+    "index": 35,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "go to store to buy the instrument",
+        "option 1": "get an used instrument at the store",
+        "option 2": "buy a new one",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "have three potential instruments in mind but would only commit to one of them in the end",
+                1,
+                "hard"
+            ],
+            [
+                "enjoy learning from friends",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

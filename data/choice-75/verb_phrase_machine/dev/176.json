@@ -1,0 +1,35 @@
+{
+    "goal": "learn how to line dance",
+    "steps": [
+        "decided to learn how to line dance",
+        "learn to love country music",
+        "watch other dancers",
+        "sign up for a dance class",
+        "practice the steps",
+        "go to the dance class",
+        "learn how to line dance",
+        "listen to and watch the teacher"
+    ],
+    "curr_index": 2137,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "practice the steps",
+        "option 1": "practice at home",
+        "option 2": "find a dance studio and learn in a group",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "is shy",
+                1,
+                "medium"
+            ],
+            [
+                "is a beginner",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 176
+}

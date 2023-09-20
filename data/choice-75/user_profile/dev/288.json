@@ -1,0 +1,38 @@
+{
+    "goal": "do stand-up at an open mic night",
+    "steps": [
+        "decided to do stand-up at an open mic night",
+        "learn a stand up routine",
+        "find an open mic night",
+        "drive to the club",
+        "sign up for the open mic",
+        "go on stage"
+    ],
+    "curr_index": 5471,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "sign up for the open mic",
+        "option 1": "go to the open mic site",
+        "option 2": "call up a friend and ask them to put you on the open mic",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: Doe prefers to engage in activities that challenge them mentally and creatively. They have a strong interest in performing arts and enjoy watching stand-up comedy shows. Doe prefers to take the initiative and make their own decisions.\nInterests: Meeting new friends in person; getting connected with other stand-up comedy folks\nFinancial situation: Doe has a stable income and is able to afford the cost of attending an open mic night.\nOccupation: student\nHobbies: Doe enjoys writing, playing guitar, and attending local events.\nGender: N/A\nLifestyle: Doe leads an active lifestyle and enjoys trying out new things. They have a small circle of close friends but enjoy meeting new people and making connections.",
+                1,
+                "hard"
+            ],
+            [
+                "Name: Doe\nGender: Not specified\nInterests: Comedy, stand-up, writing, performing\nHobbies: Watching comedy shows, trying out new jokes, reading books on humor\nOccupation: Not specified\nPersonal connection: has some friends who work for the open mic company.\nFinancial situation: Not specified\nLifestyle: Active\nPreferences: Enjoys performing in front of an audience",
+                2,
+                "easy"
+            ],
+            [
+                "Name: Doe\nPreferences: Doe prefers to engage in activities that challenge them mentally and creatively. They have a strong interest in performing arts and enjoy watching stand-up comedy shows. Doe prefers to take the initiative and make their own decisions.\nInterests: Doe has a keen interest in stand-up comedy and has been working on their own material for some time. They also enjoy watching movies, playing video games, and trying out new restaurants.\nFinancial situation: Doe has a stable income and is able to afford the cost of attending an open mic night.\nOccupation: N/A\nHobbies: Doe enjoys writing, playing guitar, and attending local events.\nGender: N/A\nLifestyle: Doe leads an active lifestyle and enjoys trying out new things. They have a small circle of close friends but enjoy meeting new people and making connections.",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 288
+}

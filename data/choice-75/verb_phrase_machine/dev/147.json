@@ -1,0 +1,28 @@
+{
+    "goal": "learn the guitar",
+    "steps": [
+        "decided to learn the guitar",
+        "save up for a guitar",
+        "purchase a guitar",
+        "purchase learning material",
+        "load up some video tutorials at home",
+        "practice following along the tutorials and material"
+    ],
+    "curr_index": 1306,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "purchase learning material",
+        "option 1": "buy learning material in a store",
+        "option 2": "buy learning material online",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "lives in a rural area and does not have access to physical stores",
+                2,
+                "easy"
+            ]
+        ]
+    },
+    "index": 147
+}

@@ -1,0 +1,28 @@
+{
+    "goal": "buy some bait",
+    "steps": [
+        "compare fishing poles",
+        "go to the bait counter",
+        "ask what bait is available",
+        "look over the options",
+        "decide on bait to use",
+        "purchase the bait"
+    ],
+    "curr_index": 6370,
+    "index": 78,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "decide on bait to use",
+        "option 1": "ask the owner for bait suggestions",
+        "option 2": "search online for reviews and advice for bait",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "is a beginner angler",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

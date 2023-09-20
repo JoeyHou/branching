@@ -1,0 +1,38 @@
+{
+    "goal": "join the marines",
+    "steps": [
+        "decided to join the marines",
+        "volunteer to join the marines",
+        "attend a basic physical examination",
+        "wait to be selected",
+        "travel to a training camp",
+        "successfully pass basic training"
+    ],
+    "curr_index": 1940,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "volunteer to join the marines",
+        "option 1": "talk to your recruiter",
+        "option 2": "apply online",
+        "type": "silver_dev",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Name: Doe\nGender: female\nOccupation: college graduate\nFinancial situation: Stable, willing to invest in education and training\nPreferences: values human interactions\nInterests: maximize the chance of getting into marines by knowing more people there\nHobbies: Running, hiking, camping\nLifestyle: Active, goal-oriented, disciplined",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nPreferences: Joining the Marines, looking for an efficient and convenient way to apply\nInterests: Physical fitness, outdoor activities, serving the country\nFinancial situation: Stable, willing to invest in education and training\nOccupation: night shift waiter with tight hours\nHobbies: Running, hiking, camping\nGender: Not specified\nLifestyle: very busy",
+                2,
+                "easy"
+            ],
+            [
+                "Name: Doe\nPreferences: Joining the Marines\nInterests: Physical fitness, outdoor activities, serving the country\nFinancial situation: Stable, willing to invest in education and training\nOccupation: waitress\nHobbies: Running, hiking, camping\nGender: female\nLifestyle: very busy",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 168
+}

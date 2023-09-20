@@ -1,0 +1,34 @@
+{
+    "goal": "play a game during recess",
+    "steps": [
+        "decided to play a game during recess",
+        "find out who wants to play at recess",
+        "find out what everyone wants to play",
+        "agree upon a game and get the needed materials",
+        "meet outside on the playground at recess",
+        "pick teams and get ready to start the game"
+    ],
+    "original_index": 653,
+    "curr_index": 6338,
+    "index": 62,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "find out what everyone wants to play",
+        "option 1": "start a poll in the social media",
+        "option 2": "ask everyone just call out what they want",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "have many people being introvert",
+                1,
+                "hard"
+            ],
+            [
+                "have a favorite game in mind",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

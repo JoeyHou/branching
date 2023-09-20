@@ -1,0 +1,54 @@
+{
+    "goal": "learn how to bake a cake",
+    "steps": [
+        "decided to learn how to bake a cake",
+        "search for baking classes in town",
+        "sign up for a baking class",
+        "wait for day of baking class",
+        "walk to baking class in town",
+        "follow along in baking class"
+    ],
+    "original_index": 612,
+    "curr_index": 5227,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "search for baking classes in town",
+        "option 1": "go to local community center and ask for baking classes in town",
+        "option 2": "search for baking classes online",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "cannot travel far for classes",
+                1,
+                "easy"
+            ],
+            [
+                "is christmas holiday and the person needs a new skill for tomorrow's family birthday party",
+                2,
+                "hard"
+            ],
+            [
+                "need feedback about the backing class",
+                2,
+                "easy"
+            ],
+            [
+                "want to learn local recipes",
+                1,
+                "easy"
+            ],
+            [
+                "want to take the best baking class available",
+                2,
+                "medium"
+            ],
+            [
+                "plan to make birthday cake for self this year",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 280
+}

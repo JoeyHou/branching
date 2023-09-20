@@ -1,0 +1,34 @@
+{
+    "goal": "start practicing with friends",
+    "steps": [
+        "learn how to play football",
+        "contact friends to set up a time",
+        "set up a time",
+        "go when the time comes",
+        "greet the friends",
+        "start throwing footballs"
+    ],
+    "original_index": 1875,
+    "curr_index": 6158,
+    "index": 6,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "contact friends to set up a time",
+        "option 1": "make a public post about playing football in facebook group",
+        "option 2": "call friends one at a time to see their available time",
+        "type": "golden",
+        "dataset": "train",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: Enjoys team sports, particularly football.\nInterests: Likes to keep active and socialize with friends.\nFinancial Situation: Financially stable enough to participate in recreational activities.\nOccupation: Not specified.\nHobbies: Enjoys playing video games in spare time.\nGender: Not specified.\nLife-style: Leads an active lifestyle and values spending time with friends.",
+                0,
+                "na"
+            ],
+            [
+                "Name: Doe\nPreferences: \n- Enjoys playing football with friends \n- Values social interaction \n- Wants to ensure everyone is happy \nInterests: \n- Sports (particularly football) \n- Spending time with friends \nFinancial situation: Unknown \nOccupation: Unknown \nHobbies: Unknown \nGender: Unknown \nLife-style: Unknown",
+                2,
+                "medium"
+            ]
+        ]
+    }
+}

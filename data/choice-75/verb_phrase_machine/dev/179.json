@@ -1,0 +1,33 @@
+{
+    "goal": "earn some cash over the summer",
+    "steps": [
+        "decided to earn some cash over the summer",
+        "type up flyers offering to do handy work",
+        "print the flyers",
+        "disperse the flyers around the neighborhood",
+        "when prompted go to homes and do odd jobs",
+        "place earnings in a savings account"
+    ],
+    "curr_index": 2279,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "disperse the flyers around the neighborhood",
+        "option 1": "get a box of flyers and put it in front of community center",
+        "option 2": "carry a flyer in your hand while you walk around the neighborhood",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "has a job and a few classes to attend during the summer",
+                1,
+                "hard"
+            ],
+            [
+                "is a social person",
+                2,
+                "medium"
+            ]
+        ]
+    },
+    "index": 179
+}

@@ -1,0 +1,39 @@
+{
+    "goal": "move belongings to new rural house",
+    "steps": [
+        "close escrow on new home",
+        "pack belongings into boxes",
+        "rent a moving truck",
+        "park back of truck in front of the door",
+        "load belongings into moving truck",
+        "drive truck to new house",
+        "move boxes into new house"
+    ],
+    "curr_index": 6296,
+    "index": 41,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "load belongings into moving truck",
+        "option 1": "load belongings with only one's hands",
+        "option 2": "rent a moving cart to help loading",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: Doe values self-sufficiency and independence.\nInterests: Doe enjoys spending time outdoors, reading books, and watching movies.\nEmployment Situation: Doe recenly got laid off.\nOccupation: N/A\nHobbies: Working out\nGender: Male\nLife-style: Doe leads a simple lifestyle and tries to minimize their environmental impact.",
+                1,
+                "hard"
+            ],
+            [
+                "Name: Doe\nInterests: Enjoys outdoor activities such as hiking.\nFinancial Situation: unknown.\nOccupation: hedge fund manager.\nLife style: Productivity geek\nHobbies: Scuba diving.\nGender: Male.",
+                2,
+                "hard"
+            ],
+            [
+                "Name: Doe\nInterests: Enjoys outdoor activities such as hiking.\nFinancial Situation: moderate.\nOccupation: manager.\nHobbies: Scuba diving.\nGender: unknown",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

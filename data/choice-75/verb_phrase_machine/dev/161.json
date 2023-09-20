@@ -1,0 +1,33 @@
+{
+    "goal": "see a rhinoceros",
+    "steps": [
+        "decided to see a rhinoceros",
+        "find out hours zoo is open",
+        "travel to zoo during open-hours",
+        "purchase ticket  for entry",
+        "find out where rhinoceros are kept",
+        "walk to rhinoceros enclosure and look around"
+    ],
+    "curr_index": 1860,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "travel to zoo during open-hours",
+        "option 1": "buy a ticket on your own",
+        "option 2": "find a travel agency to book on your behalf",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "enjoys the thrill of the journey",
+                0,
+                "na"
+            ],
+            [
+                "is planning a long trip with her family",
+                2,
+                "hard"
+            ]
+        ]
+    },
+    "index": 161
+}

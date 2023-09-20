@@ -1,0 +1,38 @@
+{
+    "goal": "learn a new instrument",
+    "steps": [
+        "decided to learn a new instrument",
+        "go to store to buy the instrument",
+        "take lessons from teacher",
+        "practice lessons at home",
+        "get new music to practice more",
+        "get feedback from friends"
+    ],
+    "curr_index": 6280,
+    "index": 35,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "go to store to buy the instrument",
+        "option 1": "get an used instrument at the store",
+        "option 2": "buy a new one",
+        "type": "golden",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Name: Doe\nPreferences: Doe likes to try new things, explore different interests, and challenge themselves.\nInterests: Doe loves music and has always been interested in learning to play an instrument. Doe enjoys listening to various genres of music, including classical, jazz, and rock.\nFinancial Situation: Doe is on a tight budget\nOccupation: taxi driver\nHobbies: reading books, planting fruits\nGender: Unknown\nLifestyle: Doe has a busy schedule and is looking for an instrument that they can practice at home in their spare time.\nSummary: Doe is an adventurous person with a love for music. They are looking for an instrument that fits their lifestyle and can be practiced at home.",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nPreferences: Doe likes to try new things, explore different interests, and challenge themselves; values durability and quality\nInterests: Doe loves music and has always been interested in learning to play an instrument. Doe enjoys listening to various genres of music, including classical, jazz, and rock. Doe wants to become an expert in at least one instrument, which means Doe needs to learn it for a long time. \nFinancial Situation: moderate\nOccupation: high school student\nHobbies: reading books, hiking\nGender: Unknown\nLife-style: well-balanced",
+                2,
+                "medium"
+            ],
+            [
+                "Name: Doe\nPreferences: Doe likes to try new things, explore different interests, and challenge themselves.\nInterests: Doe loves music and has always been interested in learning to play an instrument. Doe enjoys listening to various genres of music, including classical, jazz, and rock.\nFinancial Situation: moderate\nOccupation: taxi driver\nHobbies: reading books, planting fruits\nGender: Unknown\nLifestyle: Doe has a busy schedule and is looking for an instrument that they can practice at home in their spare time.\nSummary: Doe is an adventurous person with a love for music. They are looking for an instrument that fits their lifestyle and can be practiced at home.",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

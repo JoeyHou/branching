@@ -1,0 +1,44 @@
+{
+    "goal": "place the skeleton on the counter",
+    "steps": [
+        "take the skeleton to the cashier",
+        "get close to counter",
+        "lift skeleton up",
+        "move skeleton towards counter",
+        "stop when the skeleton is directly above of the counter",
+        "drop the skeleton"
+    ],
+    "original_index": 2005,
+    "curr_index": 6315,
+    "index": 51,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "lift skeleton up",
+        "option 1": "life the skeleton on one's own",
+        "option 2": "ask the cashier for help",
+        "type": "golden",
+        "dataset": "train",
+        "freeform_ra": [
+            [
+                "decided to purchase a cheap version of skeleton instead of an expensive one",
+                0,
+                "na"
+            ],
+            [
+                "have a broken arm",
+                2,
+                "medium"
+            ],
+            [
+                "see the cashier has a broken arm",
+                1,
+                "hard"
+            ],
+            [
+                "want to impress the cashier",
+                1,
+                "easy"
+            ]
+        ]
+    }
+}

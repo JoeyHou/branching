@@ -1,0 +1,46 @@
+{
+    "goal": "try making bagels",
+    "steps": [
+        "decided to try making bagels",
+        "turn on the computer",
+        "open a web browswer",
+        "search the internet for how to make bagels",
+        "take notes on how to make bagels",
+        "drive to the store",
+        "buy ingredients at the store",
+        "follow the instructions to make bagels"
+    ],
+    "original_index": 581,
+    "curr_index": 6162,
+    "index": 8,
+    "branching_info": {
+        "branching_idx": 4,
+        "branching_step": "take notes on how to make bagels",
+        "option 1": "take notes on the easy recipes of making bagels",
+        "option 2": "take notes on the delicious but difficult recipes of making bagels",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "enjoy cooking complex recipes",
+                2,
+                "easy"
+            ],
+            [
+                "have a tight daily routine",
+                1,
+                "medium"
+            ],
+            [
+                "want to take on challenges",
+                2,
+                "easy"
+            ],
+            [
+                "enjoy eating bagels",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

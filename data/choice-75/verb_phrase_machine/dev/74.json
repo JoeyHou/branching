@@ -1,0 +1,33 @@
+{
+    "goal": "speak a lot of languages",
+    "steps": [
+        "decided to speak a lot of languages",
+        "decide on what languages to learn",
+        "purchase books to learn each language",
+        "wait for delivery",
+        "open and unpack books",
+        "read through each one"
+    ],
+    "curr_index": 6359,
+    "index": 74,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "purchase books to learn each language",
+        "option 1": "request a sample before buying an e-book",
+        "option 2": "order a paper copy of the language book from amazon",
+        "type": "golden",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "wants to start learning the language as soon as possible",
+                1,
+                "medium"
+            ],
+            [
+                "likes to highlight important points and take notes about the book",
+                0,
+                "na"
+            ]
+        ]
+    }
+}

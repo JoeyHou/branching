@@ -1,0 +1,35 @@
+{
+    "goal": "learn to make pot pies",
+    "steps": [
+        "decided to learn to make pot pies",
+        "find potpie tutorial online",
+        "gather materials together",
+        "turn on the oven",
+        "make the potpies",
+        "bake the potpies",
+        "take the pies out to cool",
+        "serve the potpies on a plate"
+    ],
+    "curr_index": 1280,
+    "branching_info": {
+        "branching_idx": 5,
+        "branching_step": "bake the potpies",
+        "option 1": "buy a new pot pie pan",
+        "option 2": "buy a used pot pie pan",
+        "type": "silver_dev",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "is a perfectionist",
+                0,
+                "na"
+            ],
+            [
+                "is on a tight budget",
+                2,
+                "easy"
+            ]
+        ]
+    },
+    "index": 145
+}

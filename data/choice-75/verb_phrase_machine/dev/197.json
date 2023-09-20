@@ -1,0 +1,33 @@
+{
+    "goal": "make a banana strawberry smoothie",
+    "steps": [
+        "decided to make a banana strawberry smoothie",
+        "look up smoothie recipe",
+        "go to the store",
+        "buy smoothie ingredients",
+        "drive home from store",
+        "make smoothie with ingredients"
+    ],
+    "curr_index": 2769,
+    "branching_info": {
+        "branching_idx": 1,
+        "branching_step": "look up smoothie recipe",
+        "option 1": "ask your grandmother for her recipe",
+        "option 2": "look up a smoothie recipe online",
+        "type": "silver_dev",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Doe's grandmother is an experienced cook",
+                1,
+                "easy"
+            ],
+            [
+                "is in a hurry",
+                2,
+                "medium"
+            ]
+        ]
+    },
+    "index": 197
+}

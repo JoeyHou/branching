@@ -1,0 +1,38 @@
+{
+    "goal": "start to eat healthy",
+    "steps": [
+        "decided to start to eat healthy",
+        "research healthy diets",
+        "pick out a new diet",
+        "make a list of groceries",
+        "go to the store for the groceries",
+        "start eating according to the diet"
+    ],
+    "curr_index": 6169,
+    "branching_info": {
+        "branching_idx": 2,
+        "branching_step": "pick out a new diet",
+        "option 1": "pick from the list of popular diets",
+        "option 2": "pick from your own list of favorite foods",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "Name: Doe \nPreferences: Interested in trying out new things, open-minded about food, likes variety in meals \nInterests: Health and wellness, cooking, trying new recipes \nFinancial Situation: Has a moderate budget, willing to spend extra for quality food \nOccupation: Not provided \nHobbies: Not provided \nGender: Not provided \nLifestyle: Prefers a balanced and active lifestyle \nOverall, Doe have a moderate budget but are willing to spend extra for quality food.",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nPreferences: Interested in healthy eating; has a preference for home-cooked meals made from familiar ingredients; enjoys a variety of cuisines; prefers to avoid processed foods and sugary drinks.\nInterests: Loves to cook and experiment with new recipes; enjoys outdoor activities such as hiking and cycling.\nFinancial Situation: Has a moderate income but willing to invest in high-quality ingredients and kitchen equipment.\nOccupation: student\nBackground: from another country where food culture is very different and unique\nHobbies: Cooking, hiking, cycling\nGender: Not specified\nLife-style: Prioritizes a healthy and active lifestyle.",
+                2,
+                "hard"
+            ],
+            [
+                "Name: Doe\nPreferences: Interested in healthy eating; has a preference for home-cooked meals made from fresh ingredients; enjoys a variety of cuisines; prefers to avoid processed foods and sugary drinks.\nInterests: Loves to cook and experiment with new recipes; enjoys outdoor activities such as hiking and cycling.\nFinancial Situation: Has a moderate income but willing to invest in high-quality ingredients and kitchen equipment.\nOccupation: student\nHobbies: Cooking, hiking, cycling\nGender: Not specified\nLife-style: Prioritizes a healthy and active lifestyle.",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 317
+}

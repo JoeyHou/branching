@@ -1,0 +1,35 @@
+{
+    "goal": "find a part time job",
+    "steps": [
+        "decided to find a part time job",
+        "open a laptop",
+        "search for job forums",
+        "fill out applications",
+        "upload a resume",
+        "wait for callbacks",
+        "go to interview"
+    ],
+    "original_index": 280,
+    "curr_index": 2846,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "fill out applications",
+        "option 1": "go to a career center to fill out applications",
+        "option 2": "go to the internet and find a job board to browse",
+        "type": "silver_dev",
+        "dataset": "dev",
+        "freeform_ra": [
+            [
+                "have a list of 30 companies to apply for",
+                2,
+                "hard"
+            ],
+            [
+                "look for a part-time job to pay for the guitar class",
+                0,
+                "na"
+            ]
+        ]
+    },
+    "index": 199
+}

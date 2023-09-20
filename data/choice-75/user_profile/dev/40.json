@@ -1,0 +1,38 @@
+{
+    "goal": "try out for lacrosse",
+    "steps": [
+        "decided to try out for lacrosse",
+        "find out when tryouts are",
+        "practice for tryouts",
+        "improve lacrosse skills",
+        "stay after school for tryouts",
+        "go to the tryouts"
+    ],
+    "curr_index": 6295,
+    "index": 40,
+    "branching_info": {
+        "branching_idx": 3,
+        "branching_step": "improve lacrosse skills",
+        "option 1": "improve lacrosse skills by learning from online tutorials",
+        "option 2": "ask players on the school lacrosse team for suggestions on how to improve",
+        "type": "golden",
+        "dataset": "test",
+        "freeform_ra": [
+            [
+                "Name: Doe\nGender: male\nOccupation: freshman student\nFinancial Situation: limited\nPreferences:\n- Interested in trying out for lacrosse\n- Self-dependent\n- Shy about meeting new people\nInterests:\n- Lacrosse\n- Soccer\n- World history\nHobbies:\n- Board game, video games\nLifestyle:\n- New to the school\n- Quiet, not very social",
+                1,
+                "easy"
+            ],
+            [
+                "Name: Doe\nGender: male\nOccupation: freshman student\nFinancial Situation: limited\nPreferences: Doe values human interaction. Doe enjoy being part of a team and collaborating with others. \nInterests: Doe is interested in trying out for lacrosse and wants to improve his skills in order to increase his chances of making the team.\nHobbies:\n- Board game, video games\nLifestyle:\n- Balanced",
+                2,
+                "easy"
+            ],
+            [
+                "Name: Doe\nGender: male\nOccupation: freshman student\nFinancial Situation: limited\nInterests: Doe is interested in trying out for lacrosse and wants to improve their skills.\nHobbies:\n- Board game, video games\nLifestyle:\n- Balanced",
+                0,
+                "na"
+            ]
+        ]
+    }
+}
